@@ -13,21 +13,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main  #采用main分支下的
+      - name: Prepare Env
+        run: |
+          cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+          sudo hwclock --systohc
       - name: Download the subscribe
         run: |
-          sh ./run.sh
+          bash ./run.sh
       - name: Commit Changes
         run: |
          git config --global user.email admin@zkyml.com
          git config --global user.name zkyml
          git add .
          if git diff-index --quiet HEAD; then
-            echo "没有未提交的改动"
+            echo "no file need to commit"
          else
-            echo "有未提交的改动"
-            cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-            sudo hwclock --systohc
-            git commit -m "由github actions推送,日期:`date +%Y%m%d`"
+            time=`date "+%Y-%m-%d %H:%M:%S"`
+            git commit -m "commit by github actions,date:$time"
          fi
          git pull --rebase
       - name: Push changes
