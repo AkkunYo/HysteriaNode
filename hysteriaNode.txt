@@ -1,9 +1,14 @@
 proxies:
-- {"name":"Relay_-🇺🇸US_01","server":"64.110.25.11","type":"hysteria2","port":33337,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-- {"name":"_03","server":"108.181.24.77","type":"hysteria2","port":43656,"udp":true,"password":"dongtaiwang.com","auth":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-- {"name":"Relay_-🇫🇷FR_05","server":"62.210.101.0","type":"hysteria2","port":52465,"udp":true,"password":"dongtaiwang.com","auth":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-- {"name":"Relay_-🇯🇵JP_09","server":"jpntt2.sharecentre.online","type":"hysteria2","port":4433,"udp":true,"password":"sharecentrepro","auth":"sharecentrepro","skip-cert-verify":true}
-- {"name":"_10","server":"51.158.54.46","type":"hysteria2","port":44550,"udp":true,"password":"dongtaiwang.com","auth":"dongtaiwang.com","sni":"bing.com","skip-cert-verify":true}
-- {"name":"disney_TW","server":"www.dtku50.xyz","type":"hysteria","country":"🇹🇼TW","port":11229,"udp":true,"auth_str":"dongtaiwang.com","auth-str":"dongtaiwang.com","alpn":["h3"],"sni":"bing.com","skip-cert-verify":true,"up":"11","down":"55","protocol":"udp"}
-- {"name":"Pool_🇺🇸US_692","server":"173.234.25.52","type":"hysteria","country":"🇺🇸US","port":30072,"udp":true,"auth_str":"dongtaiwang.com","auth-str":"dongtaiwang.com","alpn":["h3"],"sni":"bing.com","skip-cert-verify":true,"up":"80","down":"100","protocol":"udp"}
-- {"name":"Pool_🇺🇸US_694","server":"108.181.22.239","type":"hysteria","country":"🇺🇸US","port":39967,"udp":true,"auth_str":"dongtaiwang.com","auth-str":"dongtaiwang.com","alpn":["h3"],"sni":"bing.com","skip-cert-verify":true,"up":"80","down":"100","protocol":"udp"}
+- {"name":"_02","server":"51.158.54.46","type":"hysteria2","port":44550,"password":"dongtaiwang.com","sni":"bing.com","skip-cert-verify":true}
+- {"name":"Relay_-🇺🇸US_03","server":"64.110.25.11","type":"hysteria2","port":33337,"udp":true,"password":"dongtaiwang.com","auth":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"Relay_-🇯🇵JP_05","server":"jpntt2.sharecentre.online","type":"hysteria2","port":4433,"udp":true,"password":"sharecentrepro","auth":"sharecentrepro","skip-cert-verify":true}
+- {"name":"Relay_-🇫🇷FR_08","server":"62.210.101.0","type":"hysteria2","port":52465,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"Relay_-🇫🇷FR_10","server":"62.210.103.0","type":"hysteria2","port":52465,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"_12","server":"108.181.24.77","type":"hysteria2","port":43656,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"disney_TW","server":"www2.dtku48.xyz","type":"hysteria","country":"🇹🇼TW","port":22334,"udp":true,"auth_str":"dongtaiwang.com","auth-str":"dongtaiwang.com","alpn":["h3"],"skip-cert-verify":true,"up":"11","down":"55","protocol":"udp"}
+- {"name":"disney_TW","server":"www4.dtku49.xyz","type":"hysteria","country":"🇹🇼TW","port":22334,"udp":true,"auth_str":"dongtaiwang.com","auth-str":"dongtaiwang.com","alpn":["h3"],"skip-cert-verify":true,"up":"11 Mbps","down":"55 Mbps","protocol":"udp"}
+- {"name":"disney_TW","server":"61.230.128.179","type":"hysteria","country":"🇹🇼TW","port":18470,"udp":true,"auth_str":"dongtaiwang.com","auth-str":"dongtaiwang.com","alpn":["h3"],"sni":"www.amazon.cn","skip-cert-verify":true,"up":"2","down":"10","protocol":"udp"}
+- {"name":"Pool_🇺🇸US_674","server":"173.234.25.52","type":"hysteria","country":"🇺🇸US","port":30072,"udp":true,"auth_str":"dongtaiwang.com","auth-str":"dongtaiwang.com","alpn":["h3"],"sni":"bing.com","skip-cert-verify":true,"up":"80","down":"100","protocol":"udp"}
+- {"name":"Pool_🇺🇸US_675","server":"108.181.22.239","type":"hysteria","country":"🇺🇸US","port":39967,"udp":true,"auth_str":"dongtaiwang.com","auth-str":"dongtaiwang.com","alpn":["h3"],"sni":"bing.com","skip-cert-verify":true,"up":"80","down":"100","protocol":"udp"}
+- {"name":"Pool_🇺🇸US_679","server":"167.160.91.115","type":"hysteria","country":"🇺🇸US","port":41189,"udp":true,"auth_str":"bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF","auth-str":"bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF","alpn":["h3"],"sni":"www.amazon.cn","skip-cert-verify":true,"up":"11","down":"55","protocol":"udp"}
+- {"name":"Relay_🇺🇸US-🇺🇸US_683","server":"iyus1.itdog.cloud","type":"hysteria2","country":"🇺🇸US","port":50015,"udp":true,"password":"815f533e-2ae0-4930-b9b3-5d38ed383d3c","sni":"iyus1.itdog.cloud","skip-cert-verify":true}
