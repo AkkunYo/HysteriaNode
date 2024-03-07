@@ -1,4 +1,3 @@
 proxies:
-- {"name":"Relay_-🇫🇷FR_05","server":"62.210.103.0","type":"hysteria2","port":22483,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-- {"name":"🇺🇸US_477","server":"108.181.24.77","type":"hysteria2","country":"🇺🇸US","port":43656,"udp":true,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-- {"name":"Relay_🇺🇸US-🇺🇸US_478","server":"64.110.25.11","type":"hysteria2","country":"🇺🇸US","port":33337,"udp":true,"password":"dongtaiwang.com","skip-cert-verify":true}
+- {"name":"netflix_US","server":"64.110.25.11","type":"hysteria2","port":33337,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"🇦🇺AU_46","server":"170.64.183.54","type":"hysteria2","country":"🇦🇺AU","port":33939,"udp":true,"password":"miaoge110.","skip-cert-verify":true}
