@@ -1,1 +1,2 @@
 proxies:
+- {"name":"🇺🇸US_450","server":"142.171.174.206","type":"hysteria2","country":"🇺🇸US","port":15090,"udp":true,"password":"b46cb204-5849-4b86-852d-8154fb8eb580","sni":"www.bing.com","skip-cert-verify":true}
