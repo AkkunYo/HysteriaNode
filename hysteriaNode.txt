@@ -1,3 +1,2 @@
 proxies:
-- {"name":"Relay_-🇺🇸US_01","server":"64.110.25.11","type":"hysteria2","port":33337,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-- {"name":"🇦🇺AU_84","server":"170.64.183.54","type":"hysteria2","country":"🇦🇺AU","port":33939,"udp":true,"password":"miaoge110.","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"🇦🇺AU_90","server":"170.64.183.54","type":"hysteria2","country":"🇦🇺AU","port":33939,"udp":true,"password":"miaoge110.","skip-cert-verify":true}
