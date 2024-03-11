@@ -1,7 +1,6 @@
 proxies:
-- {"name":"netflix_US","server":"64.110.25.11","type":"hysteria2","port":33337,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-- {"name":"Pool__06","server":"51.159.77.153","type":"hysteria2","port":33390,"password":"dongtaiwang.com","alpn":["h3"],"sni":"bing.com","skip-cert-verify":true,"up":"11 Mbps","down":"55 Mbps"}
-- {"name":"🇦🇺AU_80","server":"170.64.183.54","type":"hysteria2","country":"🇦🇺AU","port":33939,"udp":true,"password":"miaoge110.","skip-cert-verify":true}
-- {"name":"🇫🇷FR_236","server":"51.158.54.46","type":"hysteria2","country":"🇫🇷FR","port":44550,"udp":true,"password":"dongtaiwang.com","sni":"bing.com","skip-cert-verify":true}
-- {"name":"Pool_🇫🇷FR_237","server":"51.159.77.198","type":"hysteria2","country":"🇫🇷FR","port":53967,"udp":true,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-- {"name":"Pool_🇺🇸US_801","server":"167.160.91.115","type":"hysteria","country":"🇺🇸US","port":41189,"udp":true,"auth_str":"bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF","auth-str":"bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF","alpn":["h3"],"sni":"www.amazon.cn","skip-cert-verify":true,"up":"11","down":"55","protocol":"udp"}
+- {"name":"Relay_-🇫🇷FR_01","server":"62.210.103.0","type":"hysteria2","port":22483,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"Relay_-🇺🇸US_02","server":"64.110.25.11","type":"hysteria2","port":33337,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"Pool__05","server":"51.159.77.198","type":"hysteria2","port":53967,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"🇦🇺AU_82","server":"170.64.183.54","type":"hysteria2","country":"🇦🇺AU","port":33939,"udp":true,"password":"miaoge110.","skip-cert-verify":true}
+- {"name":"🇫🇷FR_224","server":"51.158.54.46","type":"hysteria","country":"🇫🇷FR","port":55396,"udp":true,"auth_str":"dongtaiwang.com","auth-str":"dongtaiwang.com","alpn":["h3"],"sni":"youku.com","skip-cert-verify":true,"up":"55","down":"110","protocol":"udp"}
