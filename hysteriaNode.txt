@@ -1,7 +1,2 @@
 proxies:
-- {"name":"netflix_US","server":"64.110.25.11","type":"hysteria2","port":33337,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-- {"name":"Pool__08","server":"51.159.77.198","type":"hysteria2","port":53967,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-- {"name":"🇦🇺AU_79","server":"170.64.183.54","type":"hysteria2","country":"🇦🇺AU","port":33939,"udp":true,"password":"miaoge110.","sni":"www.bing.com","skip-cert-verify":true}
-- {"name":"Relay_🇫🇷FR-🇫🇷FR_205","server":"62.210.103.0","type":"hysteria2","country":"🇫🇷FR","port":22483,"udp":true,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-- {"name":"Pool_🇫🇷FR_206","server":"51.159.77.153","type":"hysteria2","country":"🇫🇷FR","port":33390,"udp":true,"password":"dongtaiwang.com","sni":"bing.com","skip-cert-verify":true}
-- {"name":"🇫🇷FR_208","server":"51.158.54.46","type":"hysteria","country":"🇫🇷FR","port":55396,"udp":true,"auth_str":"dongtaiwang.com","auth-str":"dongtaiwang.com","alpn":["h3"],"sni":"youku.com","skip-cert-verify":true,"up":"11","down":"55","protocol":"udp"}
+- {"name":"🇺🇸US_570","server":"108.181.24.77","type":"hysteria2","country":"🇺🇸US","port":43656,"udp":true,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
