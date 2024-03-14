@@ -1,1 +1,2 @@
 proxies:
+- {"name":"🇫🇷FR_203","server":"51.158.54.46","type":"hysteria2","country":"🇫🇷FR","port":44550,"udp":true,"password":"dongtaiwang.com","sni":"bing.com","skip-cert-verify":true}
