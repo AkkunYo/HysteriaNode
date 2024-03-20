@@ -1,4 +1,8 @@
 proxies:
-- {"name":"Relay_🇹🇼TW-🇹🇼TW_755","server":"ty17.twty.dynu.net","type":"hysteria2","country":"🇹🇼TW","port":8991,"udp":true,"password":"ff0a98ef-e829-4a62-b625-998593df5249","sni":"ty17.twty.dynu.net","skip-cert-verify":false}
-- {"name":"Relay_🇹🇼TW-🇹🇼TW_756","server":"b37.ntbq.dynu.net","type":"hysteria2","country":"🇹🇼TW","port":8886,"udp":true,"password":"ff0a98ef-e829-4a62-b625-998593df5249","sni":"b37.ntbq.dynu.net","skip-cert-verify":false}
-- {"name":"Relay_🇹🇼TW-🇹🇼TW_757","server":"ty16.twty.dynu.net","type":"hysteria2","country":"🇹🇼TW","port":8882,"udp":true,"password":"ff0a98ef-e829-4a62-b625-998593df5249","sni":"ty16.twty.dynu.net","skip-cert-verify":false}
+- {"name":"Pool__01","server":"51.159.77.153","type":"hysteria2","port":33390,"password":"dongtaiwang.com","alpn":["h3"],"sni":"bing.com","skip-cert-verify":true,"up":"11 Mbps","down":"55 Mbps"}
+- {"name":"Relay_-🇫🇷FR_07","server":"62.210.103.0","type":"hysteria2","port":22483,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"🇫🇷FR_295","server":"51.158.54.46","type":"hysteria2","country":"🇫🇷FR","port":44550,"udp":true,"password":"dongtaiwang.com","sni":"bing.com","skip-cert-verify":true}
+- {"name":"Relay_🇹🇼TW-🇹🇼TW_866","server":"ty16.twty.dynu.net","type":"hysteria2","country":"🇹🇼TW","port":8882,"udp":true,"password":"ff0a98ef-e829-4a62-b625-998593df5249","sni":"ty16.twty.dynu.net","skip-cert-verify":false}
+- {"name":"Relay_🇹🇼TW-🇹🇼TW_867","server":"ty17.twty.dynu.net","type":"hysteria2","country":"🇹🇼TW","port":8991,"udp":true,"password":"ff0a98ef-e829-4a62-b625-998593df5249","sni":"ty17.twty.dynu.net","skip-cert-verify":false}
+- {"name":"Relay_🇹🇼TW-🇹🇼TW_868","server":"b37.ntbq.dynu.net","type":"hysteria2","country":"🇹🇼TW","port":8886,"udp":true,"password":"ff0a98ef-e829-4a62-b625-998593df5249","sni":"b37.ntbq.dynu.net","skip-cert-verify":false}
+- {"name":"Relay_🇹🇼TW-🇹🇼TW_869","server":"b26.ntbq.dynu.net","type":"hysteria2","country":"🇹🇼TW","port":8886,"udp":true,"password":"ff0a98ef-e829-4a62-b625-998593df5249","sni":"b26.ntbq.dynu.net","skip-cert-verify":false}
