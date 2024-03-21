@@ -1,7 +1,6 @@
 proxies:
-- {"name":"Pool__03","server":"51.159.77.153","type":"hysteria2","port":33390,"password":"dongtaiwang.com","alpn":["h3"],"sni":"bing.com","skip-cert-verify":true,"up":"11 Mbps","down":"55 Mbps"}
-- {"name":"Relay_🇹🇼TW-🇹🇼TW_806","server":"ty17.twty.dynu.net","type":"hysteria2","country":"🇹🇼TW","port":8991,"udp":true,"password":"ff0a98ef-e829-4a62-b625-998593df5249","sni":"ty17.twty.dynu.net","skip-cert-verify":false}
-- {"name":"Relay_🇹🇼TW-🇹🇼TW_807","server":"b37.ntbq.dynu.net","type":"hysteria2","country":"🇹🇼TW","port":8886,"udp":true,"password":"ff0a98ef-e829-4a62-b625-998593df5249","sni":"b37.ntbq.dynu.net","skip-cert-verify":false}
-- {"name":"Relay_🇹🇼TW-🇹🇼TW_808","server":"b26.ntbq.dynu.net","type":"hysteria2","country":"🇹🇼TW","port":8886,"udp":true,"password":"ff0a98ef-e829-4a62-b625-998593df5249","sni":"b26.ntbq.dynu.net","skip-cert-verify":false}
-- {"name":"Relay_🇹🇼TW-🇹🇼TW_809","server":"ty16.twty.dynu.net","type":"hysteria2","country":"🇹🇼TW","port":8882,"udp":true,"password":"ff0a98ef-e829-4a62-b625-998593df5249","sni":"ty16.twty.dynu.net","skip-cert-verify":false}
-- {"name":"🇺🇸US_871","server":"108.181.24.77","type":"hysteria2","country":"🇺🇸US","port":43656,"udp":true,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"Pool__01","server":"51.159.77.153","type":"hysteria2","port":33390,"password":"dongtaiwang.com","alpn":["h3"],"sni":"bing.com","skip-cert-verify":true,"up":"11 Mbps","down":"55 Mbps"}
+- {"name":"Relay_🇹🇼TW-🇹🇼TW_712","server":"b26.ntbq.dynu.net","type":"hysteria2","country":"🇹🇼TW","port":8886,"udp":true,"password":"ff0a98ef-e829-4a62-b625-998593df5249","sni":"b26.ntbq.dynu.net","skip-cert-verify":false}
+- {"name":"Relay_🇹🇼TW-🇹🇼TW_713","server":"ty17.twty.dynu.net","type":"hysteria2","country":"🇹🇼TW","port":8991,"udp":true,"password":"ff0a98ef-e829-4a62-b625-998593df5249","sni":"ty17.twty.dynu.net","skip-cert-verify":false}
+- {"name":"Relay_🇹🇼TW-🇹🇼TW_714","server":"b37.ntbq.dynu.net","type":"hysteria2","country":"🇹🇼TW","port":8886,"udp":true,"password":"ff0a98ef-e829-4a62-b625-998593df5249","sni":"b37.ntbq.dynu.net","skip-cert-verify":false}
+- {"name":"Relay_🇹🇼TW-🇹🇼TW_715","server":"ty16.twty.dynu.net","type":"hysteria2","country":"🇹🇼TW","port":8882,"udp":true,"password":"ff0a98ef-e829-4a62-b625-998593df5249","sni":"ty16.twty.dynu.net","skip-cert-verify":false}
