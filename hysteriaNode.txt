@@ -1,9 +1,13 @@
 proxies:
-- {"name":"🇦🇺AU_1136","server":"170.64.183.54","type":"hysteria2","country":"🇦🇺AU","port":33939,"udp":true,"password":"miaoge110.","sni":"www.bing.com","skip-cert-verify":true}
-- {"name":"disney_netflix_US","server":"108.181.23.225","type":"hysteria2","country":"🇺🇸US","port":443,"udp":true,"password":"45a8d20d-9a78-4be4-a74a-ab3b9e84e34e","sni":"www.apple.com","skip-cert-verify":true}
-- {"name":"🇺🇸US_1774","server":"108.181.22.153","type":"hysteria2","country":"🇺🇸US","port":443,"udp":true,"password":"45a8d20d-9a78-4be4-a74a-ab3b9e84e34e","sni":"www.apple.com","skip-cert-verify":true}
-- {"name":"🇺🇸US_1775","server":"163.123.192.62","type":"hysteria2","country":"🇺🇸US","port":443,"udp":true,"password":"45a8d20d-9a78-4be4-a74a-ab3b9e84e34e","sni":"apps.apple.com","skip-cert-verify":true}
-- {"name":"🇺🇸US_1776","server":"208.87.243.155","type":"hysteria2","country":"🇺🇸US","port":443,"udp":true,"password":"45a8d20d-9a78-4be4-a74a-ab3b9e84e34e","sni":"www.apple.com","skip-cert-verify":true}
-- {"name":"🇺🇸US_1777","server":"163.123.192.61","type":"hysteria2","country":"🇺🇸US","port":443,"udp":true,"password":"45a8d20d-9a78-4be4-a74a-ab3b9e84e34e","sni":"apps.apple.com","skip-cert-verify":true}
-- {"name":"🇺🇸US_1778","server":"108.181.24.43","type":"hysteria2","country":"🇺🇸US","port":443,"udp":true,"password":"45a8d20d-9a78-4be4-a74a-ab3b9e84e34e","sni":"www.apple.com","skip-cert-verify":true}
-- {"name":"Pool_🇺🇸US_1779","server":"163.123.192.151","type":"hysteria2","country":"🇺🇸US","port":443,"udp":true,"password":"45a8d20d-9a78-4be4-a74a-ab3b9e84e34e","sni":"music.apple.com","skip-cert-verify":true}
+- {"name":"Pool__01","server":"51.159.77.153","type":"hysteria2","port":33390,"password":"dongtaiwang.com","alpn":["h3"],"sni":"bing.com","skip-cert-verify":true,"up":"11 Mbps","down":"55 Mbps"}
+- {"name":"Relay_-🇫🇷FR_07","server":"62.210.103.0","type":"hysteria2","port":22483,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"🇦🇺AU_1141","server":"170.64.183.54","type":"hysteria2","country":"🇦🇺AU","port":33939,"udp":true,"password":"miaoge110.","skip-cert-verify":true}
+- {"name":"🇫🇷FR_1271","server":"51.158.54.46","type":"hysteria2","country":"🇫🇷FR","port":44550,"udp":true,"password":"dongtaiwang.com","sni":"bing.com","skip-cert-verify":true}
+- {"name":"Pool_🇺🇸US_1867","server":"163.123.192.151","type":"hysteria2","country":"🇺🇸US","port":443,"udp":true,"password":"45a8d20d-9a78-4be4-a74a-ab3b9e84e34e","sni":"music.apple.com","skip-cert-verify":true}
+- {"name":"🇺🇸US_1868","server":"108.181.23.225","type":"hysteria2","country":"🇺🇸US","port":443,"udp":true,"password":"45a8d20d-9a78-4be4-a74a-ab3b9e84e34e","sni":"www.apple.com","skip-cert-verify":true}
+- {"name":"🇺🇸US_1869","server":"163.123.192.62","type":"hysteria2","country":"🇺🇸US","port":443,"udp":true,"password":"45a8d20d-9a78-4be4-a74a-ab3b9e84e34e","sni":"apps.apple.com","skip-cert-verify":true}
+- {"name":"🇺🇸US_1870","server":"108.181.24.77","type":"hysteria2","country":"🇺🇸US","port":43656,"udp":true,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"🇺🇸US_1871","server":"108.181.24.43","type":"hysteria2","country":"🇺🇸US","port":443,"udp":true,"password":"45a8d20d-9a78-4be4-a74a-ab3b9e84e34e","sni":"www.apple.com","skip-cert-verify":true}
+- {"name":"🇺🇸US_1872","server":"208.87.243.155","type":"hysteria2","country":"🇺🇸US","port":443,"udp":true,"password":"45a8d20d-9a78-4be4-a74a-ab3b9e84e34e","sni":"www.apple.com","skip-cert-verify":true}
+- {"name":"🇺🇸US_1873","server":"108.181.22.153","type":"hysteria2","country":"🇺🇸US","port":443,"udp":true,"password":"45a8d20d-9a78-4be4-a74a-ab3b9e84e34e","sni":"www.apple.com","skip-cert-verify":true}
+- {"name":"🇺🇸US_1874","server":"163.123.192.61","type":"hysteria2","country":"🇺🇸US","port":443,"udp":true,"password":"45a8d20d-9a78-4be4-a74a-ab3b9e84e34e","sni":"apps.apple.com","skip-cert-verify":true}
