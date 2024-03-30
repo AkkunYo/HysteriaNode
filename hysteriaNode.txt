@@ -1,2 +1,1 @@
 proxies:
-- {"name":"🇦🇺AU_551","server":"170.64.183.54","type":"hysteria2","country":"🇦🇺AU","port":33939,"udp":true,"password":"miaoge110.","skip-cert-verify":true}
