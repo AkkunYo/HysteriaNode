@@ -1,5 +1,5 @@
 proxies:
-- {"name":"Pool__01","server":"51.159.77.153","type":"hysteria2","port":33390,"password":"dongtaiwang.com","alpn":["h3"],"sni":"bing.com","skip-cert-verify":true,"up":"11 Mbps","down":"55 Mbps"}
-- {"name":"Relay_-🇫🇷FR_02","server":"62.210.103.0","type":"hysteria2","port":22483,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-- {"name":"🇦🇺AU_416","server":"170.64.183.54","type":"hysteria2","country":"🇦🇺AU","port":33939,"udp":true,"password":"miaoge110.","sni":"www.bing.com","skip-cert-verify":true}
-- {"name":"🇫🇷FR_547","server":"51.158.54.46","type":"hysteria","country":"🇫🇷FR","port":55396,"udp":true,"auth_str":"dongtaiwang.com","auth-str":"dongtaiwang.com","alpn":["h3"],"sni":"youku.com","skip-cert-verify":true,"up":"55","down":"110","protocol":"udp"}
+- {"name":"Relay_-🇫🇷FR_01","server":"62.210.103.0","type":"hysteria2","port":22483,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"Pool__02","server":"51.159.77.153","type":"hysteria2","port":33390,"password":"dongtaiwang.com","alpn":["h3"],"sni":"bing.com","skip-cert-verify":true,"up":"11 Mbps","down":"55 Mbps"}
+- {"name":"🇦🇺AU_437","server":"170.64.183.54","type":"hysteria2","country":"🇦🇺AU","port":33939,"udp":true,"password":"miaoge110.","skip-cert-verify":true}
+- {"name":"🇫🇷FR_593","server":"51.158.54.46","type":"hysteria","country":"🇫🇷FR","port":55396,"udp":true,"auth_str":"dongtaiwang.com","auth-str":"dongtaiwang.com","alpn":["h3"],"sni":"youku.com","skip-cert-verify":true,"up":"11","down":"55","protocol":"udp"}
