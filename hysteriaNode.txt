@@ -1,1 +1,2 @@
 proxies:
+- {"name":"","server":"173.234.25.52","type":"hysteria","country":"🇺🇸US","port":48919,"udp":true,"auth_str":"dongtaiwang.com","auth-str":"dongtaiwang.com","alpn":["h3"],"sni":"bing.com","skip-cert-verify":true,"up":"11","down":"55","protocol":"udp"}
