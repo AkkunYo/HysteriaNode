@@ -1,9 +1,3 @@
 proxies:
-- {"name":"Pool_🇫🇷FR_378","server":"51.159.77.153","type":"hysteria2","country":"🇫🇷FR","port":33390,"udp":true,"password":"dongtaiwang.com","sni":"bing.com","skip-cert-verify":true}
-- {"name":"🇫🇷FR_379","server":"51.159.213.39","type":"hysteria2","country":"🇫🇷FR","port":22483,"udp":true,"password":"dongtaiwang.com","sni":"eliv2ray.eliv2.top","skip-cert-verify":true}
-- {"name":"🇫🇷FR_380","server":"51.158.54.46","type":"hysteria2","country":"🇫🇷FR","port":44550,"udp":true,"password":"dongtaiwang.com","sni":"eli.eliv2.top","skip-cert-verify":true}
-- {"name":"Relay_🇫🇷FR-🇫🇷FR_382","server":"62.210.103.0","type":"hysteria2","country":"🇫🇷FR","port":22483,"udp":true,"password":"dongtaiwang.com","sni":"vkvd127.mycdn.me","skip-cert-verify":true}
-- {"name":"🇫🇷FR_389","server":"51.159.103.141","type":"hysteria2","country":"🇫🇷FR","port":33390,"udp":true,"password":"dongtaiwang.com","sni":"vkvd127.mycdn.me","skip-cert-verify":true}
-- {"name":"Pool_🇺🇸US_773","server":"173.234.25.52","type":"hysteria","country":"🇺🇸US","port":48919,"udp":true,"auth_str":"dongtaiwang.com","auth-str":"dongtaiwang.com","alpn":["h3"],"sni":"bing.com","skip-cert-verify":true,"up":"11","down":"55","protocol":"udp"}
-- {"name":"🇺🇸US_775","server":"137.175.79.36","type":"hysteria2","country":"🇺🇸US","port":8620,"udp":true,"password":"XvXbk2s6zvHzavka","sni":"https://bing.com/","skip-cert-verify":true}
-- {"name":"Pool_🇺🇸US_777","server":"173.234.25.50","type":"hysteria","country":"🇺🇸US","port":1992,"udp":true,"auth_str":"dongtaiwang.com","auth-str":"dongtaiwang.com","alpn":["h3"],"sni":"bing.com","skip-cert-verify":true,"up":"11","down":"55","protocol":"udp"}
+- {"name":"Pool_🇺🇸US_869","server":"173.234.25.50","type":"hysteria","country":"🇺🇸US","port":1992,"udp":true,"auth_str":"dongtaiwang.com","auth-str":"dongtaiwang.com","alpn":["h3"],"sni":"bing.com","skip-cert-verify":true,"up":"11","down":"55","protocol":"udp"}
+- {"name":"Pool_🇺🇸US_870","server":"173.234.25.52","type":"hysteria","country":"🇺🇸US","port":48919,"udp":true,"auth_str":"dongtaiwang.com","auth-str":"dongtaiwang.com","alpn":["h3"],"sni":"bing.com","skip-cert-verify":true,"up":"80","down":"100","protocol":"udp"}
