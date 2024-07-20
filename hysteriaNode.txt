@@ -1,1 +1,14 @@
 proxies:
+- {"name":"Relay_BR-🇧🇷BR_148","server":"144.22.129.240","type":"hysteria2","country":"BR","port":50000,"udp":true,"password":"42087b21-853a-4c14-9074-73936ab1caa9","sni":"www.microsoft.com","skip-cert-verify":true}
+- {"name":"FR_152","server":"51.158.54.46","type":"hysteria2","country":"FR","port":44550,"udp":true,"password":"dongtaiwang.com","sni":"vkvd127.mycdn.me","skip-cert-verify":true}
+- {"name":"Pool_FR_154","server":"51.159.77.153","type":"hysteria2","country":"FR","port":33390,"udp":true,"password":"dongtaiwang.com","sni":"google.com","skip-cert-verify":true}
+- {"name":"FR_161","server":"51.159.103.141","type":"hysteria2","country":"FR","port":33390,"udp":true,"password":"dongtaiwang.com","sni":"google.com","skip-cert-verify":true}
+- {"name":"Relay_KR-🇰🇷KR_162","server":"152.67.200.22","type":"hysteria2","country":"KR","port":50000,"udp":true,"password":"42087b21-853a-4c14-9074-73936ab1caa9","sni":"www.hoyoverse.com","skip-cert-verify":true}
+- {"name":"Relay_SG-🇸🇬SG_165","server":"gcpsg2.cfyun01.sbs","type":"hysteria2","country":"SG","port":8080,"udp":true,"password":"d9398106-e799-4bc3-95fa-55230d889f3a","sni":"gcpsg2.cfyun01.sbs","skip-cert-verify":false}
+- {"name":"Relay_SG-🇸🇬SG_166","server":"129.150.43.19","type":"hysteria2","country":"SG","port":443,"udp":true,"password":"42087b21-853a-4c14-9074-73936ab1caa9","sni":"www.microsoft.com","skip-cert-verify":true}
+- {"name":"Pool_US_169","server":"173.234.25.52","type":"hysteria","country":"US","port":48919,"udp":true,"auth_str":"dongtaiwang.com","auth-str":"dongtaiwang.com","alpn":["h3"],"sni":"bing.com","skip-cert-verify":true,"up":"11","down":"55","protocol":"udp"}
+- {"name":"US_170","server":"149.130.215.22","type":"hysteria2","country":"US","port":50000,"udp":true,"password":"42087b21-853a-4c14-9074-73936ab1caa9","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"US_171","server":"108.181.24.39","type":"hysteria2","country":"US","port":60714,"udp":true,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"🇬🇧GB_232","server":"132.145.28.17","type":"hysteria2","country":"🇬🇧GB","port":65535,"udp":true,"password":"42087b21-853a-4c14-9074-73936ab1caa9","sni":"www.microsoft.com","skip-cert-verify":true}
+- {"name":"🇬🇧GB_233","server":"132.145.52.10","type":"hysteria2","country":"🇬🇧GB","port":65535,"udp":true,"password":"42087b21-853a-4c14-9074-73936ab1caa9","sni":"www.microsoft.com","skip-cert-verify":true}
+- {"name":"🇿🇦ZA_677","server":"129.151.169.64","type":"hysteria2","country":"🇿🇦ZA","port":65535,"udp":true,"password":"42087b21-853a-4c14-9074-73936ab1caa9","sni":"www.microsoft.com","skip-cert-verify":true}
