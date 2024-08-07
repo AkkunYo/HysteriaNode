@@ -1,1 +1,4 @@
 proxies:
+- {"name":"Relay_🇭🇰HK-🇭🇰HK_368","server":"mr.moonriver.sbs","type":"hysteria2","country":"🇭🇰HK","port":32065,"udp":true,"password":"19cfd418-f845-43a6-9c96-d89645e1bbb3","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"Pool_🇺🇸US_455","server":"173.234.25.52","type":"hysteria","country":"🇺🇸US","port":48919,"udp":true,"auth_str":"dongtaiwang.com","auth-str":"dongtaiwang.com","alpn":["h3"],"sni":"bing.com","skip-cert-verify":true,"up":"55","down":"110","protocol":"udp"}
+- {"name":"🇺🇸US_457","server":"74.48.134.235","type":"hysteria2","country":"🇺🇸US","port":9443,"udp":true,"password":"123456","sni":"bing.com","skip-cert-verify":true}
