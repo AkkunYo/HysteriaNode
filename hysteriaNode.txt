@@ -1,4 +1,3 @@
 proxies:
-- {"name":"Relay_🇭🇰HK-🇭🇰HK_556","server":"mr.moonriver.sbs","type":"hysteria2","country":"🇭🇰HK","port":32065,"udp":true,"password":"19cfd418-f845-43a6-9c96-d89645e1bbb3","sni":"www.bing.com","skip-cert-verify":true}
-- {"name":"🇺🇸US_657","server":"74.48.134.235","type":"hysteria2","country":"🇺🇸US","port":9443,"udp":true,"password":"123456","sni":"bing.com","skip-cert-verify":true}
-- {"name":"🇺🇸US_658","server":"207.90.239.157","type":"hysteria2","country":"🇺🇸US","port":15669,"udp":true,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"US_492","server":"108.181.24.39","type":"hysteria2","country":"US","port":60714,"udp":true,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"Relay_🇰🇷KR-🇰🇷KR_554","server":"kr01.pochan.868891.xyz","type":"hysteria2","country":"🇰🇷KR","port":15062,"udp":true,"password":"8225986b-4c13-4deb-9cde-321405dc8a97","sni":"kr01.pochan.868891.xyz","skip-cert-verify":true}
