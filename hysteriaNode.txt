@@ -1,5 +1,8 @@
 proxies:
-- {"name":"_418","server":"207.90.239.157","type":"hysteria2","port":15669,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-- {"name":"Relay_🇯🇵JP-🇯🇵JP_769","server":"jp01.pochan.868891.xyz","type":"hysteria2","country":"🇯🇵JP","port":55556,"udp":true,"password":"8225986b-4c13-4deb-9cde-321405dc8a97","sni":"jp01.pochan.868891.xyz","skip-cert-verify":true}
-- {"name":"🇺🇸US_874","server":"108.181.24.39","type":"hysteria2","country":"🇺🇸US","port":60714,"udp":true,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-- {"name":"Pool_🇺🇸US_876","server":"173.234.25.52","type":"hysteria","country":"🇺🇸US","port":48919,"udp":true,"auth_str":"dongtaiwang.com","auth-str":"dongtaiwang.com","alpn":["h3"],"sni":"bing.com","skip-cert-verify":true,"up":"11","down":"55","protocol":"udp"}
+- {"name":"US_644","server":"108.181.24.39","type":"hysteria2","country":"US","port":60714,"udp":true,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"Relay_🇯🇵JP-🇯🇵JP_727","server":"jp01.pochan.868891.xyz","type":"hysteria2","country":"🇯🇵JP","port":55556,"udp":true,"password":"8225986b-4c13-4deb-9cde-321405dc8a97","sni":"jp01.pochan.868891.xyz","skip-cert-verify":true}
+- {"name":"Relay_🇰🇷KR-🇰🇷KR_740","server":"kr01.pochan.868891.xyz","type":"hysteria2","country":"🇰🇷KR","port":15062,"udp":true,"password":"8225986b-4c13-4deb-9cde-321405dc8a97","sni":"kr01.pochan.868891.xyz","skip-cert-verify":true}
+- {"name":"Relay_🇹🇷TR-🇹🇷TR_829","server":"hyhk02.pochan.868891.xyz","type":"hysteria2","country":"🇹🇷TR","port":20000,"udp":true,"password":"f1100511-eceb-4c6c-b47c-e0498865b5a5","sni":"hyhk02.pochan.868891.xyz","skip-cert-verify":true}
+- {"name":"Relay_🇹🇷TR-🇹🇷TR_830","server":"hyhk01.pochan.868891.xyz","type":"hysteria2","country":"🇹🇷TR","port":20000,"udp":true,"password":"8225986b-4c13-4deb-9cde-321405dc8a97","sni":"hyhk01.pochan.868891.xyz","skip-cert-verify":true}
+- {"name":"🇺🇸US_870","server":"207.90.239.157","type":"hysteria2","country":"🇺🇸US","port":15669,"udp":true,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"🇺🇸US_871","server":"74.48.134.235","type":"hysteria2","country":"🇺🇸US","port":9443,"udp":true,"password":"123456","sni":"bing.com","skip-cert-verify":true}
