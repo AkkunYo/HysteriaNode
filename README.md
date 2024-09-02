@@ -8,8 +8,12 @@
 
 ### 仅Hysteria节点
 - 源地址：[https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/hysteriaNode.txt](https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/hysteriaNode.txt)
-- 加速地址：[https://mirror.ghproxy.com/https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/hysteriaNode.txt](https://mirror.ghproxy.com/https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/hysteriaNode.txt)
+- 加速地址：[https://ghproxy.cfd/https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/hysteriaNode.txt](https://ghproxy.cfd/https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/hysteriaNode.txt)
 
 ### 全类型节点
 - 源地址：[https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/subscribe.txt](https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/subscribe.txt)
-- 加速地址：[https://mirror.ghproxy.com/https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/subscribe.txt](https://mirror.ghproxy.com/https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/subscribe.txt)
+- 加速地址：[https://ghproxy.cfd/https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/subscribe.txt](https://ghproxy.cfd/https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/subscribe.txt)
+
+### 自用筛选节点
+- 源地址：[https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/mineNode.txt](https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/mineNode.txt)
+- 加速地址：[https://ghproxy.cfd/https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/mineNode.txt](https://ghproxy.cfd/https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/mineNode.txt)

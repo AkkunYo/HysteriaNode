@@ -1,34 +1,35 @@
 #!/bin/bash
 
-subscribeUrl="https://pp.dcd.one/clash/proxies?speed=10"
+subscribeUrl="https://pp.dcd.one/clash/proxies?speed=15,30&type=hysteria2,hysteria,vless,vmess,trojan"
+subscribeUrl_hy="https://pp.dcd.one/clash/proxies?speed=15,30&type=hysteria2,hysteria"
+subscribeUrl_me="https://pp.dcd.one/clash/proxies?speed=15,30&type=hysteria2,hysteria,vless,vmess,trojan"
+subscribeUrl_me_bak="https://pp.dcd.one/clash/proxies?speed=15,30&type=hysteria2,hysteria,vless,vmess,trojan&stream=netflix,disney"
 
 echo "start getting the subscribe"
-wget $subscribeUrl -O ./subscribeTmp.txt
-echo "proxies:" > ./allNodes.txt
-
-# 读取文本文件
-while IFS= read -r line
-do
-  # 将IP地址提取出来
-  ip=$(echo "$line" | awk -F '"' '{print $8}')
-
-  # 检查IP地址是否已经存在于去重列表中
-  if [[ ! " ${unique_ips[@]} " =~ " $ip " ]]; then
-    # 如果不在列表中，则添加到去重列表中
-    unique_ips+=("$ip")
-    echo "$line" >> ./allNodes.txt
-  fi
-done < "./subscribeTmp.txt"
-totalNodeSize=$(grep -c '"type":' "./subscribeTmp.txt")
-leaveNodeSize=$(grep -c '"type":' "./allNodes.txt")
-echo "totalNodeSize:$totalNodeSize,remove duplicates leaveNodeSize:$leaveNodeSize"
-rm -rf ./subscribe*.txt
-mv ./allNodes.txt ./subscribe.txt
+wget $subscribeUrl -O ./subscribe.txt
+sed -i '/"name":"NULL"/d' ./subscribe.txt
+sed -i '/"server":"NULL"/d' ./subscribe.txt
 
 echo "------------------- hysteria2 -------------------"
-echo "proxies:" > ./hysteriaNode.txt
-sed -n '/type":"hysteria/p' ./subscribe.txt >> ./hysteriaNode.txt
-hysteria2NodeSize=$(grep -c '"type":' "./hysteriaNode.txt")
-echo "hysteria2NodeSize:$hysteria2NodeSize"
+
+wget $subscribeUrl_hy -O ./hysteriaNode.txt
+sed -i '/"name":"NULL"/d' ./hysteriaNode.txt
+sed -i '/"server":"NULL"/d' ./hysteriaNode.txt
+
+echo "------------------- my custom -------------------"
+
+wget $subscribeUrl_me -O ./mineNode.txt
+sed -i '/"name":"NULL"/d' ./mineNode.txt
+sed -i '/"server":"NULL"/d' ./mineNode.txt
+
+mineNodeSize=$(grep -c '"name":' ./mineNode.txt)
+
+if [ $mineNodeSize -gt 0 ]; then
+    echo "mineNodeSize:$mineNodeSize"
+else
+    wget $subscribeUrl_subscribeUrl_me_bak -O ./mineNode.txt
+    sed -i '/"name":"NULL"/d' ./mineNode.txt
+    sed -i '/"server":"NULL"/d' ./mineNode.txt
+fi
 
 echo "getting the subscribe succeed,enjoy it~"

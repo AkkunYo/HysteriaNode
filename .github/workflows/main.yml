@@ -10,7 +10,7 @@ on:
 
 jobs:
   run-csjs:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@main  #采用main分支下的
       - name: Prepare Env
