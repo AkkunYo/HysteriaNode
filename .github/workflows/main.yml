@@ -1,41 +1,89 @@
-# name属性用来指定这个工作流的名字
 name: Download Nodes
 
 on:
   push:
     branches:
       - main
-  schedule:   
+    paths:
+      - run.py
+      - template/**
+      - tests/**
+      - .github/workflows/main.yml
+  schedule:
     - cron: '0 */6 * * *'
+
+permissions:
+  contents: write
 
 jobs:
   run-csjs:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@main  #采用main分支下的
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Prepare Env
         run: |
           cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
           sudo hwclock --systohc
+          pip install pyyaml maxminddb
+          # Download GeoIP database
+          echo "Downloading GeoLite2-Country.mmdb..."
+          curl --fail --silent --show-error --location --retry 3 --retry-all-errors --retry-delay 2 --connect-timeout 10 --max-time 60 --retry-max-time 120 \
+            "https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-Country.mmdb" -o /tmp/GeoLite2-Country.mmdb
+      - name: Run regression tests
+        run: python3 -B -m unittest discover -s tests -v
+      - name: Install Mihomo
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          CURL_ARGS=(--fail --silent --show-error --location --retry 3 --retry-all-errors --retry-delay 2 --connect-timeout 10 --max-time 60 --retry-max-time 120)
+          echo "Installing mihomo..."
+          if ! curl "${CURL_ARGS[@]}" \
+            --header "Authorization: Bearer $GH_TOKEN" \
+            --header "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/MetaCubeX/mihomo/releases/latest" -o /tmp/mihomo-release.json; then
+            echo "::error::Failed to fetch Mihomo release metadata after retries."
+            exit 1
+          fi
+          if ! MIHOMO_URL=$(jq -er '
+            [.assets[]? | select(.name | test("^mihomo-linux-amd64-compatible-.*\\.gz$")) | .browser_download_url][0]
+            // [.assets[]? | select(.name | test("^mihomo-linux-amd64-v[0-9]+-.*\\.gz$")) | .browser_download_url][0]
+            | select(type == "string" and startswith("https://"))
+          ' /tmp/mihomo-release.json); then
+            echo "::error::Invalid Mihomo release metadata or no compatible Linux amd64 download URL."
+            exit 1
+          fi
+          echo "Downloading from: $MIHOMO_URL"
+          if ! curl "${CURL_ARGS[@]}" "$MIHOMO_URL" -o /tmp/mihomo.gz; then
+            echo "::error::Failed to download Mihomo after retries."
+            exit 1
+          fi
+          if ! gzip -t /tmp/mihomo.gz; then
+            echo "::error::Downloaded Mihomo archive is invalid."
+            exit 1
+          fi
+          gzip -d /tmp/mihomo.gz
+          chmod +x /tmp/mihomo
+          sudo mv /tmp/mihomo /usr/local/bin/mihomo
+          mihomo -v
       - name: Download the subscribe
+        env:
+          SOURCES_SECRET: ${{ secrets.SOURCES_SECRET }}
         run: |
-          bash ./run.sh
-      - name: Commit Changes
-        run: |
-         git config --global user.email admin@zkyml.com
-         git config --global user.name zkyml
-         git add .
-         if git diff-index --quiet HEAD; then
-            echo "no file need to commit"
-         else
-            time=`date "+%Y-%m-%d %H:%M:%S"`
-            git commit -m "commit by github actions,date:$time"
-         fi
-         git pull --rebase
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+          python3 run.py
+      - name: Publish to GitHub Release
+        uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # v3.0.3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
-          force_with_lease: true
-          directory: .
+          tag_name: prerelease
+          name: "Pre-release 节点自动更新"
+          body_path: release_note.md
+          prerelease: true
+          make_latest: false
+          fail_on_unmatched_files: false
+          files: |
+            subscribe.txt
+            selected.txt
+            hysteriaNode.txt
+            yaml/clash.yaml
+            type/*.txt
