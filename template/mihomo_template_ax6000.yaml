@@ -1,0 +1,852 @@
+# 红米AX6000优化配置
+# 硬件: MediaTek MT7986A (四核2.0GHz) + 512MB RAM
+# 优化: 标准配置，充分发挥性能
+
+
+# ==================== 全局配置 ====================
+mixed-port: 7890
+redir-port: 7892
+tproxy-port: 7893
+authentication: [""]
+allow-lan: true
+bind-address: '*'
+mode: Rule
+log-level: warning  # 优化: info→6降低复杂度
+
+# 外部控制
+external-controller: :9999
+external-ui: ui
+external-ui-url: "https://hk.gh-proxy.org/https://github.com/Zephyruso/zashboard/releases/latest/download/dist-cdn-fonts.zip"
+secret: ""
+
+# TUN模式 - 路由器推荐关闭
+tun:
+  enable: false
+
+# 实验性功能
+experimental:
+  ignore-resolve-fail: true
+
+# 性能优化
+find-process-mode: "off"
+routing-mark: 7894
+unified-delay: true
+
+# Hosts
+use-system-hosts: true
+hosts:
+  'time.android.com': 203.107.6.88
+  'time.facebook.com': 203.107.6.88
+  'services.googleapis.cn': services.googleapis.com
+  'localhost': 127.0.0.1
+
+# ==================== DNS配置 ====================
+dns:
+  enable: true
+  listen: :1053
+  use-hosts: true
+  ipv6: false
+
+  # 默认DNS - 国内快速DNS
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+
+  # 直连DNS - 用于中国域名
+  direct-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+
+  # 优化: fake-ip→redir-host 省内存30%+
+  enhanced-mode: redir-host
+
+  # fake-ip配置保留（备用）
+  fake-ip-range: 28.0.0.0/8
+  fake-ip-filter:
+    - '*.lan'
+    - '*.local'
+    - '*.direct'
+    - 'time.*.com'
+    - 'ntp.*.com'
+    - '+.pool.ntp.org'
+    - 'localhost.ptlogin2.qq.com'
+    - 'music.163.com'
+    - '*.music.163.com'
+    - '+.msftconnecttest.com'
+    - '+.msftncsi.com'
+    - 'Mijia Cloud'
+
+  # DNS策略 - 分流解析
+  nameserver-policy:
+    'rule-set:cn,private': [223.5.5.5, 119.29.29.29]
+
+  # 代理服务器DNS
+  proxy-server-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+
+  # 国际域名DNS - 优化: 使用纯IP避免bootstrap问题
+  nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+    - 223.5.5.5
+
+  # 尊重规则
+  respect-rules: true
+
+# ==================== 代理组 ====================
+proxies:
+  - name: "🟢 直连"
+    type: direct
+    udp: true
+
+proxy-groups:
+  # 主选择组
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - ☢ 负载均衡-散列
+      - ☢ 负载均衡-轮询
+      - 🌐 全部节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇺🇲 美国节点
+      - 🇬🇧 英国节点
+      - 🇩🇪 德国节点
+      - 🇪🇸 西班牙节点
+      - 🇧🇷 巴西节点
+      - 🇮🇳 印度节点
+      - 🇹🇷 土耳其节点
+      - 🟢 直连
+
+  # 自动选择 - 优化: 间隔1800→3600
+  - name: ♻️ 自动选择
+    type: url-test
+    interval: 3600
+    tolerance: 100
+    lazy: true
+    include-all: true
+    exclude-filter: "(?i)(剩余|重置|到期|防失联|官网|导航|客服|http|www|直连)"
+
+  # 负载均衡-散列
+  - name: ☢ 负载均衡-散列
+    type: load-balance
+    strategy: consistent-hashing
+    interval: 3600
+    tolerance: 100
+    lazy: true
+    include-all: true
+    filter: "^((?!(直连)).)*$"
+
+  # 负载均衡-轮询
+  - name: ☢ 负载均衡-轮询
+    type: load-balance
+    strategy: round-robin
+    interval: 3600
+    tolerance: 100
+    lazy: true
+    include-all: true
+    filter: "^((?!(直连)).)*$"
+
+  # 全部节点
+  - name: 🌐 全部节点
+    type: select
+    include-all: true
+
+  # ========== 应用分流 ==========
+
+  # 我的网站
+  - name: 🌏 我的网站
+    type: select
+    proxies:
+      - 🟢 直连
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ☢ 负载均衡-散列
+      - ☢ 负载均衡-轮询
+      - 🌐 全部节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇺🇲 美国节点
+      - 🇬🇧 英国节点
+      - 🇩🇪 德国节点
+      - 🇪🇸 西班牙节点
+      - 🇧🇷 巴西节点
+      - 🇮🇳 印度节点
+      - 🇹🇷 土耳其节点
+
+  # AI平台
+  - name: 🤖 AI
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ☢ 负载均衡-散列
+      - ☢ 负载均衡-轮询
+      - 🌐 全部节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇺🇲 美国节点
+      - 🇬🇧 英国节点
+      - 🇩🇪 德国节点
+      - 🇪🇸 西班牙节点
+      - 🇧🇷 巴西节点
+      - 🇮🇳 印度节点
+      - 🇹🇷 土耳其节点
+      - 🟢 直连
+
+  # YouTube
+  - name: 📹 YouTube
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ☢ 负载均衡-散列
+      - ☢ 负载均衡-轮询
+      - 🌐 全部节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇺🇲 美国节点
+      - 🇬🇧 英国节点
+      - 🇩🇪 德国节点
+      - 🇪🇸 西班牙节点
+      - 🇧🇷 巴西节点
+      - 🇮🇳 印度节点
+      - 🇹🇷 土耳其节点
+      - 🟢 直连
+
+  # Google
+  - name: 🍀 Google
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ☢ 负载均衡-散列
+      - ☢ 负载均衡-轮询
+      - 🌐 全部节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇺🇲 美国节点
+      - 🇬🇧 英国节点
+      - 🇩🇪 德国节点
+      - 🇪🇸 西班牙节点
+      - 🇧🇷 巴西节点
+      - 🇮🇳 印度节点
+      - 🇹🇷 土耳其节点
+      - 🟢 直连
+
+  # 哔哩哔哩
+  - name: 📹 哔哩哔哩
+    type: select
+    proxies:
+      - 🟢 直连
+      - 🚀 节点选择
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+
+  # Spotify
+  - name: 🎵 Spotify
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ☢ 负载均衡-散列
+      - ☢ 负载均衡-轮询
+      - 🌐 全部节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇺🇲 美国节点
+      - 🇬🇧 英国节点
+      - 🇩🇪 德国节点
+      - 🇪🇸 西班牙节点
+      - 🇧🇷 巴西节点
+      - 🇮🇳 印度节点
+      - 🇹🇷 土耳其节点
+      - 🟢 直连
+
+  # 巴哈姆特
+  - name: 📹 巴哈姆特
+    type: select
+    proxies:
+      - 🇨🇳 台湾节点
+      - 🚀 节点选择
+      - 🇭🇰 香港节点
+      - 🟢 直连
+
+  # OneDrive
+  - name: 🐬 OneDrive
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ☢ 负载均衡-散列
+      - ☢ 负载均衡-轮询
+      - 🌐 全部节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇺🇲 美国节点
+      - 🇬🇧 英国节点
+      - 🇩🇪 德国节点
+      - 🇪🇸 西班牙节点
+      - 🇧🇷 巴西节点
+      - 🇮🇳 印度节点
+      - 🇹🇷 土耳其节点
+      - 🟢 直连
+
+  # Microsoft
+  - name: 🪟 Microsoft
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ☢ 负载均衡-散列
+      - ☢ 负载均衡-轮询
+      - 🌐 全部节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇺🇲 美国节点
+      - 🇬🇧 英国节点
+      - 🇩🇪 德国节点
+      - 🇪🇸 西班牙节点
+      - 🇧🇷 巴西节点
+      - 🇮🇳 印度节点
+      - 🇹🇷 土耳其节点
+      - 🟢 直连
+
+  # TikTok
+  - name: 🎵 TikTok
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ☢ 负载均衡-散列
+      - ☢ 负载均衡-轮询
+      - 🌐 全部节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇺🇲 美国节点
+      - 🇬🇧 英国节点
+      - 🇩🇪 德国节点
+      - 🇪🇸 西班牙节点
+      - 🇧🇷 巴西节点
+      - 🇮🇳 印度节点
+      - 🇹🇷 土耳其节点
+      - 🟢 直连
+
+  # Telegram
+  - name: 📲 Telegram
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ☢ 负载均衡-散列
+      - ☢ 负载均衡-轮询
+      - 🌐 全部节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇺🇲 美国节点
+      - 🇬🇧 英国节点
+      - 🇩🇪 德国节点
+      - 🇪🇸 西班牙节点
+      - 🇧🇷 巴西节点
+      - 🇮🇳 印度节点
+      - 🇹🇷 土耳其节点
+      - 🟢 直连
+
+  # Netflix
+  - name: 🎥 NETFLIX
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ☢ 负载均衡-散列
+      - ☢ 负载均衡-轮询
+      - 🌐 全部节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇺🇲 美国节点
+      - 🇬🇧 英国节点
+      - 🇩🇪 德国节点
+      - 🇪🇸 西班牙节点
+      - 🇧🇷 巴西节点
+      - 🇮🇳 印度节点
+      - 🇹🇷 土耳其节点
+      - 🟢 直连
+
+  # Notion
+  - name: 📖 Notion
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ☢ 负载均衡-散列
+      - ☢ 负载均衡-轮询
+      - 🌐 全部节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇺🇲 美国节点
+      - 🇬🇧 英国节点
+      - 🇩🇪 德国节点
+      - 🇪🇸 西班牙节点
+      - 🇧🇷 巴西节点
+      - 🇮🇳 印度节点
+      - 🇹🇷 土耳其节点
+      - 🟢 直连
+
+  # PayPal
+  - name: 💶 PayPal
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ☢ 负载均衡-散列
+      - ☢ 负载均衡-轮询
+      - 🌐 全部节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇺🇲 美国节点
+      - 🇬🇧 英国节点
+      - 🇩🇪 德国节点
+      - 🇪🇸 西班牙节点
+      - 🇧🇷 巴西节点
+      - 🇮🇳 印度节点
+      - 🇹🇷 土耳其节点
+      - 🟢 直连
+
+  # GitHub
+  - name: 🐙 GitHub
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ☢ 负载均衡-散列
+      - ☢ 负载均衡-轮询
+      - 🌐 全部节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇺🇲 美国节点
+      - 🇬🇧 英国节点
+      - 🇩🇪 德国节点
+      - 🇪🇸 西班牙节点
+      - 🇧🇷 巴西节点
+      - 🇮🇳 印度节点
+      - 🇹🇷 土耳其节点
+      - 🟢 直连
+
+  # Twitter
+  - name: 🐦 Twitter
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ☢ 负载均衡-散列
+      - ☢ 负载均衡-轮询
+      - 🌐 全部节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇺🇲 美国节点
+      - 🇬🇧 英国节点
+      - 🇩🇪 德国节点
+      - 🇪🇸 西班牙节点
+      - 🇧🇷 巴西节点
+      - 🇮🇳 印度节点
+      - 🇹🇷 土耳其节点
+      - 🟢 直连
+
+  # Apple
+  - name: 🍎 Apple
+    type: select
+    proxies:
+      - 🟢 直连
+      - 🚀 节点选择
+      - 🇭🇰 香港节点
+      - 🇺🇲 美国节点
+      - 🇬🇧 英国节点
+      - 🇩🇪 德国节点
+      - 🇪🇸 西班牙节点
+      - 🇧🇷 巴西节点
+      - 🇮🇳 印度节点
+      - 🇹🇷 土耳其节点
+
+  # Steam
+  - name: 🦾 Steam
+    type: select
+    proxies:
+      - 🟢 直连
+      - 🚀 节点选择
+      - 🇭🇰 香港节点
+
+  # 游戏
+  - name: 🎮 游戏
+    type: select
+    proxies:
+      - 🟢 直连
+      - 🚀 节点选择
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡
+
+  # BT下载
+  - name: 🧲 BT下载
+    type: select
+    proxies:
+      - 🟢 直连
+      - 🚀 节点选择
+
+  # 网络测速
+  - name: 📈 测速
+    type: select
+    proxies:
+      - 🟢 直连
+      - 🚀 节点选择
+
+  # 全球直连
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - 🟢 直连
+      - 🚀 节点选择
+
+  # 国内流量
+  - name: 🀄️ 国内
+    type: select
+    proxies:
+      - 🟢 直连
+      - 🚀 节点选择
+
+  # 广告拦截
+  - name: 🛑 广告
+    type: select
+    proxies:
+      - REJECT
+      - 🟢 直连
+
+  # 漏网之鱼
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ☢ 负载均衡-散列
+      - ☢ 负载均衡-轮询
+      - 🌐 全部节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡
+      - 🇰🇷 韩国
+      - 🇺🇲 美国节点
+      - 🇬🇧 英国节点
+      - 🇩🇪 德国节点
+      - 🇪🇸 西班牙节点
+      - 🇧🇷 巴西节点
+      - 🇮🇳 印度节点
+      - 🇹🇷 土耳其节点
+      - 🟢 直连
+
+  # ========== 地区节点 ==========
+
+  # 香港节点 - 优化: 间隔300→3600
+  - name: 🇭🇰 香港节点
+    type: url-test
+    interval: 3600
+    tolerance: 100
+    lazy: true
+    include-all: true
+    filter: "(?i)(港|HK|Hong Kong|HongKong|hongkong)"
+
+  # 台湾节点
+  - name: 🇨🇳 台湾节点
+    type: url-test
+    interval: 3600
+    tolerance: 100
+    lazy: true
+    include-all: true
+    filter: "(?i)(台|TW|Taiwan|新北|彰化)"
+
+  # 日本节点
+  - name: 🇯🇵 日本节点
+    type: url-test
+    interval: 3600
+    tolerance: 100
+    lazy: true
+    include-all: true
+    filter: "(?i)(日|JP|Japan|东京|大阪)"
+
+  # 新加坡
+  - name: 🇸🇬 新加坡
+    type: url-test
+    interval: 3600
+    tolerance: 100
+    lazy: true
+    include-all: true
+    filter: "(?i)(新加坡|坡|狮城|SG|Singapore)"
+
+  # 韩国
+  - name: 🇰🇷 韩国
+    type: url-test
+    interval: 3600
+    tolerance: 100
+    lazy: true
+    include-all: true
+    filter: "(?i)(KR|Korea|首尔|韩|韓)"
+
+  # 美国节点
+  - name: 🇺🇲 美国节点
+    type: url-test
+    interval: 3600
+    tolerance: 100
+    lazy: true
+    include-all: true
+    filter: "(?i)(美|\\bUS\\b|United States|洛杉矶|西雅图|America)"
+
+  # 英国节点
+  - name: 🇬🇧 英国节点
+    type: url-test
+    interval: 3600
+    tolerance: 100
+    lazy: true
+    include-all: true
+    filter: "(?i)(英国|\\bGB\\b|\\bUK\\b|Great Britain|United Kingdom|London|伦敦)"
+
+  # 德国节点
+  - name: 🇩🇪 德国节点
+    type: url-test
+    interval: 3600
+    tolerance: 100
+    lazy: true
+    include-all: true
+    filter: "(?i)(德国|\\bDE\\b|Germany|Frankfurt|Berlin|Munich|法兰克福|柏林|慕尼黑)"
+
+  # 西班牙节点
+  - name: 🇪🇸 西班牙节点
+    type: url-test
+    interval: 3600
+    tolerance: 100
+    lazy: true
+    include-all: true
+    filter: "(?i)(西班牙|\\bES\\b|Spain|Espana|Madrid|巴塞罗那)"
+
+  # 巴西节点
+  - name: 🇧🇷 巴西节点
+    type: url-test
+    interval: 3600
+    tolerance: 100
+    lazy: true
+    include-all: true
+    filter: "(?i)(巴西|\\bBR\\b|Brazil|Sao Paulo|圣保罗)"
+
+  # 印度节点
+  - name: 🇮🇳 印度节点
+    type: url-test
+    interval: 3600
+    tolerance: 100
+    lazy: true
+    include-all: true
+    filter: "(?i)(印度|\\bIN\\b|India|Mumbai|孟买|班加罗尔)"
+
+  # 土耳其节点
+  - name: 🇹🇷 土耳其节点
+    type: url-test
+    interval: 3600
+    tolerance: 100
+    lazy: true
+    include-all: true
+    filter: "(?i)(土耳其|\\bTR\\b|Turkey|Istanbul|伊斯坦布尔)"
+
+# ==================== 规则 ====================
+rules:
+  # 局域网直连
+  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
+  - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
+  - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
+  - IP-CIDR,169.254.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,224.0.0.0/4,🎯 全球直连,no-resolve
+  - IP-CIDR,240.0.0.0/4,🎯 全球直连,no-resolve
+
+  # 自定义直连
+  - DOMAIN-SUFFIX,mob.com,🎯 全球直连
+  - DOMAIN-SUFFIX,ghfast.top,🎯 全球直连
+  - DOMAIN-SUFFIX,gh-proxy.org,🎯 全球直连
+  - DOMAIN-SUFFIX,spaceship.com,🎯 全球直连
+  - DOMAIN-SUFFIX,local,🎯 全球直连
+
+  # 我的网站
+  - DOMAIN-SUFFIX,hidns.vip,🌏 我的网站
+  - DOMAIN-SUFFIX,openapi.cfd,🌏 我的网站
+  - DOMAIN-SUFFIX,zkyml.com,🌏 我的网站
+  - DOMAIN-SUFFIX,945395.xyz,🌏 我的网站
+
+  # 核心规则集（12个平衡方案）
+  - RULE-SET,ads,🛑 广告
+  - RULE-SET,ai,🤖 AI
+  - RULE-SET,youtube,📹 YouTube
+  - RULE-SET,netflix,🎥 NETFLIX
+  - RULE-SET,telegramip,📲 Telegram,no-resolve
+  - RULE-SET,apple-cn,🍎 Apple
+  - RULE-SET,microsoft-cn,🪟 Microsoft
+  - RULE-SET,games-cn,🎮 游戏
+  - RULE-SET,media,🚀 节点选择
+  - RULE-SET,proxy,🚀 节点选择
+  - RULE-SET,cn,🀄️ 国内
+  - RULE-SET,cnip,🀄️ 国内,no-resolve
+
+  # 兜底
+  - MATCH,🐟 漏网之鱼
+
+# ==================== 规则提供者（平衡12个，约8-10MB）====================
+rule-providers:
+  # 广告拦截
+  ads:
+    type: http
+    format: mrs
+    interval: 86400
+    behavior: domain
+    proxy: DIRECT
+    url: "https://testingcf.jsdelivr.net/gh/DustinWin/ruleset_geodata@mihomo-ruleset/ads.mrs"
+
+  # AI平台
+  ai:
+    type: http
+    format: mrs
+    interval: 86400
+    behavior: domain
+    proxy: DIRECT
+    url: "https://testingcf.jsdelivr.net/gh/DustinWin/ruleset_geodata@mihomo-ruleset/ai.mrs"
+
+  # YouTube
+  youtube:
+    type: http
+    format: mrs
+    interval: 86400
+    behavior: domain
+    proxy: DIRECT
+    url: "https://testingcf.jsdelivr.net/gh/DustinWin/ruleset_geodata@mihomo-ruleset/youtube.mrs"
+
+  # Netflix
+  netflix:
+    type: http
+    format: mrs
+    interval: 86400
+    behavior: domain
+    proxy: DIRECT
+    url: "https://testingcf.jsdelivr.net/gh/DustinWin/ruleset_geodata@mihomo-ruleset/netflix.mrs"
+
+  # Telegram IP
+  telegramip:
+    type: http
+    format: mrs
+    interval: 86400
+    behavior: ipcidr
+    proxy: DIRECT
+    url: "https://testingcf.jsdelivr.net/gh/DustinWin/ruleset_geodata@mihomo-ruleset/telegramip.mrs"
+
+  # 苹果中国
+  apple-cn:
+    type: http
+    format: mrs
+    interval: 86400
+    behavior: domain
+    proxy: DIRECT
+    url: "https://testingcf.jsdelivr.net/gh/DustinWin/ruleset_geodata@mihomo-ruleset/apple-cn.mrs"
+
+  # 微软中国
+  microsoft-cn:
+    type: http
+    format: mrs
+    interval: 86400
+    behavior: domain
+    proxy: DIRECT
+    url: "https://testingcf.jsdelivr.net/gh/DustinWin/ruleset_geodata@mihomo-ruleset/microsoft-cn.mrs"
+
+  # 国服游戏
+  games-cn:
+    type: http
+    format: mrs
+    interval: 86400
+    behavior: domain
+    proxy: DIRECT
+    url: "https://testingcf.jsdelivr.net/gh/DustinWin/ruleset_geodata@mihomo-ruleset/games-cn.mrs"
+
+  # 国际媒体
+  media:
+    type: http
+    format: mrs
+    interval: 86400
+    behavior: domain
+    proxy: DIRECT
+    url: "https://testingcf.jsdelivr.net/gh/DustinWin/ruleset_geodata@mihomo-ruleset/media.mrs"
+
+  # 代理域名
+  proxy:
+    type: http
+    format: mrs
+    interval: 86400
+    behavior: domain
+    proxy: DIRECT
+    url: "https://testingcf.jsdelivr.net/gh/DustinWin/ruleset_geodata@mihomo-ruleset/proxy.mrs"
+
+  # 中国域名
+  cn:
+    type: http
+    format: mrs
+    interval: 86400
+    behavior: domain
+    proxy: DIRECT
+    url: "https://testingcf.jsdelivr.net/gh/DustinWin/ruleset_geodata@mihomo-ruleset/cn.mrs"
+
+  # 中国IP
+  cnip:
+    type: http
+    format: mrs
+    interval: 86400
+    behavior: ipcidr
+    proxy: DIRECT
+    url: "https://testingcf.jsdelivr.net/gh/DustinWin/ruleset_geodata@mihomo-ruleset/cnip.mrs"
