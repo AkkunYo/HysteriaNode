@@ -1,1 +1,12 @@
 /.idea/
+.DS_Store
+/tools/
+/.codegraph/
+
+# Generated node files & release notes
+subscribe.txt
+selected.txt
+hysteriaNode.txt
+type/
+yaml/
+release_note.md
