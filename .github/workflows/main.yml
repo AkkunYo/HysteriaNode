@@ -5,25 +5,43 @@ on:
   push:
     branches:
       - main
-  schedule:   
+  schedule:
     - cron: '0 */6 * * *'
 
 jobs:
   run-csjs:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@main  #采用main分支下的
       - name: Prepare Env
         run: |
           cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
           sudo hwclock --systohc
+          pip install pyyaml maxminddb
+          # Download GeoIP database
+          echo "Downloading GeoLite2-Country.mmdb..."
+          curl -sL "https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-Country.mmdb" -o /tmp/GeoLite2-Country.mmdb
+          # Download and install Mihomo for node connectivity verification
+          echo "Installing mihomo..."
+          MIHOMO_URL=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | grep "browser_download_url.*linux-amd64-compatible.*\.gz" | head -n 1 | cut -d '"' -f 4)
+          if [ -z "$MIHOMO_URL" ]; then
+            MIHOMO_URL=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | grep "browser_download_url.*linux-amd64-v[0-9].*\.gz" | head -n 1 | cut -d '"' -f 4)
+          fi
+          echo "Downloading from: $MIHOMO_URL"
+          curl -sL "$MIHOMO_URL" -o /tmp/mihomo.gz
+          gzip -d /tmp/mihomo.gz
+          chmod +x /tmp/mihomo
+          sudo mv /tmp/mihomo /usr/local/bin/mihomo
+          mihomo -v
       - name: Download the subscribe
+        env:
+          SOURCES_SECRET: ${{ secrets.SOURCES_SECRET }}
         run: |
-          bash ./run.sh
+          python3 run.py
       - name: Commit Changes
         run: |
-         git config --global user.email admin@zkyml.com
-         git config --global user.name zkyml
+         git config --global user.email 945395054@qq.com
+         git config --global user.name AkkunYo
          git add .
          if git diff-index --quiet HEAD; then
             echo "no file need to commit"

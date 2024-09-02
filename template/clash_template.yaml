@@ -1,0 +1,229 @@
+# 策略组引用
+pr: &pr {type: select, proxies: [🚀 节点选择, ♻️ 自动选择, ☢ 负载均衡-散列, ☢ 负载均衡-轮询, 🌐 全部节点, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇸🇬 新加坡, 🇰🇷 韩国, 🇺🇲 美国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇪🇸 西班牙节点, 🇲🇽 墨西哥节点, 🇧🇷 巴西节点, 🇵🇭 菲律宾节点, 🇮🇳 印度节点, 🇹🇷 土耳其节点, 🧿 其它地区, 🟢 直连]}
+best: &best {type: url-test, interval: 300, tolerance: 50, lazy: true, include-all: true}
+
+# 全局配置
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+ipv6: false
+
+external-ui: ui
+external-ui-url: https://hk.gh-proxy.org/https://github.com/Zephyruso/zashboard/releases/latest/download/dist-cdn-fonts.zip
+external-controller: :9090
+secret: clashclash
+
+unified-delay: true
+tcp-concurrent: true
+enable-process: true
+
+find-process-mode: strict
+global-client-fingerprint: chrome
+
+geodata-mode: true
+geodata-loader: standard
+geo-auto-update: true
+geo-update-interval: 12
+global-ua: "clash.meta"
+geox-url:
+  geoip: "https://hk.gh-proxy.org/https:/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geoip.dat"
+  geosite: "https://hk.gh-proxy.org/https:/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geosite.dat"
+  mmdb: "https://hk.gh-proxy.org/https:/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/country.mmdb"
+  asn: "https://hk.gh-proxy.org/https:/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/GeoLite2-ASN.mmdb"
+
+# 流量嗅探
+sniffer:
+  enable: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+  force-domain:
+    - +.v2ex.com
+  skip-domain:
+    - "Mijia Cloud"
+    - "dlg.io.mi.com"
+    - "+.push.apple.com"
+    - "+.apple.com"
+
+# 代理模式
+tun:
+  enable: true
+  stack: mixed
+  mtu: 1500
+  dns-hijack:
+    - "any:53"
+    - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+
+hosts:
+  xui.openapi.com: 192.168.1.2
+  '*.94345.com': 192.168.1.2
+
+# DNS模块
+dns:
+  enable: true
+  use-hosts: true
+  listen: 0.0.0.0:53
+  ipv6: false
+  respect-rules: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.0/15
+
+  default-nameserver:
+    - tls://223.5.5.5
+    - tls://119.29.29.29
+
+  fake-ip-filter:
+    - '*.lan'
+    - '*.local'
+    - '*.arpa'
+    - '*.cloudflare.com'
+    - '*.cloudflared.com'
+    - '*.cloudflare-dns.com'
+    - '*.cloudflare.net'
+    - time.*.com
+    - ntp.*.com
+    - +.xiaomi.com
+    - localhost.ptlogin2.qq.com
+    - geosite:private
+    - geosite:cn
+
+  nameserver:
+    - https://dns.cloudflare.com/dns-query
+    - https://dns.google/dns-query
+
+  fallback:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+    - tls://dns.google
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+
+  proxy-server-nameserver:
+    - https://dns.cloudflare.com/dns-query
+    - https://dns.google/dns-query
+  nameserver-policy:
+    "geosite:cn,private,apple":
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
+      - https://120.53.53.53/dns-query
+      - https://223.5.5.5/dns-query
+    "geosite:category-ads-all": rcode://success
+    "geosite:geolocation-!cn":
+      - "https://dns.cloudflare.com/dns-query"
+      - "https://dns.google/dns-query"
+
+proxies:
+  - name: "🟢 直连"
+    type: direct
+    udp: true
+
+
+# 策略组
+proxy-groups:
+  - {name: 🚀 节点选择, type: select, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Proxy.png, proxies: [☢ 负载均衡-散列, ☢ 负载均衡-轮询, ♻️ 自动选择, 🌐 全部节点, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇸🇬 新加坡, 🇰🇷 韩国, 🇺🇲 美国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇪🇸 西班牙节点, 🇲🇽 墨西哥节点, 🇧🇷 巴西节点, 🇵🇭 菲律宾节点, 🇮🇳 印度节点, 🇹🇷 土耳其节点, 🧿 其它地区, 🟢 直连]}
+  - {name: ♻️ 自动选择, type: url-test, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Auto.png, include-all: true, tolerance: 30, interval: 300, lazy: true, filter: "^((?!(直连)).)*$"}
+  - {name: ☢ 负载均衡-散列, type: load-balance, strategy: consistent-hashing, interval: 300, <<: *best, filter: "^((?!(直连)).)*$", icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Round_Robin_1.png }
+  - {name: ☢ 负载均衡-轮询, type: load-balance, strategy: round-robin, interval: 300, <<: *best, filter: "^((?!(直连)).)*$", icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Round_Robin.png }
+  #应用分流
+  - {name: 🌐 全部节点, type: select, include-all: true, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Final.png }
+  - {name: 🌏 我的网站, type: select, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/bilibili_2.png, proxies: [🟢 直连, 🚀 节点选择, ☢ 负载均衡-散列, ☢ 负载均衡-轮询, ♻️ 自动选择, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇸🇬 新加坡, 🇰🇷 韩国, 🇺🇲 美国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇪🇸 西班牙节点, 🇲🇽 墨西哥节点, 🇧🇷 巴西节点, 🇵🇭 菲律宾节点, 🇮🇳 印度节点, 🇹🇷 土耳其节点, 🧿 其它地区, 🌐 全部节点]}
+  - {name: 📹 YouTube, <<: *pr, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/YouTube.png }
+  - {name: 🍀 Google, <<: *pr, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Google_Search.png }
+  - {name: 📹 哔哩哔哩, type: select, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/bilibili_2.png, proxies: [🟢 直连, 🚀 节点选择, ☢ 负载均衡-散列, ☢ 负载均衡-轮询, ♻️ 自动选择, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇸🇬 新加坡, 🇰🇷 韩国, 🇺🇲 美国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇪🇸 西班牙节点, 🇲🇽 墨西哥节点, 🇧🇷 巴西节点, 🇵🇭 菲律宾节点, 🇮🇳 印度节点, 🇹🇷 土耳其节点, 🧿 其它地区, 🌐 全部节点]}
+  - {name: 🎵 Spotify, <<: *pr, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Spotify.png }
+  - {name: 📹 巴哈姆特, type: select, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Bahamut.png, proxies: [🇨🇳 台湾节点, 🌐 全部节点, 🚀 节点选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡, 🇰🇷 韩国, 🇺🇲 美国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🧿 其它地区, 🟢 直连]}
+  - {name: 🤖 AI, <<: *pr, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/AI.png }
+  - {name: 🐬 OneDrive, <<: *pr, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/OneDrive.png }
+  - {name: 🪟 Microsoft, <<: *pr, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Microsoft.png }
+  - {name: 🎵 TikTok, <<: *pr, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/TikTok_1.png }
+  - {name: 📲 Telegram, <<: *pr, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Telegram_X.png }
+  - {name: 🎥 NETFLIX, <<: *pr, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Netflix.png }
+  - {name: 📖 Notion, <<: *pr, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Notion.png }
+  - {name: 💶 PayPal, <<: *pr, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/PayPal.png }
+  - {name: 🐙 GitHub, <<: *pr, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/GitHub.png }
+  - {name: 🐦 Twitter, <<: *pr, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Twitter.png }
+  - {name: 🍎 Apple, type: select, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Apple.png, proxies: [🟢 直连, 🚀 节点选择, ♻️ 自动选择, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇸🇬 新加坡, 🇰🇷 韩国, 🇺🇲 美国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇪🇸 西班牙节点, 🇲🇽 墨西哥节点, 🇧🇷 巴西节点, 🇵🇭 菲律宾节点, 🇮🇳 印度节点, 🇹🇷 土耳其节点, 🧿 其它地区, 🌐 全部节点]}
+  - {name: 🎯 全球直连, type: select, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Proxy.png, proxies: [🟢 直连, 🚀 节点选择]}
+  - {name: 🐟 漏网之鱼, <<: *pr, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Lab.png }
+  #地区
+  - {name: 🇭🇰 香港节点, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Hong_Kong.png, type: url-test, include-all: true, tolerance: 30, interval: 300, lazy: true, filter: "港|HK|hk|Hong Kong|HongKong|hongkong"}
+  - {name: 🇨🇳 台湾节点, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Taiwan.png, type: url-test, include-all: true, tolerance: 30, interval: 300, lazy: true, filter: "台|新北|彰化|TW|Taiwan"}
+  - {name: 🇸🇬 新加坡, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Singapore.png, type: url-test, include-all: true, tolerance: 30, interval: 300, lazy: true, filter: "新加坡|坡|狮城|SG|Singapore"}
+  - {name: 🇰🇷 韩国, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Korea.png, type: url-test, include-all: true, tolerance: 30, interval: 300, lazy: true, filter: "KR|Korea|KOR|首尔|韩|韓"}
+  - {name: 🇯🇵 日本节点, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Japan.png, type: url-test, include-all: true, tolerance: 30, interval: 300, lazy: true, filter: "日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan" }
+  - {name: 🇺🇲 美国节点, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/United_States.png, type: url-test, include-all: true, tolerance: 30, interval: 300, lazy: true, filter: "美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|\\bUS\\b|United States"}
+  - {name: 🇬🇧 英国节点, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/United_Kingdom.png, type: url-test, include-all: true, tolerance: 30, interval: 300, lazy: true, filter: "英国|Great Britain" }
+  - {name: 🇩🇪 德国节点, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Germany.png, type: url-test, include-all: true, tolerance: 30, interval: 300, lazy: true, filter: "(?i)德国|germany|\\bde\\b|frankfurt|berlin|munich|muc" }
+  - {name: 🇪🇸 西班牙节点, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Spain.png, type: url-test, include-all: true, tolerance: 30, interval: 300, lazy: true, filter: "西班牙|Spain|ES|Espana" }
+  - {name: 🇲🇽 墨西哥节点, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Mexico.png, type: url-test, include-all: true, tolerance: 30, interval: 300, lazy: true, filter: "墨西哥|Mexico|MX" }
+  - {name: 🇧🇷 巴西节点, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Brazil.png, type: url-test, include-all: true, tolerance: 30, interval: 300, lazy: true, filter: "巴西|Brazil|BR" }
+  - {name: 🇵🇭 菲律宾节点, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Philippines.png, type: url-test, include-all: true, tolerance: 30, interval: 300, lazy: true, filter: "菲律宾|Philippines|PH" }
+  - {name: 🇮🇳 印度节点, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/India.png, type: url-test, include-all: true, tolerance: 30, interval: 300, lazy: true, filter: "印度|India|IN" }
+  - {name: 🇹🇷 土耳其节点, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Turkey.png, type: url-test, include-all: true, tolerance: 30, interval: 300, lazy: true, filter: "土耳其|Turkey|TR" }
+  - {name: 🧿 其它地区, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Global.png, type: select, include-all: true, tolerance: 20, filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|港|hk|hongkong|台|tw|taiwan|日|jp|japan|新|sg|singapore|美|us|unitedstates|英国|great britain|德国|germany|\\bde\\b|frankfurt|berlin|munich|muc|kr|korea|kor|首尔|韩|韓|西班牙|spain|espana|墨西哥|mexico|巴西|brazil|菲律宾|philippines|印度|india|土耳其|turkey)).*"}
+
+
+rules:
+  # 局域网直连
+  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
+  - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
+  - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
+  - IP-CIDR,169.254.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,224.0.0.0/4,🎯 全球直连,no-resolve
+  - IP-CIDR,240.0.0.0/4,🎯 全球直连,no-resolve
+  # 自定义直连
+  - DOMAIN-SUFFIX,mob.com,🎯 全球直连
+  - DOMAIN-SUFFIX,ghfast.top,🎯 全球直连
+  - DOMAIN-SUFFIX,gh-proxy.org,🎯 全球直连
+  - DOMAIN-SUFFIX,spaceship.com,🎯 全球直连
+  - DOMAIN-SUFFIX,hidns.vip,🌏 我的网站
+  - DOMAIN-SUFFIX,openapi.cfd,🌏 我的网站
+  - DOMAIN-SUFFIX,zkyml.com,🌏 我的网站
+  - DOMAIN-SUFFIX,945395.xyz,🌏 我的网站
+  - DOMAIN-SUFFIX,local,🎯 全球直连
+  - GEOSITE,category-ads-all,REJECT
+  - GEOSITE,apple-cn,🍎 Apple
+  - GEOSITE,category-ai-chat-!cn,🤖 AI
+  - GEOSITE,openai,🤖 AI
+  - GEOIP,ai,🤖 AI,no-resolve
+  - GEOSITE,github,🐙 GitHub
+  - GEOSITE,twitter,🐦 Twitter
+  - GEOSITE,bilibili,📹 哔哩哔哩
+  - GEOSITE,biliintl,📹 哔哩哔哩
+  - GEOSITE,spotify,🎵 Spotify
+  - GEOSITE,bahamut,📹 巴哈姆特
+  - GEOSITE,youtube,📹 YouTube
+  - GEOSITE,google,🍀 Google
+  - GEOSITE,onedrive,🐬 OneDrive
+  - GEOSITE,microsoft,🪟 Microsoft
+  - GEOSITE,tiktok,🎵 TikTok
+  - GEOSITE,telegram,📲 Telegram
+  - GEOSITE,netflix,🎥 NETFLIX
+  - GEOSITE,notion,📖 Notion
+  - GEOSITE,paypal,💶 PayPal
+  - GEOSITE,geolocation-!cn,🚀 节点选择
+  - GEOSITE,cn,🎯 全球直连
+  - GEOIP,google,🍀 Google,no-resolve
+  - GEOIP,netflix,🎥 NETFLIX,no-resolve
+  - GEOIP,telegram,📲 Telegram,no-resolve
+  - GEOIP,cn,🎯 全球直连,no-resolve
+  - MATCH,🐟 漏网之鱼
+
+
+
+#url:https://github.com/AkkunYo/HysteriaNode.git
