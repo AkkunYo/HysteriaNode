@@ -1,1 +1,2 @@
 proxies:
+- {"name":"🇺🇸US_1919","server":"108.181.24.39","type":"hysteria2","country":"🇺🇸US","port":60714,"udp":true,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
