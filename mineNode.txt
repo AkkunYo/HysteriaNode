@@ -1,2 +1,2 @@
 proxies:
-- {"name":"netflix_US","server":"104.16.192.155","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"e8105dfd24414268b6c7652c63731097","sni":"jobscareerfortoday.com","ws-opts":{"path":"6b777a91","headers":{"Host":"jobscareerfortoday.com"}},"network":"ws"}
+- {"name":"disney_KR","server":"104.17.147.22","type":"trojan","country":"🏁ZZ","port":8443,"udp":true,"password":"trojan","sni":"ana-service--xn--kbraa23dbb976icac773ddad2349aeae99rfaf8546aga0.mjxrwd.workers.dev","ws-opts":{"path":"/?ed=2560","headers":{"Host":"ana-service--xn--kbraa23dbb976icac773ddad2349aeae99rfaf8546aga0.mjxrwd.workers.dev"}},"fingerprint":"random","network":"ws"}
