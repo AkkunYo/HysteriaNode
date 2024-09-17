@@ -1,2 +1,3 @@
 proxies:
-- {"name":"disney_KR","server":"104.17.147.22","type":"trojan","country":"🏁ZZ","port":8443,"udp":true,"password":"trojan","sni":"ana-service--xn--kbraa23dbb976icac773ddad2349aeae99rfaf8546aga0.mjxrwd.workers.dev","ws-opts":{"path":"/?ed=2560","headers":{"Host":"ana-service--xn--kbraa23dbb976icac773ddad2349aeae99rfaf8546aga0.mjxrwd.workers.dev"}},"fingerprint":"random","network":"ws"}
+- {"name":"disney_US","server":"206.206.80.66","type":"vmess","country":"🏁 ZZ","port":23423,"uuid":"8825fd04-9005-4410-b48c-d2f345ec7fee","alterId":0,"cipher":"auto","network":"tcp","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
+- {"name":"disney_KR","server":"104.26.13.54","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"auto","sni":"e9464f45.trauma-2r4.pages.dev","ws-opts":{"path":"/","headers":{"Host":"e9464f45.trauma-2r4.pages.dev"}},"network":"ws"}
