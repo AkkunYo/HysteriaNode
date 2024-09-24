@@ -1,1 +1,3 @@
 proxies:
+- {"name":"disney_US","server":"107.148.207.249","type":"vmess","country":"🏁 ZZ","port":48712,"uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"cipher":"auto","network":"tcp","servername":"appsvs.shop","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
+- {"name":"netflix_IT","server":"sdhdffjblkgfh_cdn.hfhfb.homes","type":"vmess","country":"🏁ZZ","port":2095,"uuid":"b001ee28-2dbf-4076-9227-a3faff40a217","alterId":0,"cipher":"auto","network":"ws","servername":"itcdn.fask511.cfd","http-opts":{},"h2-opts":{},"skip-cert-verify":true,"ws-opts":{"path":"/?ed=1024","headers":{"HOST":"itcdn.fask511.cfd"}}}
