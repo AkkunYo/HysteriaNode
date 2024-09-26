@@ -1,2 +1,2 @@
 proxies:
-- {"name":"netflix_KR","server":"152.69.234.137","type":"vless","port":12199,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","network":"ws","tls":true,"client-fingerprint":"chrome","servername":"a.ssll.gay","ws-opts":{"path":"/Telegram🇨🇳 @WangCai2 /?ed=2048","headers":{"Host":"a.ssll.gay"}}}
+- {"name":"netflix_KR","server":"45.80.110.161","type":"vless","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","network":"ws","client-fingerprint":"chrome","servername":"a.ssll.gay","ws-opts":{"path":"/Twitterfreecodesfp=chrome","headers":{"Host":"a.ssll.gay"}}}
