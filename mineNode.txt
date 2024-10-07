@@ -1,1 +1,3 @@
 proxies:
+- {"name":"netflix_US","server":"104.19.45.42","type":"vmess","port":2095,"udp":true,"uuid":"a63e9c8c-2c04-4b8e-af6a-4a02494a1f0b","alterId":0,"cipher":"auto","network":"ws","servername":"ip2.8084726.xyz","http-opts":{},"h2-opts":{},"ws-opts":{"path":"github.com/Alvin9999","headers":{"Host":"ip2.8084726.xyz"}}}
+- {"name":"disney_KR","server":"162.159.128.233","type":"trojan","country":"🏁ZZ","port":8443,"udp":true,"password":"auto","sni":"e9464f45.trauma-2r4.pages.dev","ws-opts":{"path":"/","headers":{"Host":"e9464f45.trauma-2r4.pages.dev"}},"network":"ws"}
