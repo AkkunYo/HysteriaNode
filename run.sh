@@ -2,7 +2,7 @@
 
 subscribeUrl="https://pp.dcd.one/clash/proxies?speed=15,30&type=hysteria2,hysteria,vless,vmess,trojan"
 subscribeUrl_hy="https://pp.dcd.one/clash/proxies?speed=15,30&type=hysteria2,hysteria"
-subscribeUrl_me="https://pp.dcd.one/clash/proxies?speed=15,30&type=hysteria2,hysteria,vless,vmess,trojan&stream=netflix,disney"
+subscribeUrl_me="https://pp.dcd.one/clash/proxies?speed=15,30&type=hysteria2,hysteria,vless,trojan"
 subscribeUrl_me_bak="https://pp.dcd.one/clash/proxies?c=JP&speed=15,30&type=hysteria2,hysteria,vless,vmess,trojan"
 
 echo "start getting the subscribe"
