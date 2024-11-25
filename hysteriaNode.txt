@@ -1,2 +1,1 @@
 proxies:
-- {"name":"Relay_🇹🇷TR-🇹🇷TR_647","server":"quran.mci.ai","type":"hysteria2","country":"🇹🇷TR","port":443,"udp":true,"password":"28c05d48e2f470d07a4c392c9bd43849","sni":"quran.mci.ai","skip-cert-verify":false}
