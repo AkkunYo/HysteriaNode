@@ -1,2 +1,3 @@
 proxies:
-- {"name":"netflix_US","server":"104.26.0.214","type":"vmess","port":2086,"udp":true,"uuid":"bc65fac2-7dc7-426f-acdd-0779a5035bde","alterId":0,"cipher":"auto","network":"ws","servername":"p1.613055.xyz","http-opts":{},"h2-opts":{},"ws-opts":{"path":"github.com/Alvin9999","headers":{"Host":"p1.613055.xyz"}}}
+- {"name":"netflix_US","server":"104.21.238.168","type":"vmess","port":8880,"udp":true,"uuid":"90f8f4dc-8092-4355-9047-05f506f5e9ab","alterId":0,"cipher":"auto","network":"ws","servername":"m1.106778.xyz","http-opts":{},"h2-opts":{},"ws-opts":{"path":"github.com/Alvin9999","headers":{"Host":"m1.106778.xyz"}}}
+- {"name":"netflix_US","server":"104.18.114.125","type":"vmess","port":8880,"udp":true,"uuid":"90f8f4dc-8092-4355-9047-05f506f5e9ab","alterId":0,"cipher":"auto","network":"ws","servername":"m1.106778.xyz","http-opts":{},"h2-opts":{},"ws-opts":{"path":"github.com/Alvin9999","headers":{"Host":"m1.106778.xyz"}}}
