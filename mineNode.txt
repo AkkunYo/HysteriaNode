@@ -1,8 +1,1 @@
 proxies:
-- {"name":"netflix_US","server":"198.2.218.102","type":"vmess","port":41400,"udp":true,"uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"cipher":"auto","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
-- {"name":"netflix_KR","server":"104.19.173.13","type":"trojan","port":443,"password":"blue2024","sni":"ha.lii2010.us.kg","skip-cert-verify":true,"ws-opts":{"path":"/?ed=2560","headers":{"Host":"ha.lii2010.us.kg"}},"network":"ws"}
-- {"name":"netflix_KR","server":"104.16.209.80","type":"trojan","port":443,"password":"blue2024","sni":"ha.lii2010.us.kg","skip-cert-verify":true,"ws-opts":{"path":"/?ed=2560","headers":{"Host":"ha.lii2010.us.kg"}},"network":"ws"}
-- {"name":"netflix_KR","server":"104.16.233.153","type":"trojan","port":443,"password":"blue2024","sni":"ha.lii2010.us.kg","skip-cert-verify":true,"ws-opts":{"path":"/?ed=2560","headers":{"Host":"ha.lii2010.us.kg"}},"network":"ws"}
-- {"name":"netflix_KR","server":"190.93.244.208","type":"trojan","port":443,"udp":true,"password":"blue2024","sni":"hb.lii2010.us.kg","skip-cert-verify":true,"ws-opts":{"path":"/?ed=2560","headers":{"Host":"hb.lii2010.us.kg"}},"network":"ws"}
-- {"name":"disney_KR","server":"104.17.135.219","type":"trojan","port":443,"password":"blue2024","sni":"ha.lii2010.us.kg","skip-cert-verify":true,"ws-opts":{"path":"/?ed=2560","headers":{"Host":"ha.lii2010.us.kg"}},"network":"ws"}
-- {"name":"disney_KR","server":"104.16.116.100","type":"trojan","port":443,"password":"blue2024","sni":"ha.lii2010.us.kg","skip-cert-verify":true,"ws-opts":{"path":"/?ed=2560","headers":{"Host":"ha.lii2010.us.kg"}},"network":"ws"}
