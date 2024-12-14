@@ -1,5 +1,1 @@
 proxies:
-- {"name":"disney_KR","server":"104.16.72.34","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"blue2024","sni":"td.promote.icu","ws-opts":{"path":"/?ed=2560","headers":{"Host":"td.promote.icu"}},"network":"ws"}
-- {"name":"disney_KR","server":"104.19.243.142","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"blue2024","sni":"td.promote.icu","network":"ws"}
-- {"name":"disney_KR","server":"104.19.190.86","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"blue2024","sni":"td.promote.icu","ws-opts":{"path":"/?ed=2560","headers":{"Host":"td.promote.icu"}},"network":"ws"}
-- {"name":"disney_KR","server":"104.19.175.73","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"blue2024","sni":"td.promote.icu","ws-opts":{"path":"/?ed=2560","headers":{"Host":"td.promote.icu"}},"fingerprint":"randomized","network":"ws"}
