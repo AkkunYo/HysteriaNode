@@ -1,1 +1,7 @@
 proxies:
+- {"name":"disney_netflix_JP","server":"jp007.421421.xyz","type":"trojan","country":"🏁 ZZ","port":20230,"udp":true,"password":"b44da489-fc70-4fd0-8997-a83b51f59267","skip-cert-verify":true}
+- {"name":"disney_netflix_JP","server":"jp008.421421.xyz","type":"trojan","country":"🏁 ZZ","port":20230,"udp":true,"password":"0028109a-37ed-4ded-b858-e566388a904c","skip-cert-verify":true}
+- {"name":"netflix_US","server":"h.522226.xyz","type":"trojan","country":"🏁 ZZ","port":45800,"udp":true,"password":"xjN4xcuPGg55","skip-cert-verify":true}
+- {"name":"netflix_US","server":"104.21.1.28","type":"vmess","country":"🏁ZZ","port":8880,"uuid":"4b5e4565-322f-4223-a891-78a84f189726","alterId":0,"cipher":"auto","network":"ws","servername":"us-ccs.yuji2022.eu.org","http-opts":{},"h2-opts":{},"skip-cert-verify":true,"ws-opts":{"path":"/XSjeg73o6ZdsheahCb5JG","headers":{"HOST":"us-ccs.yuji2022.eu.org"}}}
+- {"name":"disney_KR","server":"104.17.213.241","type":"vmess","country":"🏁ZZ","port":80,"uuid":"e6543319-0574-42ac-b778-1c4325d626f5","alterId":0,"cipher":"auto","network":"ws","servername":"chunchuan.kejixiaoqi666.store","http-opts":{},"h2-opts":{},"skip-cert-verify":true,"ws-opts":{"path":"/","headers":{"HOST":"chunchuan.kejixiaoqi666.store"}}}
+- {"name":"disney_KR","server":"104.21.75.193","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"bpb-trojan","sni":"bpb-hd.aaronchin.xyz","ws-opts":{"path":"/tr?ed=2560","headers":{"Host":"bpb-hd.aaronchin.xyz"}},"fingerprint":"randomized","network":"ws"}
