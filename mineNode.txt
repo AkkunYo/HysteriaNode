@@ -1,1 +1,13 @@
 proxies:
+- {"name":"netflix_KR","server":"146.56.112.110","type":"vmess","country":"🏁 ZZ","port":8888,"uuid":"e7c302f3-90d6-42dd-9d7d-94a3683a3707","alterId":0,"cipher":"auto","network":"tcp","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
+- {"name":"disney_HK","server":"218.190.230.207","type":"trojan","country":"🏁 ZZ","port":42264,"udp":true,"password":"aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856","skip-cert-verify":true}
+- {"name":"disney_VN","server":"160.30.21.105","type":"trojan","country":"🏁 ZZ","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","skip-cert-verify":true}
+- {"name":"disney_LU","server":"104.16.120.250","type":"vmess","country":"🏁ZZ","port":443,"uuid":"bf67437e-6c90-45ca-abc2-c7240a5ce2aa","alterId":0,"cipher":"auto","network":"ws","servername":"foxlux.fovi.tk","http-opts":{},"h2-opts":{},"tls":true,"skip-cert-verify":true,"ws-opts":{"path":"/eisasqa","headers":{"HOST":"foxlux.fovi.tk"}}}
+- {"name":"disney_HK","server":"gost.cloudflare.182682.xyz","type":"vmess","country":"🏁ZZ","port":80,"uuid":"aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856","alterId":0,"cipher":"auto","network":"ws","servername":"gost.naiunclient.top","http-opts":{},"h2-opts":{},"skip-cert-verify":true,"ws-opts":{"path":"/","headers":{"HOST":"gost.naiunclient.top"}}}
+- {"name":"netflix_US","server":"jobscareerfortoday.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"242a3d8eee5e4ed1a6bfa4141d549a25","skip-cert-verify":true}
+- {"name":"netflix_US","server":"jobscareertoday.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"b4e8771997c94732acbc9ec4d19c2589","skip-cert-verify":true}
+- {"name":"netflix_US","server":"jobscareertoday.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"4aec4e7f8cf8454ea4613659822e1a61","skip-cert-verify":true}
+- {"name":"netflix_US","server":"jobscareertoday.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"242a3d8eee5e4ed1a6bfa4141d549a25","skip-cert-verify":true}
+- {"name":"netflix_US","server":"jobscareerfortoday.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"4732adfa16c6450bbef87264e41332db","skip-cert-verify":true}
+- {"name":"disney_KR","server":"104.21.75.193","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"bpb-trojan","sni":"bpb-hd.aaronchin.xyz","ws-opts":{"path":"/tr?ed=2560","headers":{"Host":"bpb-hd.aaronchin.xyz"}},"fingerprint":"randomized","network":"ws"}
+- {"name":"netflix_US","server":"jobscareerforlawyers.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"b4e8771997c94732acbc9ec4d19c2589","skip-cert-verify":true}
