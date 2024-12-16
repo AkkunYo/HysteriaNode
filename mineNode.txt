@@ -1,3 +1,2 @@
 proxies:
-- {"name":"netflix_US","server":"198.2.218.100","type":"vmess","country":"🇺🇸 US","port":41400,"uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"cipher":"auto","network":"tcp","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
-- {"name":"netflix_US","server":"104.16.60.8","type":"vmess","country":"🇺🇸 US","port":80,"uuid":"05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d","alterId":0,"cipher":"auto","network":"ws","servername":"4868-poetry-4868.napora7003.workers.dev","http-opts":{},"h2-opts":{},"skip-cert-verify":true,"ws-opts":{"path":"/obdii.cfd/linkws","headers":{"HOST":"4868-poetry-4868.napora7003.workers.dev"}}}
+- {"name":"disney_HK","server":"104.17.213.241","type":"vmess","country":"🏁ZZ","port":80,"uuid":"aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856","alterId":0,"cipher":"auto","network":"ws","servername":"gost.naiunclient.top","http-opts":{},"h2-opts":{},"skip-cert-verify":true,"ws-opts":{"path":"/","headers":{"HOST":"gost.naiunclient.top"}}}
