@@ -1,2 +1,4 @@
 proxies:
-- {"name":"disney_HK","server":"104.17.213.241","type":"vmess","country":"🏁ZZ","port":80,"uuid":"aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856","alterId":0,"cipher":"auto","network":"ws","servername":"gost.naiunclient.top","http-opts":{},"h2-opts":{},"skip-cert-verify":true,"ws-opts":{"path":"/","headers":{"HOST":"gost.naiunclient.top"}}}
+- {"name":"netflix_US","server":"2.58.87.221","type":"vmess","country":"🇺🇸US","port":46628,"uuid":"f6ba9e5a-711c-496f-be60-ac5464dec2b8","alterId":0,"cipher":"auto","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
+- {"name":"netflix_US","server":"155.248.205.39","type":"trojan","country":"🇺🇸US","port":45601,"udp":true,"password":"xjN4xcuPGg","sni":"f.522226.xyz","skip-cert-verify":true}
+- {"name":"netflix_KR","server":"172.67.180.227","type":"trojan","country":"🇺🇸US","port":443,"udp":true,"password":"bpb-trojan","sni":"bpb-hd.aaronchin.xyz","ws-opts":{"path":"/tr?ed=2560","headers":{"Host":"bpb-hd.aaronchin.xyz"}},"fingerprint":"randomized","network":"ws"}
