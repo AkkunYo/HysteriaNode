@@ -1,2 +1,1 @@
 proxies:
-- {"name":"Relay_🇵🇱PL-🇵🇱PL_408","server":"128.204.223.43","type":"hysteria2","country":"🇵🇱PL","port":59350,"udp":true,"password":"f6a88286-2454-4d22-b7d3-abe61874e3d2","sni":"www.bing.com","skip-cert-verify":true}
