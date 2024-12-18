@@ -1,4 +1,2 @@
 proxies:
-- {"name":"netflix_US","server":"104.21.83.115","type":"vmess","country":"🇺🇸 US","port":443,"uuid":"6c168fcc-2231-4f3b-8c1e-f6391692df4a","alterId":0,"cipher":"auto","network":"ws","servername":"hms02.fxiaomi.sbs","http-opts":{},"h2-opts":{},"tls":true,"skip-cert-verify":true,"ws-opts":{"path":"/link","headers":{"HOST":"hms02.fxiaomi.sbs"}}}
 - {"name":"disney_US","server":"206.206.80.66","type":"vmess","country":"🇺🇸 US","port":23423,"uuid":"8825fd04-9005-4410-b48c-d2f345ec7fee","alterId":0,"cipher":"auto","network":"tcp","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
-- {"name":"netflix_KR","server":"144.24.88.133","type":"trojan","country":"🏁 ZZ","port":45101,"udp":true,"password":"xjN4xcuPGg","skip-cert-verify":true}
