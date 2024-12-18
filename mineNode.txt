@@ -1,13 +1,2 @@
 proxies:
-- {"name":"netflix_US","server":"jobscareerfortoday.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"f0eb8c92ce8946aaba856569cff1a16b","skip-cert-verify":true}
-- {"name":"netflix_US","server":"jobscareerfortoday.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"242a3d8eee5e4ed1a6bfa4141d549a25","skip-cert-verify":true}
-- {"name":"netflix_US","server":"jobscareerfortoday.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"e8105dfd24414268b6c7652c63731097","skip-cert-verify":true}
-- {"name":"netflix_US","server":"jobscareerfortoday.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"4aec4e7f8cf8454ea4613659822e1a61","skip-cert-verify":true}
-- {"name":"netflix_US","server":"jobscareertoday.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"71409d3e488548e8bb076d229778f008","skip-cert-verify":true}
-- {"name":"netflix_US","server":"jobscareerfortoday.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"dba20dcb635e430fa4d3bfc303a149d2","skip-cert-verify":true}
-- {"name":"netflix_US","server":"jobscareerfortoday.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"2cba4104747d49d18319e5ade1b93ab5","skip-cert-verify":true}
-- {"name":"netflix_US","server":"jobscareerfortoday.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"ce8b8b30ebba45f2a38dd608b85e8628","skip-cert-verify":true}
-- {"name":"netflix_US","server":"jobscareerfortoday.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"b4e8771997c94732acbc9ec4d19c2589","skip-cert-verify":true}
-- {"name":"netflix_US","server":"jobscareertoday.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"2cba4104747d49d18319e5ade1b93ab5","skip-cert-verify":true}
-- {"name":"disney_KR","server":"104.21.75.193","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"bpb-trojan","sni":"bpb-hd.aaronchin.xyz","ws-opts":{"path":"/tr?ed=2560","headers":{"Host":"bpb-hd.aaronchin.xyz"}},"fingerprint":"randomized","network":"ws"}
-- {"name":"netflix_US","server":"23.150.248.107","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"dba20dcb635e430fa4d3bfc303a149d2","sni":"jobscareertoday.com","skip-cert-verify":true}
+- {"name":"disney_US","server":"107.148.207.249","type":"vmess","country":"🇺🇸 US","port":48712,"uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"cipher":"auto","network":"tcp","servername":"appsvs.shop","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
