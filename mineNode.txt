@@ -1,2 +1,2 @@
 proxies:
-- {"name":"netflix_KR","server":"144.24.88.133","type":"trojan","country":"🏁 ZZ","port":45101,"udp":true,"password":"xjN4xcuPGg","skip-cert-verify":true}
+- {"name":"disney_US","server":"38.11.60.80","type":"vmess","country":"🇺🇸US","port":37001,"uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"cipher":"auto","network":"ws","servername":"www.33937261.xyz","http-opts":{},"h2-opts":{},"tls":true,"skip-cert-verify":true,"ws-opts":{"path":"/path/1733651231647","headers":{"HOST":"www.33937261.xyz"}}}
