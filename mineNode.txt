@@ -1,2 +1,1 @@
 proxies:
-- {"name":"netflix_US","server":"104.16.67.38","type":"vmess","country":"🏁ZZ","port":8080,"uuid":"6c168fcc-2231-4f3b-8c1e-f6391692df4a","alterId":0,"cipher":"auto","network":"ws","servername":"8bsibsh8wbbwihfhjskbbng-shape-3.mewivot154.workers.dev","http-opts":{},"h2-opts":{},"skip-cert-verify":true,"ws-opts":{"path":"/hms02.fxiaomi.sbs/link","headers":{"HOST":"8bsibsh8wbbwihfhjskbbng-shape-3.mewivot154.workers.dev"}}}
