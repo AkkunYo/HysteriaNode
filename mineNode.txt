@@ -1,3 +1,1 @@
 proxies:
-- {"name":"netflix_US","server":"77.75.199.6","type":"vmess","port":8443,"uuid":"191babc5-2aaf-4fe5-a563-f14244aefb4e","alterId":0,"cipher":"auto","network":"ws","http-opts":{},"h2-opts":{},"tls":true,"skip-cert-verify":true,"ws-opts":{"path":"/xrenvws","headers":{"Host":"lax1.ibgfw.top"}}}
-- {"name":"disney_VN","server":"160.30.160.134","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"25a0ffa0-725c-4d6f-b0d5-c74579753075","skip-cert-verify":true}
