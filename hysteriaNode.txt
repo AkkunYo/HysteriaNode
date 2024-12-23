@@ -1,3 +1,1 @@
 proxies:
-- {"name":"Relay_🇺🇸US-🇺🇸US_767","server":"02.v2cat.cc","type":"hysteria2","country":"🇺🇸US","port":8443,"udp":true,"password":"aa9b1e2e-caa3-4f8a-8ec5-cf915ee240ea","sni":"02.v2cat.cc","skip-cert-verify":false}
-- {"name":"Relay_🇺🇸US-🇺🇸US_768","server":"09.v2cat.cc","type":"hysteria2","country":"🇺🇸US","port":8443,"udp":true,"password":"aa9b1e2e-caa3-4f8a-8ec5-cf915ee240ea","sni":"09.v2cat.cc","skip-cert-verify":false}
