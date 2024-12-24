@@ -1,2 +1,7 @@
 proxies:
+- {"name":"disney_netflix_KR","server":"198.62.62.67","type":"trojan","country":"🇺🇸US","port":443,"udp":true,"password":"tg-fq521free","sni":"torjan.xn--xhq44j.eu.org","skip-cert-verify":true,"ws-opts":{"path":"/","headers":{"Host":"torjan.xn--xhq44j.eu.org"}},"network":"ws"}
+- {"name":"disney_KR","server":"216.24.57.30","type":"trojan","country":"🇺🇸US","port":443,"udp":true,"password":"tg-fq521free","sni":"torjan.xn--xhq44j.eu.org","skip-cert-verify":true,"ws-opts":{"path":"/","headers":{"Host":"torjan.xn--xhq44j.eu.org"}},"network":"ws"}
+- {"name":"disney_VN","server":"103.173.66.155","type":"trojan","country":"🇻🇳VN","port":443,"udp":true,"password":"25a0ffa0-725c-4d6f-b0d5-c74579753075","skip-cert-verify":true}
+- {"name":"disney_VN","server":"160.30.21.105","type":"trojan","country":"🏁 ZZ","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","skip-cert-verify":true}
+- {"name":"disney_VN","server":"std1.loadingip.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"94d219c9-1afc-4d42-b090-8b3794764380","skip-cert-verify":true}
 - {"name":"disney_VN","server":"160.30.160.134","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"25a0ffa0-725c-4d6f-b0d5-c74579753075","skip-cert-verify":true}
