@@ -1,1 +1,2 @@
 proxies:
+- {"name":"disney_VN","server":"160.30.160.134","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"25a0ffa0-725c-4d6f-b0d5-c74579753075","skip-cert-verify":true}
