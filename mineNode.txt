@@ -1,6 +1,1 @@
 proxies:
-- {"name":"netflix_US","server":"jobscareerforlawyers.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"cb1f26aa437d4bfa9b841d28503ce8cc","skip-cert-verify":true}
-- {"name":"netflix_US","server":"jobscareerforlawyers.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"dba20dcb635e430fa4d3bfc303a149d2","skip-cert-verify":true}
-- {"name":"netflix_US","server":"jobscareertoday.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"cb1f26aa437d4bfa9b841d28503ce8cc","skip-cert-verify":true}
-- {"name":"disney_netflix_KR","server":"104.21.61.73","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"yaml777","sni":"yaml7.ggff.net","ws-opts":{"path":"/","headers":{"Host":"yaml7.ggff.net"}},"fingerprint":"chrome","network":"ws"}
-- {"name":"netflix_US","server":"jobscareertoday.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"dba20dcb635e430fa4d3bfc303a149d2","skip-cert-verify":true}
