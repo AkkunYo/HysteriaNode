@@ -1,2 +1,4 @@
 proxies:
-- {"name":"🇺🇸US_654","server":"166.1.18.244","type":"hysteria2","country":"🇺🇸US","port":26699,"udp":true,"password":"95c2b673-d899-4ff4-a6c1-eafa74268a5e","skip-cert-verify":true}
+- {"name":"Relay_🇸🇬SG-🇸🇬SG_468","server":"52.163.114.191","type":"hysteria2","country":"🇸🇬SG","port":443,"udp":true,"password":"ThisIsNotForSale-Free$ervice","sni":"api.tg8lnk.tech","skip-cert-verify":true}
+- {"name":"Relay_🇹🇼TW-🇭🇰HK_475","server":"tw3.akebi.cc","type":"hysteria2","country":"🇹🇼TW","port":2010,"udp":true,"password":"338b9800-fb4d-4934-8425-388f6d4342f5","sni":"hk02.akebi.cc","skip-cert-verify":true}
+- {"name":"🇺🇸US_663","server":"166.1.18.244","type":"hysteria2","country":"🇺🇸US","port":26699,"udp":true,"password":"95c2b673-d899-4ff4-a6c1-eafa74268a5e","skip-cert-verify":true}
