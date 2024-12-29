@@ -1,2 +1,2 @@
 proxies:
-- {"name":"🇺🇸US_655","server":"166.1.18.244","type":"hysteria2","country":"🇺🇸US","port":26699,"udp":true,"password":"95c2b673-d899-4ff4-a6c1-eafa74268a5e","skip-cert-verify":true}
+- {"name":"🇺🇸US_654","server":"166.1.18.244","type":"hysteria2","country":"🇺🇸US","port":26699,"udp":true,"password":"95c2b673-d899-4ff4-a6c1-eafa74268a5e","skip-cert-verify":true}
