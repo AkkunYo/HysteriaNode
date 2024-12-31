@@ -1,6 +1,2 @@
 proxies:
-- {"name":"disney_US","server":"198.2.218.100","type":"vmess","country":"🇺🇸 US","port":41400,"uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"cipher":"auto","network":"tcp","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
-- {"name":"disney_US","server":"198.2.218.108","type":"vmess","country":"🇺🇸US","port":41400,"uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"cipher":"auto","network":"tcp","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
 - {"name":"disney_KR","server":"172.67.207.57","type":"trojan","country":"🇺🇸US","port":443,"udp":true,"password":"yaml777","sni":"yaml7.ggff.net","ws-opts":{"path":"/","headers":{"Host":"yaml7.ggff.net"}},"network":"ws"}
-- {"name":"disney_KR","server":"216.24.57.30","type":"trojan","country":"🇺🇸US","port":443,"udp":true,"password":"tg-fq521free","sni":"torjan.xn--xhq44j.eu.org","skip-cert-verify":true,"ws-opts":{"path":"/","headers":{"Host":"torjan.xn--xhq44j.eu.org"}},"network":"ws"}
-- {"name":"disney_KR","server":"198.62.62.67","type":"trojan","country":"🇺🇸US","port":443,"udp":true,"password":"tg-fq521free","sni":"torjan.xn--xhq44j.eu.org","skip-cert-verify":true,"ws-opts":{"path":"/","headers":{"Host":"torjan.xn--xhq44j.eu.org"}},"network":"ws"}
