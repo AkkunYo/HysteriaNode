@@ -1,3 +1,4 @@
 proxies:
-- {"name":"Relay_🇸🇬SG-🇸🇬SG_390","server":"api.tg8lnk.tech","type":"hysteria2","country":"🇸🇬SG","port":443,"udp":true,"password":"ThisIsNotForSale-Free$ervice","skip-cert-verify":true}
-- {"name":"Relay_🇹🇼TW-🇭🇰HK_396","server":"tw3.akebi.cc","type":"hysteria2","country":"🇹🇼TW","port":2010,"udp":true,"password":"338b9800-fb4d-4934-8425-388f6d4342f5","sni":"hk02.akebi.cc","skip-cert-verify":true}
+- {"name":"Relay_🇸🇬SG-🇸🇬SG_233","server":"52.163.114.191","type":"hysteria2","country":"🇸🇬SG","port":443,"udp":true,"password":"ThisIsNotForSale-Free$ervice","sni":"api.tg8lnk.tech","skip-cert-verify":true}
+- {"name":"Relay_🇸🇬SG-🇸🇬SG_234","server":"api.tg8lnk.tech","type":"hysteria2","country":"🇸🇬SG","port":443,"udp":true,"password":"ThisIsNotForSale-Free$ervice","skip-cert-verify":true}
+- {"name":"Pool_🇸🇬SG_235","server":"52.187.5.16","type":"hysteria2","country":"🇸🇬SG","port":443,"udp":true,"password":"ThisIsNotForSale-Free$ervice","sni":"api.tg8lnk.tech","skip-cert-verify":true}
