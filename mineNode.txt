@@ -1,4 +1,1 @@
 proxies:
-- {"name":"disney_HK","server":"154.83.88.106","type":"vmess","country":"🏁 ZZ","port":8888,"uuid":"63ab66f1-4d71-424e-8f2d-f4fb90fc92a2","alterId":0,"cipher":"auto","network":"tcp","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
-- {"name":"disney_KR","server":"104.22.4.240","type":"trojan","country":"🏁ZZ","port":8443,"udp":true,"password":"takaz?cuswo-r?_ojuMit@i=rAcrETl\u0026lb1fro?L1uP=@me=*NlWEbrlsP#t@d_8","sni":"quiz.vidio.com.vidio.us.kg","ws-opts":{"path":"/pyip=s10.serv00.com:15661","headers":{"Host":"quiz.vidio.com.vidio.us.kg"}},"fingerprint":"random","network":"ws"}
-- {"name":"disney_KR","server":"104.22.5.240","type":"trojan","country":"🏁ZZ","port":8443,"udp":true,"password":"takaz?cuswo-r?_ojuMit@i=rAcrETl\u0026lb1fro?L1uP=@me=*NlWEbrlsP#t@d_8","sni":"quiz.vidio.com.vidio.us.kg","ws-opts":{"path":"/pyip=s10.serv00.com:15661","headers":{"Host":"quiz.vidio.com.vidio.us.kg"}},"fingerprint":"random","network":"ws"}
