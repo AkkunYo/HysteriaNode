@@ -1,1 +1,3 @@
 proxies:
+- {"name":"netflix_US","server":"23.150.152.52","type":"vmess","country":"🏁ZZ","port":443,"uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"cipher":"auto","network":"ws","servername":"maxin.beauty","http-opts":{},"h2-opts":{},"tls":true,"skip-cert-verify":true,"ws-opts":{"path":"/linkvws","headers":{"HOST":"maxin.beauty"}}}
+- {"name":"netflix_CA","server":"23.162.200.227","type":"vmess","country":"🏁ZZ","port":443,"uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"cipher":"auto","network":"ws","http-opts":{},"h2-opts":{},"tls":true,"skip-cert-verify":true,"ws-opts":{"path":"/linkvws"}}
