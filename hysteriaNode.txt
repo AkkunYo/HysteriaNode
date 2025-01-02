@@ -1,7 +1,6 @@
 proxies:
-- {"name":"","server":"ae.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"ae.1010520.xyz","skip-cert-verify":false}
-- {"name":"","server":"es.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"es.1010520.xyz","skip-cert-verify":false}
-- {"name":"","server":"hr.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"hr.1010520.xyz","skip-cert-verify":false}
-- {"name":"","server":"dk.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"dk.1010520.xyz","skip-cert-verify":false}
-- {"name":"","server":"th.1010520.xyz","type":"hysteria2","country":"🇺🇸US","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"th.1010520.xyz","skip-cert-verify":false}
-- {"name":"","server":"fr1.xiaoliyu.us","type":"hysteria2","country":"🇺🇸US","port":2052,"udp":true,"password":"547e05a0-2e59-4712-b9f9-dedb10293d83","sni":"fr1.xiaoliyu.us","skip-cert-verify":true}
+- {"name":"Relay_🇸🇬SG-🇩🇰DK_440","server":"dk.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"dk.1010520.xyz","skip-cert-verify":false}
+- {"name":"Relay_🇸🇬SG-🇩🇪DE_441","server":"es.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"es.1010520.xyz","skip-cert-verify":false}
+- {"name":"Relay_🇸🇬SG-🇦🇪AE_442","server":"ae.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"ae.1010520.xyz","skip-cert-verify":false}
+- {"name":"Relay_🇸🇬SG-🇭🇷HR_443","server":"hr.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"hr.1010520.xyz","skip-cert-verify":false}
+- {"name":"Relay_🇺🇸US-🇹🇭TH_653","server":"th.1010520.xyz","type":"hysteria2","country":"🇺🇸US","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"th.1010520.xyz","skip-cert-verify":false}
