@@ -1,10 +1,7 @@
 proxies:
-- {"name":"Relay_🇸🇬SG-🇭🇷HR_332","server":"hr.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"hr.1010520.xyz","skip-cert-verify":false}
-- {"name":"Relay_🇸🇬SG-🇩🇪DE_333","server":"es.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"es.1010520.xyz","skip-cert-verify":false}
-- {"name":"Relay_🇸🇬SG-🇩🇰DK_334","server":"dk.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"dk.1010520.xyz","skip-cert-verify":false}
-- {"name":"Relay_🇸🇬SG-🇦🇪AE_335","server":"ae.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"ae.1010520.xyz","skip-cert-verify":false}
-- {"name":"Relay_🇹🇼TW-🇭🇰HK_344","server":"tw3.akebi.cc","type":"hysteria2","country":"🇹🇼TW","port":2010,"udp":true,"password":"338b9800-fb4d-4934-8425-388f6d4342f5","sni":"hk02.akebi.cc","skip-cert-verify":true}
-- {"name":"Relay_🇺🇸US-🇺🇸US_510","server":"fr1.xiaoliyu.us","type":"hysteria2","country":"🇺🇸US","port":2052,"udp":true,"password":"547e05a0-2e59-4712-b9f9-dedb10293d83","sni":"fr1.xiaoliyu.us","skip-cert-verify":true}
-- {"name":"Relay_🇺🇸US-🇭🇰HK_511","server":"hk.1010520.xyz","type":"hysteria2","country":"🇺🇸US","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"hk.1010520.xyz","skip-cert-verify":false}
-- {"name":"Relay_🇺🇸US-🇮🇩ID_512","server":"id.1010520.xyz","type":"hysteria2","country":"🇺🇸US","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"id.1010520.xyz","skip-cert-verify":false}
-- {"name":"Relay_🇺🇸US-🇹🇭TH_513","server":"th.1010520.xyz","type":"hysteria2","country":"🇺🇸US","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"th.1010520.xyz","skip-cert-verify":false}
+- {"name":"","server":"ae.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"ae.1010520.xyz","skip-cert-verify":false}
+- {"name":"","server":"es.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"es.1010520.xyz","skip-cert-verify":false}
+- {"name":"","server":"hr.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"hr.1010520.xyz","skip-cert-verify":false}
+- {"name":"","server":"dk.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"dk.1010520.xyz","skip-cert-verify":false}
+- {"name":"","server":"th.1010520.xyz","type":"hysteria2","country":"🇺🇸US","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"th.1010520.xyz","skip-cert-verify":false}
+- {"name":"","server":"fr1.xiaoliyu.us","type":"hysteria2","country":"🇺🇸US","port":2052,"udp":true,"password":"547e05a0-2e59-4712-b9f9-dedb10293d83","sni":"fr1.xiaoliyu.us","skip-cert-verify":true}
