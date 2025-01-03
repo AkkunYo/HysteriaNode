@@ -1,2 +1,4 @@
 proxies:
-- {"name":"netflix_US","server":"phx-plus-1ddns.faforex.eu.org","type":"vless","port":18443,"udp":true,"uuid":"311faab5-5e89-4f41-b2a4-ca4452508cc6","network":"tcp","tls":true,"client-fingerprint":"safari","servername":"www.tesla.com","reality-opts":{"public-key":"8233FxCRw1a_aCJ8d1HwHBMD_fABUNNW7rsrFe3vK0s","short-id":"e6658462"}}
+- {"name":"netflix_KR","server":"a.522226.xyz","type":"trojan","country":"🇰🇷 KR","port":45101,"udp":true,"password":"xjN4xcuPGg","skip-cert-verify":true}
+- {"name":"netflix_US","server":"hms02opi.fxiaomi.sbs","type":"vmess","country":"🏁ZZ","port":443,"uuid":"6c168fcc-2231-4f3b-8c1e-f6391692df4a","alterId":0,"cipher":"auto","network":"ws","servername":"hms02.fxiaomi.sbs","http-opts":{},"h2-opts":{},"tls":true,"skip-cert-verify":true,"ws-opts":{"path":"/link","headers":{"HOST":"hms02.fxiaomi.sbs"}}}
+- {"name":"netflix_US","server":"23.166.88.183","type":"vmess","country":"🏁ZZ","port":22324,"uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":0,"cipher":"auto","network":"tcp","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
