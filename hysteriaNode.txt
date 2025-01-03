@@ -1,7 +1,7 @@
 proxies:
-- {"name":"Relay_🇸🇬SG-🇩🇪DE_478","server":"es.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"es.1010520.xyz","skip-cert-verify":false}
-- {"name":"Relay_🇸🇬SG-🇦🇪AE_479","server":"ae.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"ae.1010520.xyz","skip-cert-verify":false}
-- {"name":"Relay_🇸🇬SG-🇩🇰DK_480","server":"dk.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"dk.1010520.xyz","skip-cert-verify":false}
-- {"name":"Relay_🇸🇬SG-🇭🇷HR_481","server":"hr.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"hr.1010520.xyz","skip-cert-verify":false}
-- {"name":"Relay_🇺🇸US-🇹🇭TH_692","server":"th.1010520.xyz","type":"hysteria2","country":"🇺🇸US","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"th.1010520.xyz","skip-cert-verify":false}
-- {"name":"Relay_🇺🇸US-🇭🇰HK_693","server":"hk.1010520.xyz","type":"hysteria2","country":"🇺🇸US","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"hk.1010520.xyz","skip-cert-verify":false}
+- {"name":"Relay_🇸🇬SG-🇩🇪DE_534","server":"es.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"es.1010520.xyz","skip-cert-verify":false}
+- {"name":"Relay_🇸🇬SG-🇦🇪AE_535","server":"ae.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"ae.1010520.xyz","skip-cert-verify":false}
+- {"name":"Relay_🇸🇬SG-🇩🇰DK_536","server":"dk.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"dk.1010520.xyz","skip-cert-verify":false}
+- {"name":"Relay_🇸🇬SG-🇭🇷HR_537","server":"hr.1010520.xyz","type":"hysteria2","country":"🇸🇬SG","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"hr.1010520.xyz","skip-cert-verify":false}
+- {"name":"Relay_🇺🇸US-🇭🇰HK_764","server":"hk.1010520.xyz","type":"hysteria2","country":"🇺🇸US","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"hk.1010520.xyz","skip-cert-verify":false}
+- {"name":"Relay_🇺🇸US-🇹🇭TH_765","server":"th.1010520.xyz","type":"hysteria2","country":"🇺🇸US","port":1001,"udp":true,"password":"d5905353-0efe-47a0-90e8-276991af4c87","sni":"th.1010520.xyz","skip-cert-verify":false}
