@@ -1,2 +1,1 @@
 proxies:
-- {"name":"Relay_🇹🇼TW-🇭🇰HK_596","server":"tw3.akebi.cc","type":"hysteria2","country":"🇹🇼TW","port":2010,"udp":true,"password":"338b9800-fb4d-4934-8425-388f6d4342f5","sni":"hk02.akebi.cc","skip-cert-verify":true}
