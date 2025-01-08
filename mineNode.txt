@@ -1,1 +1,4 @@
 proxies:
+- {"name":"netflix_KR","server":"172.67.207.57","type":"trojan","country":"🇺🇸US","port":443,"udp":true,"password":"yaml777","sni":"yaml7.ggff.net","ws-opts":{"path":"/","headers":{"Host":"yaml7.ggff.net"}},"network":"ws"}
+- {"name":"disney_HK","server":"103.149.183.178","type":"vmess","country":"🏁 ZZ","port":27512,"uuid":"96d38683-0817-4d91-bffa-6f03df18d9dc","alterId":0,"cipher":"auto","network":"tcp","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
+- {"name":"disney_HK","server":"103.149.183.178","type":"vmess","country":"🏁 ZZ","port":54675,"uuid":"3a907956-f668-4e6b-ea03-0949f0c9c0a5","alterId":0,"cipher":"auto","network":"tcp","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
