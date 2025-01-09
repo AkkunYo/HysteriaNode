@@ -1,3 +1,1 @@
 proxies:
-- {"name":"disney_PL","server":"www.visa.com.hk","type":"vmess","country":"🏁ZZ","port":443,"uuid":"eca1ba8f-b25f-4d47-a31f-530e95a3d1f6","alterId":0,"cipher":"auto","network":"ws","servername":"00.likelike.us.kg","http-opts":{},"h2-opts":{},"tls":true,"skip-cert-verify":true,"ws-opts":{"path":"/serv00?ed=2048","headers":{"HOST":"00.likelike.us.kg"}}}
-- {"name":"disney_VN","server":"160.30.160.134","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"34ec6bdf-602c-4bbe-933a-5c0823524201","skip-cert-verify":true}
