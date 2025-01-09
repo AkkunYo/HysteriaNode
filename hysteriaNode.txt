@@ -1,2 +1,2 @@
 proxies:
-- {"name":"Relay_🇧🇷BR-🇧🇷BR_256","server":"br.taipeicity.news","type":"hysteria2","country":"🇧🇷BR","port":25888,"udp":true,"password":"0ed2ff21-d51d-4500-9197-66596897cdfa","sni":"https://bing.com","skip-cert-verify":true}
+- {"name":"Relay_🇸🇬SG-🇸🇬SG_520","server":"sgzl1.stardad.lol","type":"hysteria2","country":"🇸🇬SG","port":35781,"udp":true,"password":"0ed2ff21-d51d-4500-9197-66596897cdfa","sni":"https://bing.com","skip-cert-verify":true}
