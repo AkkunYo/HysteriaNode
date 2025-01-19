@@ -1,4 +1,5 @@
 proxies:
-- {"name":"netflix_KR","server":"146.56.112.110","type":"vmess","country":"🇰🇷 KR","port":8888,"uuid":"e7c302f3-90d6-42dd-9d7d-94a3683a3707","alterId":0,"cipher":"auto","network":"tcp","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
-- {"name":"disney_US","server":"198.2.218.100","type":"vmess","country":"🇺🇸 US","port":41400,"uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"cipher":"auto","network":"tcp","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
+- {"name":"disney_US","server":"38.33.19.71","type":"vmess","country":"🇺🇸US","port":41400,"uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"cipher":"auto","network":"tcp","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
+- {"name":"disney_KR","server":"172.67.5.14","type":"trojan","country":"🇺🇸US","port":8443,"udp":true,"password":"takaz?cuswo-r?_ojuMit@i=rAcrETl\u0026lb1fro?L1uP=@me=*NlWEbrlsP#t@d_8","sni":"quiz.vidio.com.vidio.us.kg","ws-opts":{"path":"/pyip=s10.serv00.com:15661","headers":{"Host":"quiz.vidio.com.vidio.us.kg"}},"fingerprint":"random","network":"ws"}
+- {"name":"disney_KR","server":"198.62.62.67","type":"trojan","country":"🇺🇸US","port":443,"udp":true,"password":"tg-fq521free","sni":"torjan.xn--xhq44j.eu.org","skip-cert-verify":true,"ws-opts":{"path":"/","headers":{"Host":"torjan.xn--xhq44j.eu.org"}},"network":"ws"}
 - {"name":"disney_HK","server":"103.149.183.178","type":"vmess","country":"🏁 ZZ","port":54675,"uuid":"3a907956-f668-4e6b-ea03-0949f0c9c0a5","alterId":0,"cipher":"auto","network":"tcp","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
