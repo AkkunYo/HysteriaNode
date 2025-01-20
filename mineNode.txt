@@ -1,1 +1,2 @@
 proxies:
+- {"name":"netflix_US","server":"us16.998998.best","type":"vmess","country":"🏁ZZ","port":443,"uuid":"11338fbe-71f7-47da-bc29-e74780eda3d3","alterId":0,"cipher":"auto","network":"ws","servername":"server9.998877.best","http-opts":{},"h2-opts":{},"tls":true,"skip-cert-verify":true,"ws-opts":{"path":"/drtyhiknu/kf/sgi","headers":{"HOST":"server9.998877.best"}}}
