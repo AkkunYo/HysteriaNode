@@ -1,2 +1,2 @@
 proxies:
-- {"name":"disney_KR","server":"108.165.152.14","type":"trojan","country":"🇺🇸US","port":2096,"udp":true,"password":"Aimer","sni":"amepo.ambercc.filegear-sg.me","skip-cert-verify":true,"ws-opts":{"path":"/","headers":{"Host":"amepo.ambercc.filegear-sg.me"}},"network":"ws"}
+- {"name":"netflix_KR","server":"104.16.58.162","type":"vless","port":80,"uuid":"a2056696-90fc-4e0a-b7c8-e85ce9f96d18","network":"ws","servername":"worker-winter-meadow-e881.test55.workers.dev","ws-opts":{"path":"/","headers":{"Host":"worker-winter-meadow-e881.test55.workers.dev"}}}
