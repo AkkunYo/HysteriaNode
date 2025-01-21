@@ -1,1 +1,2 @@
 proxies:
+- {"name":"disney_KR","server":"108.165.152.14","type":"trojan","country":"🇺🇸US","port":2096,"udp":true,"password":"Aimer","sni":"amepo.ambercc.filegear-sg.me","skip-cert-verify":true,"ws-opts":{"path":"/","headers":{"Host":"amepo.ambercc.filegear-sg.me"}},"network":"ws"}
