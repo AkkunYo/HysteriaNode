@@ -1,1 +1,4 @@
 proxies:
+- {"name":"🇫🇷FR_558","server":"51.158.148.53","type":"hysteria2","country":"🇫🇷FR","port":8080,"udp":true,"password":"a0605527-28e4-449c-80ee-5642cc16a8af","skip-cert-verify":true}
+- {"name":"Relay_🇯🇵JP-🇯🇵JP_777","server":"rb1.xiaofeixia.cyou","type":"hysteria2","country":"🇯🇵JP","port":2052,"udp":true,"password":"92dc14c5-e2b0-41bc-9827-1b687295c530","sni":"rb1.xiaofeixia.cyou","skip-cert-verify":true}
+- {"name":"Relay_🇯🇵JP-🇯🇵JP_778","server":"rb2.xiaofeixia.cyou","type":"hysteria2","country":"🇯🇵JP","port":2052,"udp":true,"password":"92dc14c5-e2b0-41bc-9827-1b687295c530","sni":"rb2.xiaofeixia.cyou","skip-cert-verify":true}
