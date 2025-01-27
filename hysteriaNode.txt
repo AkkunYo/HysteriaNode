@@ -1,2 +1,2 @@
 proxies:
-- {"name":"🇫🇷FR_630","server":"51.158.148.53","type":"hysteria2","country":"🇫🇷FR","port":8080,"udp":true,"password":"a0605527-28e4-449c-80ee-5642cc16a8af","skip-cert-verify":true}
+- {"name":"🇫🇷FR_812","server":"51.158.148.53","type":"hysteria2","country":"🇫🇷FR","port":8080,"udp":true,"password":"a0605527-28e4-449c-80ee-5642cc16a8af","skip-cert-verify":true}
