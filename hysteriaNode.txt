@@ -1,7 +1,7 @@
 proxies:
-- {"name":"Relay_🇧🇷BR-🇧🇷BR_523","server":"br.huafei888.site","type":"hysteria2","country":"🇧🇷BR","port":80,"udp":true,"password":"a0605527-28e4-449c-80ee-5642cc16a8af","skip-cert-verify":true}
-- {"name":"🇫🇷FR_612","server":"51.158.148.53","type":"hysteria2","country":"🇫🇷FR","port":8080,"udp":true,"password":"a0605527-28e4-449c-80ee-5642cc16a8af","skip-cert-verify":true}
-- {"name":"Relay_🇭🇰HK-🇭🇰HK_697","server":"hhhk.naisicloud.xyz","type":"hysteria2","country":"🇭🇰HK","port":35600,"udp":true,"password":"d339c345-6514-4f6b-8c44-30dd29c74b39","sni":"hhhk.naisicloud.xyz","skip-cert-verify":true}
-- {"name":"🇭🇰HK_698","server":"203.23.128.167","type":"hysteria2","country":"🇭🇰HK","port":80,"udp":true,"password":"a0605527-28e4-449c-80ee-5642cc16a8af","skip-cert-verify":true}
-- {"name":"Relay_🇯🇵JP-🇯🇵JP_727","server":"rb1.xiaofeixia.cyou","type":"hysteria2","country":"🇯🇵JP","port":2052,"udp":true,"password":"92dc14c5-e2b0-41bc-9827-1b687295c530","sni":"rb1.xiaofeixia.cyou","skip-cert-verify":true}
-- {"name":"Relay_🇯🇵JP-🇯🇵JP_728","server":"rb2.xiaofeixia.cyou","type":"hysteria2","country":"🇯🇵JP","port":2052,"udp":true,"password":"92dc14c5-e2b0-41bc-9827-1b687295c530","sni":"rb2.xiaofeixia.cyou","skip-cert-verify":true}
+- {"name":"Relay_🇧🇷BR-🇧🇷BR_495","server":"br.huafei888.site","type":"hysteria2","country":"🇧🇷BR","port":80,"udp":true,"password":"a0605527-28e4-449c-80ee-5642cc16a8af","skip-cert-verify":true}
+- {"name":"🇭🇰HK_649","server":"62.72.163.215","type":"hysteria2","country":"🇭🇰HK","port":80,"udp":true,"password":"a0605527-28e4-449c-80ee-5642cc16a8af","skip-cert-verify":true}
+- {"name":"Relay_🇭🇰HK-🇭🇰HK_650","server":"hhhk.naisicloud.xyz","type":"hysteria2","country":"🇭🇰HK","port":35600,"udp":true,"password":"d339c345-6514-4f6b-8c44-30dd29c74b39","sni":"hhhk.naisicloud.xyz","skip-cert-verify":true}
+- {"name":"disney_SG","server":"203.23.128.167","type":"hysteria2","country":"🇭🇰HK","port":80,"udp":true,"password":"a0605527-28e4-449c-80ee-5642cc16a8af","skip-cert-verify":true}
+- {"name":"Relay_🇯🇵JP-🇯🇵JP_679","server":"rb2.xiaofeixia.cyou","type":"hysteria2","country":"🇯🇵JP","port":2052,"udp":true,"password":"92dc14c5-e2b0-41bc-9827-1b687295c530","sni":"rb2.xiaofeixia.cyou","skip-cert-verify":true}
+- {"name":"Relay_🇯🇵JP-🇯🇵JP_680","server":"rb1.xiaofeixia.cyou","type":"hysteria2","country":"🇯🇵JP","port":2052,"udp":true,"password":"92dc14c5-e2b0-41bc-9827-1b687295c530","sni":"rb1.xiaofeixia.cyou","skip-cert-verify":true}
