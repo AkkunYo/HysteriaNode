@@ -1,4 +1,5 @@
 proxies:
-- {"name":"Relay_🇧🇷BR-🇧🇷BR_783","server":"br.huafei888.site","type":"hysteria2","country":"🇧🇷BR","port":80,"udp":true,"password":"a0605527-28e4-449c-80ee-5642cc16a8af","skip-cert-verify":true}
-- {"name":"🇫🇷FR_847","server":"51.158.148.53","type":"hysteria2","country":"🇫🇷FR","port":8080,"udp":true,"password":"a0605527-28e4-449c-80ee-5642cc16a8af","skip-cert-verify":true}
+- {"name":"Relay_🇧🇷BR-🇧🇷BR_1135","server":"br.huafei888.site","type":"hysteria2","country":"🇧🇷BR","port":80,"udp":true,"password":"a0605527-28e4-449c-80ee-5642cc16a8af","skip-cert-verify":true}
+- {"name":"🇫🇷FR_1223","server":"51.158.148.53","type":"hysteria2","country":"🇫🇷FR","port":8080,"udp":true,"password":"a0605527-28e4-449c-80ee-5642cc16a8af","skip-cert-verify":true}
 - {"name":"disney_HK","server":"203.23.128.167","type":"hysteria2","country":"🇭🇰HK","port":80,"udp":true,"password":"a0605527-28e4-449c-80ee-5642cc16a8af","skip-cert-verify":true}
+- {"name":"disney_HK","server":"62.72.163.215","type":"hysteria2","country":"🇭🇰HK","port":80,"udp":true,"password":"a0605527-28e4-449c-80ee-5642cc16a8af","skip-cert-verify":true}
