@@ -1,2 +1,3 @@
 proxies:
-- {"name":"","server":"195.154.33.70","type":"hysteria2","country":"🇫🇷FR","port":13861,"udp":true,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"Relay_🇧🇷BR-🇧🇷BR_523","server":"br.huafei888.site","type":"hysteria2","country":"🇧🇷BR","port":80,"udp":true,"password":"a0605527-28e4-449c-80ee-5642cc16a8af","skip-cert-verify":true}
+- {"name":"Pool_🇫🇷FR_586","server":"195.154.33.70","type":"hysteria2","country":"🇫🇷FR","port":13861,"udp":true,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
