@@ -1,3 +1,2 @@
 proxies:
-- {"name":"netflix_US","server":"s2.db-link01.top","type":"vmess","port":2082,"uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"cipher":"auto","network":"ws","http-opts":{},"h2-opts":{},"skip-cert-verify":true,"ws-opts":{"path":"/dabai.in104.19.196.1","headers":{"Host":"100-178-162-73.s2.db-link01.top"}}}
-- {"name":"netflix_US","server":"104.19.48.236","type":"vmess","country":"🏁ZZ","port":2052,"uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"cipher":"auto","network":"ws","servername":"100-41-36-35.s2.db-link01.top","http-opts":{},"h2-opts":{},"skip-cert-verify":true,"ws-opts":{"path":"/dabai.in172.67.71.198","headers":{"HOST":"100-41-36-35.s2.db-link01.top"}}}
+- {"name":"disney_US","server":"107.148.207.249","type":"vmess","country":"🇺🇸 US","port":48712,"uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"cipher":"auto","network":"tcp","servername":"appsvs.shop","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
