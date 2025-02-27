@@ -1,2 +1,1 @@
 proxies:
-- {"name":"netflix_JP","server":"152.69.197.60","type":"vmess","port":1069,"udp":true,"uuid":"ac8e26fe-8150-4b60-ae64-82fc77eba2cf","alterId":0,"cipher":"auto","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
