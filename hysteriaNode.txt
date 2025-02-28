@@ -1,2 +1,2 @@
 proxies:
-- {"name":"Pool_🇫🇷FR_269","server":"195.154.33.70","type":"hysteria2","country":"🇫🇷FR","port":13861,"udp":true,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"Pool_🇫🇷FR_255","server":"195.154.33.70","type":"hysteria2","country":"🇫🇷FR","port":13861,"udp":true,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
