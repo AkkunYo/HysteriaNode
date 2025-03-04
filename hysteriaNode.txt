@@ -1,3 +1,3 @@
 proxies:
-- {"name":"Relay_🇯🇵JP-🇯🇵JP_310","server":"yiyuankuailian-jp.jiumaojiu.org","type":"hysteria2","country":"🇯🇵JP","port":21050,"udp":true,"password":"15261735-2168-42f8-b3ad-91ec82a58b5a","skip-cert-verify":false}
-- {"name":"🇵🇱PL_394","server":"31.186.87.211","type":"hysteria2","country":"🇵🇱PL","port":4029,"udp":true,"password":"be758973-186d-46fe-8aa4-e017134fa291","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"Relay_🇯🇵JP-🇯🇵JP_287","server":"yiyuankuailian-jp.jiumaojiu.org","type":"hysteria2","country":"🇯🇵JP","port":21050,"udp":true,"password":"15261735-2168-42f8-b3ad-91ec82a58b5a","skip-cert-verify":false}
+- {"name":"🇵🇱PL_352","server":"31.186.87.211","type":"hysteria2","country":"🇵🇱PL","port":4029,"udp":true,"password":"be758973-186d-46fe-8aa4-e017134fa291","sni":"www.bing.com","skip-cert-verify":true}
