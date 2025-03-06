@@ -1,1 +1,4 @@
 proxies:
+- {"name":"disney_JP","server":"jp006.421421.xyz","type":"trojan","country":"🏁 ZZ","port":20230,"udp":true,"password":"90e7b2f3-fb61-4fd7-959f-176e9a51d8d7","skip-cert-verify":true}
+- {"name":"disney_KR","server":"japan.com","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"bpb-trojan","sni":"zamim340.ggff.net","ws-opts":{"path":"/tr?ed=2560","headers":{"Host":"zamim340.ggff.net"}},"network":"ws"}
+- {"name":"disney_KR","server":"visa.cn","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"bpb-trojan","sni":"zamim340.ggff.net","ws-opts":{"path":"/tr?ed=2560","headers":{"Host":"zamim340.ggff.net"}},"network":"ws"}
