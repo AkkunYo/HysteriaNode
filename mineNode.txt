@@ -1,2 +1,2 @@
 proxies:
-- {"name":"netflix_US","server":"104.17.213.241","type":"vmess","country":"🏁ZZ","port":8080,"uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"cipher":"auto","network":"ws","servername":"100-119-151-248.s2.db-link02.top","http-opts":{},"h2-opts":{},"skip-cert-verify":true,"ws-opts":{"path":"/dabai.in172.64.41.150","headers":{"HOST":"100-119-151-248.s2.db-link02.top"}}}
+- {"name":"netflix_US","server":"31.43.179.105","type":"vmess","country":"🇰🇿KZ","port":8443,"uuid":"e88b85c6-93b4-47f6-b3fb-2c55dcb1289f","alterId":0,"cipher":"auto","network":"ws","servername":"lax2.ibgfw.top","http-opts":{},"h2-opts":{},"tls":true,"skip-cert-verify":true,"ws-opts":{"path":"/dyajvws","headers":{"HOST":"lax2.ibgfw.top"}}}
