@@ -1,4 +1,1 @@
 proxies:
-- {"name":"netflix_US","server":"2.58.87.221","type":"vmess","country":"🇺🇸US","port":46628,"uuid":"f6ba9e5a-711c-496f-be60-ac5464dec2b8","alterId":0,"cipher":"auto","network":"tcp","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
-- {"name":"netflix_KR","server":"146.56.112.110","type":"vmess","country":"🏁 ZZ","port":8888,"uuid":"e7c302f3-90d6-42dd-9d7d-94a3683a3707","alterId":0,"cipher":"auto","network":"tcp","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
-- {"name":"netflix_US","server":"104.17.148.22","type":"vmess","country":"🏁ZZ","port":443,"uuid":"de94cc0a-0592-4969-b1fc-97ea8f0ea0b3","alterId":0,"cipher":"auto","network":"ws","servername":"divine-salad-41fb.mostafasafair.workers.dev","http-opts":{},"h2-opts":{},"tls":true,"skip-cert-verify":true,"ws-opts":{"path":"/us.insbot.filegear-sg.me/aa","headers":{"HOST":"divine-salad-41fb.mostafasafair.workers.dev"}}}
