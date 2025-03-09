@@ -1,3 +1,1 @@
 proxies:
-- {"name":"netflix_US","server":"68.168.31.184","type":"vmess","country":"🇺🇸US","port":26924,"uuid":"9f8b16a8-369d-4b79-af82-201c089dadd2","alterId":0,"cipher":"auto","network":"tcp","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
-- {"name":"netflix_US","server":"s4.db-link02.top","type":"vmess","country":"🏁ZZ","port":2052,"uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":0,"cipher":"auto","network":"ws","servername":"100-145-217-186.s4.db-link02.top","http-opts":{},"h2-opts":{},"skip-cert-verify":true,"ws-opts":{"path":"/dabai.in172.64.8.26","headers":{"HOST":"100-145-217-186.s4.db-link02.top"}}}
