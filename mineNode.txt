@@ -1,2 +1,1 @@
 proxies:
-- {"name":"netflix_US","server":"107.148.207.249","type":"vmess","country":"🇺🇸 US","port":48712,"uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"cipher":"auto","network":"tcp","servername":"appsvs.shop","http-opts":{},"h2-opts":{},"skip-cert-verify":true}

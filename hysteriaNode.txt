@@ -1,2 +1,2 @@
 proxies:
-- {"name":"🇵🇱PL_431","server":"31.186.87.211","type":"hysteria2","country":"🇵🇱PL","port":4029,"udp":true,"password":"be758973-186d-46fe-8aa4-e017134fa291","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"🇳🇱NL_355","server":"weilai-nl.sanguayun.com","type":"hysteria2","country":"🇳🇱NL","port":443,"udp":true,"password":"0e57e0a8-939e-478d-8513-63b70e961e21","sni":"weilai-nl.sanguayun.com","skip-cert-verify":false}
