@@ -1,2 +1,1 @@
 proxies:
-- {"name":"netflix_US","server":"192.9.132.79","type":"trojan","country":"🇺🇸US","port":443,"udp":true,"password":"696cfe79","sni":"sje.5216818.xyz","skip-cert-verify":true}
