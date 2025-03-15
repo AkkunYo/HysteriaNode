@@ -1,1 +1,3 @@
 proxies:
+- {"name":"netflix_US","server":"104.18.149.76","type":"vmess","country":"🏁ZZ","port":443,"uuid":"de94cc0a-0592-4969-b1fc-97ea8f0ea0b3","alterId":0,"cipher":"auto","network":"ws","servername":"us.kkp.me.eu.org","http-opts":{},"h2-opts":{},"tls":true,"skip-cert-verify":true,"ws-opts":{"path":"/aa","headers":{"HOST":"us.kkp.me.eu.org"}}}
+- {"name":"netflix_US","server":"104.18.149.75","type":"vmess","country":"🏁ZZ","port":443,"uuid":"de94cc0a-0592-4969-b1fc-97ea8f0ea0b3","alterId":0,"cipher":"auto","network":"ws","servername":"us.insbot.filegear-sg.me","http-opts":{},"h2-opts":{},"tls":true,"skip-cert-verify":true,"ws-opts":{"path":"/aa","headers":{"HOST":"us.insbot.filegear-sg.me"}}}
