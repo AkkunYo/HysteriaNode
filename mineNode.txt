@@ -1,2 +1,2 @@
 proxies:
-- {"name":"disney_KR","server":"visa.cn","type":"trojan","country":"🏁ZZ","port":443,"udp":true,"password":"bpb-trojan","sni":"zamim340.ggff.net","ws-opts":{"path":"/tr?ed=2560","headers":{"Host":"zamim340.ggff.net"}},"network":"ws"}
+- {"name":"netflix_US","server":"141.11.203.194","type":"vmess","country":"🇺🇸US","port":8443,"uuid":"e88b85c6-93b4-47f6-b3fb-2c55dcb1289f","alterId":0,"cipher":"auto","network":"ws","servername":"lax2.ibgfw.top","http-opts":{},"h2-opts":{},"tls":true,"skip-cert-verify":true,"ws-opts":{"path":"/dyajvws","headers":{"HOST":"lax2.ibgfw.top"}}}
