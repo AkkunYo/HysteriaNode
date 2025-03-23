@@ -1,1 +1,3 @@
 proxies:
+- {"name":"netflix_US","server":"77.83.254.62","type":"vmess","country":"🇺🇸US","port":58923,"uuid":"19497b99-0694-4d7c-cf2d-f7a9d30bffa9","alterId":0,"cipher":"auto","network":"tcp","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
+- {"name":"netflix_US","server":"69.5.54.47","type":"trojan","country":"🇺🇸US","port":443,"udp":true,"password":"ZCR3pplzBEDwYy3w3e8X685aCxFCgaIeYSxSROa97KxDxaC328lD0T4z7SynagqSXA6cR","sni":"stodewrn.homeofbrave.net","skip-cert-verify":true}
