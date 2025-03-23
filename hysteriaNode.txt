@@ -1,4 +1,4 @@
 proxies:
-- {"name":"Relay_🇩🇪DE-🇩🇪DE_218","server":"shy38.zqjc.cloud","type":"hysteria2","country":"🇩🇪DE","port":55215,"udp":true,"password":"867f512f-93d2-4344-853c-50965de9b103","sni":"shy38.zqjc.cloud","skip-cert-verify":false}
+- {"name":"Relay_🇩🇪DE-🇩🇪DE_240","server":"shy38.zqjc.cloud","type":"hysteria2","country":"🇩🇪DE","port":55215,"udp":true,"password":"867f512f-93d2-4344-853c-50965de9b103","sni":"shy38.zqjc.cloud","skip-cert-verify":false}
 - {"name":"Relay_🇳🇱NL-🇳🇱NL_451","server":"shy42.zqjc.cloud","type":"hysteria2","country":"🇳🇱NL","port":55215,"udp":true,"password":"867f512f-93d2-4344-853c-50965de9b103","sni":"shy42.zqjc.cloud","skip-cert-verify":false}
 - {"name":"🇵🇱PL_469","server":"31.186.87.211","type":"hysteria2","country":"🇵🇱PL","port":4029,"udp":true,"password":"be758973-186d-46fe-8aa4-e017134fa291","sni":"www.bing.com","skip-cert-verify":true}

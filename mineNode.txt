@@ -1,3 +1,1 @@
 proxies:
-- {"name":"netflix_US","server":"38.99.82.193","type":"vmess","country":"🇺🇸 US","port":443,"uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"cipher":"auto","network":"ws","servername":"tilebani.com","http-opts":{},"h2-opts":{},"tls":true,"skip-cert-verify":true,"ws-opts":{"path":"/linkvws","headers":{"HOST":"tilebani.com"}}}
-- {"name":"netflix_SG","server":"172.67.213.110","type":"vmess","country":"🇺🇸US","port":443,"uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":0,"cipher":"auto","network":"ws","servername":"sgfqkqmltcy.site","http-opts":{},"h2-opts":{},"tls":true,"skip-cert-verify":true,"ws-opts":{"path":"/rbqqvws","headers":{"HOST":"sgfqkqmltcy.site"}}}
