@@ -1,3 +1,3 @@
 proxies:
-- {"name":"🇵🇱PL_415","server":"31.186.87.211","type":"hysteria2","country":"🇵🇱PL","port":4029,"udp":true,"password":"be758973-186d-46fe-8aa4-e017134fa291","sni":"www.bing.com","skip-cert-verify":true}
-- {"name":"🇺🇸US_556","server":"107.167.18.123","type":"hysteria2","country":"🇺🇸US","port":443,"udp":true,"password":"0aed82ca-fd08-11ef-8cf9-f23c93136cb3","sni":"06a68208-st69s0-su9bm5-1phl.la.shifen.uk","skip-cert-verify":true}
+- {"name":"🇵🇱PL_390","server":"31.186.87.211","type":"hysteria2","country":"🇵🇱PL","port":4029,"udp":true,"password":"be758973-186d-46fe-8aa4-e017134fa291","sni":"www.bing.com","skip-cert-verify":true}
+- {"name":"","server":"107.167.18.123","type":"hysteria2","country":"🇺🇸US","port":443,"udp":true,"password":"0aed82ca-fd08-11ef-8cf9-f23c93136cb3","sni":"06a68208-st69s0-su9bm5-1phl.la.shifen.uk","skip-cert-verify":true}
