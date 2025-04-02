@@ -1,2 +1,1 @@
 proxies:
-- {"name":"🇺🇸US_520","server":"107.167.18.123","type":"hysteria2","country":"🇺🇸US","port":443,"udp":true,"password":"0aed82ca-fd08-11ef-8cf9-f23c93136cb3","sni":"06a68208-st69s0-su9bm5-1phl.la.shifen.uk","skip-cert-verify":true}
