@@ -6,7 +6,7 @@
 
 ## Hysteria订阅链接(Nekoray/Nekobox可直接导入订阅使用)
 
-### 仅Hysteria节点
+### 仅Hysteria[2]节点
 - 源地址：[https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/hysteriaNode.txt](https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/hysteriaNode.txt)
 - 加速地址：[https://ghproxy.cfd/https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/hysteriaNode.txt](https://ghproxy.cfd/https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/hysteriaNode.txt)
 
