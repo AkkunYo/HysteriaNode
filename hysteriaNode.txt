@@ -1,2 +1,1 @@
 proxies:
-- {"name":"Relay_🇷🇺RU-🇷🇺RU_254","server":"hy2.694463.xyz","type":"hysteria2","country":"🇷🇺RU","port":30033,"udp":true,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
