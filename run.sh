@@ -1,7 +1,7 @@
 #!/bin/bash
 
 subscribeUrl="https://pp.dcd.one/clash/proxies?speed=15,30&type=hysteria2,hysteria,vless,vmess,trojan"
-subscribeUrl_net="https://pub-api-1.bianyuan.xyz/sub?target=clash&url=https%3A%2F%2Fsub.0664.net%2Fclash%2Fproxies%3Fspeed%3D10%26nc%3DCN%26type%3Dvmess%2Ctrojan%7Chttps%3A%2F%2Fpp.dcd.one%2Fclash%2Fproxies%3Fspeed%3D10%26nc%3DCN%26type%3Dhysteria2%2Chysteria%2Cvless%2Cvmess%2Ctrojan%7Chttps%3A%2F%2Fraw.kkgithub.com%2Ffree18%2Fv2ray%2Frefs%2Fheads%2Fmain%2Fv.txt%7Chttps%3A%2F%2Fraw.kkgithub.com%2Fchengaopan%2FAutoMergePublicNodes%2Frefs%2Fheads%2Fmaster%2Flist.meta.yml&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2F9bingyin%2Froutes-info%2Frefs%2Fheads%2Fmain%2Fprofile_min.ini&filename=sub0664.yaml&emoji=true&list=true&scv=true&fdn=true&expand=true&sort=true&new_name=true"
+subscribeUrl_net="https://pub-api-1.bianyuan.xyz/sub?target=clash&url=https%3A%2F%2Fsub.0664.net%2Fclash%2Fproxies%3Fspeed%3D10%26nc%3DCN%26type%3Dvmess%2Ctrojan%7Chttps%3A%2F%2Fraw.kkgithub.com%2Ffree18%2Fv2ray%2Frefs%2Fheads%2Fmain%2Fv.txt%7Chttps%3A%2F%2Fraw.kkgithub.com%2Fchengaopan%2FAutoMergePublicNodes%2Frefs%2Fheads%2Fmaster%2Flist.meta.yml&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2F9bingyin%2Froutes-info%2Frefs%2Fheads%2Fmain%2Fprofile_min.ini&filename=sub0664.yaml&emoji=true&list=true&scv=true&fdn=true&expand=true&sort=true&new_name=true"
 subscribeUrl_hy="https://pp.dcd.one/clash/proxies?speed=15,30&type=hysteria2,hysteria"
 subscribeUrl_me="https://pp.dcd.one/clash/proxies?speed=15,30&type=hysteria2,hysteria,vless,vmess,trojan"
 subscribeUrl_me_bak="https://pp.dcd.one/clash/proxies?speed=15,30&type=hysteria2,hysteria,vless,vmess,trojan&stream=netflix,disney"
