@@ -13,7 +13,7 @@ sed -i '/"server":"NULL"/d' ./subscribe.txt
 
 echo "------------------- subscribe from net -------------------"
 
-wget $subscribeUrl_hy -O ./subscribe_net.txt
+wget $subscribeUrl_net -O ./subscribe_net.txt
 sed -i '/"name":"NULL"/d' ./subscribe_net.txt
 sed -i '/"server":"NULL"/d' ./subscribe_net.txt
 
