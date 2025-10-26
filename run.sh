@@ -1,7 +1,7 @@
 #!/bin/bash
 
 subscribeUrl="https://pp.dcd.one/clash/proxies?speed=15,30&type=hysteria2,hysteria,vless,vmess,trojan"
-subscribeUrl_net="https://v1.mk/0rcF0Hl"
+subscribeUrl_net="https://v1.mk/keN5oxQ"
 subscribeUrl_hy="https://pp.dcd.one/clash/proxies?speed=15,30&type=hysteria2,hysteria"
 subscribeUrl_me="https://pp.dcd.one/clash/proxies?speed=15,30&type=hysteria2,hysteria,vless,vmess,trojan"
 subscribeUrl_me_bak="https://pp.dcd.one/clash/proxies?speed=15,30&type=hysteria2,hysteria,vless,vmess,trojan&stream=netflix,disney"
