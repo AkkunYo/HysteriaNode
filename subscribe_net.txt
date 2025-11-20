@@ -1,0 +1,48 @@
+proxies:
+  - {name: _13, server: 51.79.102.253, port: 80, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2}}
+  - {name: Relay_🇦🇹AT-🇺🇸US_16, server: 46.29.34.205, port: 59956, type: vmess, uuid: ca0c9937-58a6-44ea-9111-a6abac267d0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: Relay_🇦🇹AT-🇺🇸US_17, server: 46.29.34.205, port: 22947, type: vmess, uuid: d7291fc4-1702-4826-8fe1-ab301b1c8f82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: Relay_🇦🇹AT-🇺🇸US_18, server: 46.29.34.205, port: 41346, type: vmess, uuid: 6063ad0d-26fe-46a7-bf78-dfea71afde9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: DE_48, server: 5.231.56.98, port: 3721, type: vmess, uuid: 5f2f0765-f331-4d1e-8560-d2fb533dd6fe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: DE_49, server: 62.146.235.193, port: 28011, type: vmess, uuid: cfc5a87f-3c13-4e25-b556-176cdd6b5c6a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: GB_58, server: 82.197.69.131, port: 39674, type: vmess, uuid: 5a89386a-827b-4f54-8778-2f1b5122c6ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: HK_61, server: 8.210.134.183, port: 3721, type: vmess, uuid: e72f5c6b-220f-40b3-a115-2d81473458cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: HK_62, server: 103.243.26.209, port: 8080, type: vmess, uuid: bc7e6840-ab83-4570-eaae-d9aff1e2da09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: HK_63, server: 103.243.26.209, port: 10086, type: vmess, uuid: c5ec2e3f-c058-46a8-a148-1831824bb94b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: HK_64, server: 47.238.71.166, port: 3721, type: vmess, uuid: 0b3da6e0-2a41-49e4-8bee-cfa705d448fc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: HK_65, server: 47.238.71.166, port: 4728, type: vmess, uuid: 001a840d-6472-4374-95d7-a15a016a26cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: disney_SG, server: 165.154.195.38, port: 35034, type: vmess, uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: HK_70, server: 58.152.110.20, port: 443, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: false}
+  - {name: HK_71, server: 58.152.26.173, port: 443, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: false}
+  - {name: HK_72, server: 219.79.165.55, port: 443, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: false}
+  - {name: 🇭🇰 Relay_🇭🇰HK-🇺🇸US_73, server: 16.162.87.79, port: 2173, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: false}
+  - {name: 🇭🇰 Relay_🇭🇰HK-🇸🇬SG_74, server: 116.49.237.130, port: 2673, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: false}
+  - {name: IR_81, server: 37.202.200.19, port: 25010, type: trojan, password: 09e71e3b-1f9f-44ab-9a10-02e0e10e2f05, sni: 37.202.200.19, skip-cert-verify: false}
+  - {name: JP_84, server: 45.32.45.45, port: 14760, type: vmess, uuid: dbf7a6e4-d518-4f9b-a55e-27ef892ffac1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇸🇬SG_85, server: 202.181.103.246, port: 5553, type: trojan, password: dd2f25b4c70689de8bc0f7fa9d6591cb, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_86, server: 160.16.85.138, port: 4492, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_87, server: 160.16.117.182, port: 1334, type: trojan, password: dd2f25b4c70689de8bc0f7fa9d6591cb, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_88, server: 160.16.150.76, port: 3093, type: trojan, password: dd2f25b4c70689de8bc0f7fa9d6591cb, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇸🇬SG_89, server: 153.121.73.102, port: 127, type: trojan, password: dd2f25b4c70689de8bc0f7fa9d6591cb, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_90, server: 153.121.65.212, port: 5156, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇳🇱NL_91, server: 160.16.117.182, port: 2760, type: trojan, password: dd2f25b4c70689de8bc0f7fa9d6591cb, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇸🇬SG_92, server: 160.16.240.91, port: 5553, type: trojan, password: dd2f25b4c70689de8bc0f7fa9d6591cb, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇸🇬SG_93, server: 160.16.116.227, port: 127, type: trojan, password: dd2f25b4c70689de8bc0f7fa9d6591cb, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_94, server: 160.16.240.91, port: 1334, type: trojan, password: dd2f25b4c70689de8bc0f7fa9d6591cb, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_95, server: 160.16.131.243, port: 1334, type: trojan, password: dd2f25b4c70689de8bc0f7fa9d6591cb, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇳🇱NL_96, server: 153.121.76.9, port: 4054, type: trojan, password: dd2f25b4c70689de8bc0f7fa9d6591cb, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_97, server: 202.181.103.246, port: 1334, type: trojan, password: dd2f25b4c70689de8bc0f7fa9d6591cb, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_98, server: 160.16.227.93, port: 1924, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_99, server: 160.16.117.182, port: 3169, type: trojan, password: dd2f25b4c70689de8bc0f7fa9d6591cb, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_100, server: 153.121.53.187, port: 2145, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: false}
+  - {name: KR_102, server: 152.70.92.69, port: 80, type: vmess, uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: KR_104, server: 146.56.112.110, port: 8888, type: vmess, uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 Relay_🇺🇸 US-🇺🇸US_239, server: usiys.southbyte.xyz, port: 5897, type: trojan, password: fg20mtCFHy, skip-cert-verify: false}
+  - {name: US_245, server: 47.239.252.30, port: 8849, type: vmess, uuid: 4244267d-52b3-4ae2-9926-da2b07de889b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/arki?ed=2048"}}
+  - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_246, server: 69.84.182.108, port: 2053, type: vmess, uuid: 559b90ec-b620-4255-80a5-c64b8d3ffe6c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: cdn-node-oss-76.paofu.de, network: ws, ws-opts: {path: /profile/sharenode}}
+  - {name: 🇺🇸 Relay_🇺🇸US-🇭🇰HK_249, server: 154.21.201.83, port: 443, type: vmess, uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hk.nbee.pp.ua, network: ws, ws-opts: {path: /aa}}
+  - {name: US_252, server: 47.239.102.115, port: 5361, type: vmess, uuid: a053682e-9373-4fe7-8277-1de3f8d1eacd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/arki?ed=2048"}}
+  - {name: US_254, server: 38.180.249.177, port: 8443, type: trojan, password: installshield, sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, skip-cert-verify: false}
+  - {name: US_255, server: 38.180.191.251, port: 443, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: false}
+  - {name: ZZ_257, server: 103.197.185.149, port: 23806, type: vmess, uuid: 841550b4-d4bf-4e3e-de9c-cff7baa47df3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: "sEscPBiAD9K$&@79", protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
