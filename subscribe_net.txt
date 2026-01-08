@@ -1,36 +1,33 @@
 proxies:
+  - {name: _06, server: 51.79.102.253, port: 80, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2, headers: {Host: 51.79.102.253}}}
   - {name: _07, server: 15.235.41.200, port: 80, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2, headers: {Host: 15.235.41.200}}}
-  - {name: Relay_-🇳🇱NL_08, server: 160.16.144.208, port: 3901, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: AT_09, server: 89.31.120.192, port: 443, type: vmess, uuid: 44537595-9ccc-4b83-8936-5f9ad3229019, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: BE_11, server: 57.129.132.223, port: 80, type: vmess, uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: google.com, network: ws, ws-opts: {path: /vmess/}}
-  - {name: BE_12, server: 57.129.24.124, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linkvws}}
-  - {name: CA_17, server: 51.79.103.76, port: 80, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2}}
-  - {name: 🇬🇧 Relay_🇬🇧GB-🇺🇸US_42, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_47, server: e6744b60-t70f40-t83wx3-19xg1.hkt.gotochinatown.net, port: 80, type: vmess, uuid: e1dee7c0-cff7-11eb-a8bf-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: e6744b60-t70f40-t83wx3-19xg1.hkt.gotochinatown.net}}}
+  - {name: Relay_-🇳🇱NL_08, server: 160.16.68.250, port: 3901, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: Relay_-🇯🇵JP_09, server: 160.16.138.24, port: 4006, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: Relay_-🇯🇵JP_10, server: 160.16.138.24, port: 1933, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: Relay_-🇳🇱NL_11, server: 160.16.138.24, port: 1281, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: _12, server: 198.57.27.27, port: 12990, type: trojan, password: 6pRjKQJ0CWyFtG.9, skip-cert-verify: false}
+  - {name: Relay_-🇳🇱NL_13, server: 160.16.138.24, port: 3901, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: Relay_-🇳🇱NL_14, server: 160.16.68.250, port: 1281, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: AT_16, server: 89.31.120.192, port: 443, type: vmess, uuid: 44537595-9ccc-4b83-8936-5f9ad3229019, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: BE_18, server: 57.128.189.240, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linkvws}}
+  - {name: CA_25, server: 15.235.85.147, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: pelang.org, network: ws, ws-opts: {path: linkvws}}
+  - {name: HK_61, server: 8.210.184.105, port: 40374, type: vmess, uuid: 36b76373-7a4f-4669-9113-7d247bcf2704, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
   - {name: disney_SG, server: 165.154.195.38, port: 35034, type: vmess, uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 Relay_🇭🇰HK-🇺🇸US_54, server: v24.hdacd.com, port: 30824, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: HK_56, server: 8.210.184.105, port: 40374, type: vmess, uuid: 36b76373-7a4f-4669-9113-7d247bcf2704, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇭🇰 Relay_🇭🇰HK-🇺🇸US_57, server: v4.hdacd.com, port: 30804, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: HK_58, server: 47.242.225.242, port: 443, type: trojan, password: 92690597d6298061459918a371e8d77d, sni: hezijiasuqi.com, skip-cert-verify: false}
-  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_67, server: 160.16.196.59, port: 4006, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_68, server: 202.181.103.246, port: 4006, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_69, server: 202.181.103.246, port: 1933, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇯🇵 Relay_🇯🇵JP-🇳🇱NL_70, server: 160.16.196.59, port: 3901, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇯🇵 Relay_🇯🇵JP-🇳🇱NL_71, server: 160.16.63.16, port: 1281, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇯🇵 Relay_🇯🇵JP-🇳🇱NL_72, server: 202.181.103.246, port: 1281, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_73, server: 160.16.144.208, port: 1933, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_74, server: 160.16.196.59, port: 1933, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇯🇵 Relay_🇯🇵JP-🇳🇱NL_75, server: 160.16.144.208, port: 1281, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇯🇵 Relay_🇯🇵JP-🇳🇱NL_76, server: 160.16.63.16, port: 3901, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_77, server: 160.16.144.208, port: 4006, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: KR_81, server: 152.70.92.69, port: 80, type: vmess, uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: disney_HK, server: 45.136.12.37, port: 20521, type: vmess, uuid: 090d0bd9-f9c4-4c3b-8aae-ffa678765935, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: HK_69, server: 47.242.225.242, port: 443, type: trojan, password: 92690597d6298061459918a371e8d77d, sni: hezijiasuqi.com, skip-cert-verify: false}
+  - {name: HK_70, server: 58.152.18.48, port: 443, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_89, server: 160.16.144.208, port: 1933, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_90, server: 160.16.196.59, port: 4006, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇳🇱NL_91, server: 160.16.63.16, port: 3901, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇳🇱NL_92, server: 160.16.196.59, port: 3901, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_93, server: 202.181.103.246, port: 4006, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇳🇱NL_94, server: 202.181.103.246, port: 3901, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_95, server: 160.16.144.208, port: 4006, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_96, server: 202.181.103.246, port: 1933, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: KR_104, server: 152.70.92.69, port: 80, type: vmess, uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
   - {name: netflix_KR, server: 146.56.112.110, port: 8888, type: vmess, uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: SG_118, server: 150.109.11.193, port: 80, type: vmess, uuid: b7118dcc-a234-4784-e487-4064c2920808, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: disney_netflix_US, server: 172.233.229.91, port: 14102, type: vmess, uuid: 27ba87fc-583f-4763-9060-83cf0b9264db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 Relay_🇺🇸US-🇰🇷KR_140, server: c7.620720.xyz, port: 8443, type: vmess, uuid: 516d8a7a-3f0b-41d3-bad0-246116381516, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: c7.620720.xyz, network: ws, ws-opts: {path: /, headers: {Host: c7.620720.xyz}}}
-  - {name: US_141, server: v2ray.codefyinc.com, port: 443, type: vmess, uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: v2ray.codefyinc.com, network: ws, ws-opts: {path: /vmessws, headers: {Host: v2ray.codefyinc.com}}}
-  - {name: Pool_🇺🇸US_149, server: 38.96.254.102, port: 18509, type: trojan, password: .ie4rghJuMkcf0oF, sni: shoppingmall.electricbanana.click, skip-cert-verify: false}
-  - {name: Pool_🇺🇸US_150, server: 64.94.95.118, port: 57142, type: trojan, password: kkzh2prsyr2ik47as615, sni: 64.94.95.118, skip-cert-verify: false}
-  - {name: ZZ_155, server: 85.195.101.122, port: 40878, type: vmess, uuid: f3d4167e-b15e-4e46-82e9-9286ef93fda7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: disney_netflix_US 2, server: 165.140.216.141, port: 443, type: vmess, uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: SG_166, server: 150.109.11.193, port: 80, type: vmess, uuid: b7118dcc-a234-4784-e487-4064c2920808, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: US_201, server: 172.233.229.91, port: 14102, type: vmess, uuid: 27ba87fc-583f-4763-9060-83cf0b9264db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: US_203, server: cgroup.node2.v.nodelist-airport.com, port: 53113, type: vmess, uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: cgroup.node2.v.nodelist-airport.com}
+  - {name: ZZ_205, server: 85.195.101.122, port: 40878, type: vmess, uuid: f3d4167e-b15e-4e46-82e9-9286ef93fda7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: "sEscPBiAD9K$&@79", protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
