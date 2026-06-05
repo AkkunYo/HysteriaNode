@@ -1,0 +1,13 @@
+services:
+  hysteria-node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hysteria-node
+    environment:
+      - ENABLE_SPEEDTEST=true
+      - SPEEDTEST_TIMEOUT=3s
+      - SPEEDTEST_MIN_SPEED=1
+      - UPDATE_INTERVAL=21600
+      - TZ=Asia/Shanghai
+    restart: always

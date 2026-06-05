@@ -1,0 +1,82 @@
+name: Build and Push HysteriaNode Docker Image
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 获取版本号
+        run: |
+          # 基于日期计算版本号: MAJOR.MINOR.PATCH
+          # MAJOR = 年份 - 2025 (2026 → 1, 2027 → 2)
+          # MINOR = 月份 (6 → 6)
+          # PATCH = 日 (5 → 5)
+          YEAR=$(date +%Y)
+          MONTH=$(date +%-m)  # 去除前导零
+          DAY=$(date +%-d)    # 去除前导零
+
+          MAJOR=$((YEAR - 2025))
+
+          VERSION="$MAJOR.$MONTH.$DAY"
+
+          # 写入环境变量
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+
+          echo "构建版本: $VERSION"
+
+      - name: 设置 QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: 设置 Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: 登录阿里云镜像仓库
+        uses: docker/login-action@v3
+        with:
+          registry: registry.cn-hangzhou.aliyuncs.com
+          username: ${{ secrets.ALIYUN_REGISTRY_USERNAME }}
+          password: ${{ secrets.ALIYUN_REGISTRY_PASSWORD }}
+
+      - name: 构建并推送镜像
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64
+          push: true
+          tags: |
+            registry.cn-hangzhou.aliyuncs.com/zkyml/hysteria-node:latest
+            registry.cn-hangzhou.aliyuncs.com/zkyml/hysteria-node:${{ env.VERSION }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: 显示镜像信息
+        run: |
+          echo "========================================"
+          echo "镜像构建和推送完成！"
+          echo "========================================"
+          echo ""
+          echo "版本信息:"
+          echo "  版本号: ${{ env.VERSION }}"
+          echo ""
+          echo "拉取命令:"
+          echo "  docker pull registry.cn-hangzhou.aliyuncs.com/zkyml/hysteria-node:latest"
+          echo "  docker pull registry.cn-hangzhou.aliyuncs.com/zkyml/hysteria-node:${{ env.VERSION }}"
+          echo ""
+          echo "本地使用:"
+          echo "  docker run -d --name hysteria-node \\"
+          echo "    -v \$(pwd)/yaml:/app/yaml \\"
+          echo "    -e ENABLE_SPEEDTEST=true \\"
+          echo "    registry.cn-hangzhou.aliyuncs.com/zkyml/hysteria-node:latest"
+          echo ""
