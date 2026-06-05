@@ -1,0 +1,7 @@
+tools/
+.git/
+.idea/
+.DS_Store
+yaml/
+type/
+clash.speedtested.yaml

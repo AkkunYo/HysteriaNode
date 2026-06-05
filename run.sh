@@ -3,21 +3,26 @@
 # ================================
 SUBLINK_BASE_URL="https://app.sublink.works"
 
+# 测速筛选配置
+ENABLE_SPEEDTEST=${ENABLE_SPEEDTEST:-false}
+SPEEDTEST_MAX_LATENCY=${SPEEDTEST_MAX_LATENCY:-1200ms}
+SPEEDTEST_MIN_SPEED=${SPEEDTEST_MIN_SPEED:-1} # 1MB/s
+SPEEDTEST_CONCURRENT=${SPEEDTEST_CONCURRENT:-8}
+SPEEDTEST_TIMEOUT=${SPEEDTEST_TIMEOUT:-5s}
+
 # GitHub 订阅源配置
 sources=(
-    "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt"
+    "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml"
     "https://cdn.jsdelivr.net/gh/vxiaov/free_proxies@main/clash/clash.provider.yaml"
     "https://freenode.openrunner.net/uploads/20240807-clash.yaml"
     "https://raw.githubusercontent.com/Misaka-blog/chromego_merge/main/sub/merged_proxies_new.yaml"
     "https://raw.githubusercontent.com/NiceVPN123/NiceVPN/main/Clash.yaml"
     "https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml"
-    "https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.yml"
     "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml"
     "https://raw.githubusercontent.com/ermaozi01/free_clash_vpn/main/subscribe/clash.yml"
     "https://raw.githubusercontent.com/lagzian/SS-Collector/main/mix_clash.yaml"
     "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml"
     "https://raw.githubusercontent.com/mfuu/v2ray/master/clash.yaml"
-    "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml"
     "https://raw.githubusercontent.com/ronghuaxueleng/get_v2/main/pub/combine.yaml"
     "https://raw.githubusercontent.com/ts-sf/fly/main/clash"
     "https://raw.githubusercontent.com/yaney01/Yaney01/main/temporary"
@@ -62,12 +67,15 @@ fetch_with_retry() {
     local url="$1" out="$2" label="$3"
     local attempt=0 max=3 wait=30
     while [ $attempt -lt $max ]; do
-        curl -sL -m 180 "$url" -o "$out"
+        local http_code
+        http_code=$(curl -sL -w "%{http_code}" -m 180 "$url" -o "$out")
         local first
-        first=$(head -c 20 "$out" 2>/dev/null || echo "")
-        if [ -s "$out" ] && ! echo "$first" | grep -q 'error code'; then
+        first=$(head -c 200 "$out" 2>/dev/null || echo "")
+        log "$label download status: $http_code"
+        if [ "$http_code" = "200" ] && [ -s "$out" ] && ! echo "$first" | grep -q -E '(error code|<!DOCTYPE|<html)'; then
             return 0
         fi
+        log "⚠ $label content preview: $first"
         attempt=$((attempt + 1))
         if [ $attempt -lt $max ]; then
             log "⚠ $label failed (attempt $attempt), retry in ${wait}s..."
@@ -77,6 +85,52 @@ fetch_with_retry() {
     done
     return 1
 }
+
+if [ "$ENABLE_SPEEDTEST" = "true" ]; then
+    CMD_SPEEDTEST="clash-speedtest"
+    if ! command -v clash-speedtest &> /dev/null; then
+        if [ -f "/app/tools/clash-speedtest" ]; then
+            CMD_SPEEDTEST="/app/tools/clash-speedtest"
+        elif [ -f "./tools/clash-speedtest" ] && [ "$(uname -s)" = "Darwin" ]; then
+            # 仅在 Darwin 宿主机下尝试使用本地 tools 目录
+            CMD_SPEEDTEST="./tools/clash-speedtest"
+        else
+            log "clash-speedtest not found, attempting to download..."
+            mkdir -p ./tools
+            OS=$(uname -s)
+            ARCH=$(uname -m)
+            DOWNLOAD_URL=""
+            if [ "$OS" = "Linux" ]; then
+                if [ "$ARCH" = "x86_64" ]; then
+                    DOWNLOAD_URL="https://github.com/faceair/clash-speedtest/releases/download/v1.8.8/clash-speedtest_Linux_x86_64.tar.gz"
+                elif [ "$ARCH" = "aarch64" ] || [ "$ARCH" = "arm64" ]; then
+                    DOWNLOAD_URL="https://github.com/faceair/clash-speedtest/releases/download/v1.8.8/clash-speedtest_Linux_arm64.tar.gz"
+                fi
+            elif [ "$OS" = "Darwin" ]; then
+                if [ "$ARCH" = "x86_64" ]; then
+                    DOWNLOAD_URL="https://github.com/faceair/clash-speedtest/releases/download/v1.8.8/clash-speedtest_Darwin_x86_64.tar.gz"
+                elif [ "$ARCH" = "arm64" ] || [ "$ARCH" = "aarch64" ]; then
+                    DOWNLOAD_URL="https://github.com/faceair/clash-speedtest/releases/download/v1.8.8/clash-speedtest_Darwin_arm64.tar.gz"
+                fi
+            fi
+            if [ -n "$DOWNLOAD_URL" ]; then
+                if curl -sL "$DOWNLOAD_URL" -o ./tools/clash-speedtest.tar.gz; then
+                    tar -zxf ./tools/clash-speedtest.tar.gz -C ./tools
+                    CMD_SPEEDTEST="./tools/clash-speedtest"
+                    chmod +x ./tools/clash-speedtest
+                    rm -f ./tools/clash-speedtest.tar.gz
+                    log "✓ clash-speedtest downloaded successfully to ./tools"
+                else
+                    log "⚠ Download failed, skipping speedtest"
+                    ENABLE_SPEEDTEST="false"
+                fi
+            else
+                log "⚠ Unsupported system ($OS-$ARCH) for auto-download, skipping speedtest"
+                ENABLE_SPEEDTEST="false"
+            fi
+        fi
+    fi
+fi
 
 log "Generating mixed subscribe and clash YAML..."
 
@@ -194,6 +248,90 @@ PY
 else
     log "✗ Failed to fetch clash conversion"
     exit 1
+fi
+
+if [ "$ENABLE_SPEEDTEST" = "true" ]; then
+    log "Running speed test on clash.yaml nodes..."
+#    SPEEDTEST_FLAGS="-max-latency ${SPEEDTEST_MAX_LATENCY:-1200ms} -concurrent ${SPEEDTEST_CONCURRENT:-4} -timeout ${SPEEDTEST_TIMEOUT:-5s} -fast -rename"
+    SPEEDTEST_FLAGS="-max-latency ${SPEEDTEST_MAX_LATENCY:-1200ms} -min-download-speed ${SPEEDTEST_MIN_SPEED:-1} -concurrent ${SPEEDTEST_CONCURRENT:-4} -timeout ${SPEEDTEST_TIMEOUT:-5s} -rename"
+
+    $CMD_SPEEDTEST -c ./yaml/clash.yaml -output ./yaml/clash.speedtested.yaml $SPEEDTEST_FLAGS || true
+
+    if [ -s ./yaml/clash.speedtested.yaml ]; then
+        python3 - <<'PY'
+from pathlib import Path
+import re
+
+speedtested = Path('./yaml/clash.speedtested.yaml').read_text()
+
+# 去掉第一行 proxy-providers
+lines = speedtested.splitlines()
+if lines and lines[0].strip().startswith('proxy-providers'):
+    speedtested = '\n'.join(lines[1:])
+
+# 提取整个 proxies 段（clash-speedtest 输出文件只有 proxies 段，直接到末尾）
+m = re.search(r'^(proxies:.*)$', speedtested, re.MULTILINE | re.DOTALL)
+if not m:
+    exit(1)
+
+proxies_block = m.group(1).strip()
+if not proxies_block or 'proxies: []' in proxies_block or 'proxies:\n[]' in proxies_block:
+    exit(1)
+
+# 修正缩进
+fixed_lines = []
+for line in proxies_block.splitlines():
+    if line.strip() == 'proxies:':
+        # proxies: 行保持不变
+        fixed_lines.append(line)
+    elif line.startswith('- '):
+        # 节点条目开头，添加 2 空格前缀
+        fixed_lines.append('  ' + line)
+    elif line.startswith('  '):
+        # 已有 2 空格的属性行，再加 2 空格变成 4 空格
+        fixed_lines.append('  ' + line)
+    elif line and line[0].isalnum():
+        # 无缩进的属性行，添加 4 空格前缀
+        fixed_lines.append('    ' + line)
+    else:
+        # 其他情况保持原样
+        fixed_lines.append(line)
+
+proxies_block = '\n'.join(fixed_lines)
+
+# 添加模板的直连节点到测速节点前面
+direct_node = '''proxies:
+  - name: "🟢 直连"
+    type: direct
+    udp: true
+'''
+# 将测速节点追加到直连节点后
+speedtest_nodes = '\n'.join(proxies_block.splitlines()[1:])  # 跳过 'proxies:' 行
+proxies_block = direct_node + speedtest_nodes
+
+# 基于模板替换 - 用字符串切片避免 re.sub 转义问题
+template = Path('./template/clash_template.yaml').read_text()
+m_template = re.search(r'^proxies:.*?(?=^proxy-groups:)', template, re.MULTILINE | re.DOTALL)
+if not m_template:
+    exit(1)
+result = template[:m_template.start()] + proxies_block + '\n\n' + template[m_template.end():]
+Path('./yaml/clash-new.yaml').write_text(result)
+PY
+        if [ $? -eq 0 ]; then
+            yaml_count=$(sed -n '/^proxies:/,/^proxy-groups:/p' ./yaml/clash-new.yaml | grep -c '^  - ' || true)
+            rm -f ./yaml/clash.speedtested.yaml
+            if [ "$yaml_count" -gt 0 ]; then
+                log "✓ Speedtest done, yaml/clash-new.yaml created ($yaml_count nodes)"
+            else
+                log "⚠ Speedtest output empty, no clash-new.yaml generated"
+            fi
+        else
+            rm -f ./yaml/clash.speedtested.yaml
+            log "⚠ Speedtest merge failed"
+        fi
+    else
+        log "⚠ Speedtest failed or output is empty"
+    fi
 fi
 
 log "Generating mihomo configs from templates..."
