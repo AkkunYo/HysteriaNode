@@ -1451,20 +1451,91 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 克罗地亚+V2CROSS.COM
+  - name: 希腊+V2CROSS.COM
     type: vless
-    server: cdn7-09.vk-cdnvideo.com
-    port: 8443
-    uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+    server: 144.24.66.151
+    port: 21828
+    uuid: 00000000-0000-4000-8000-000000000000
     tls: true
-    servername: cdn7-09.vk-cdnvideo.com
+    servername: ufo4dxyv6255yk8eh1ejyxgxc.worker.ddns-ip.net
+    network: ws
+    ws-opts:
+      path: /@Marisa_kristi
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 伊朗+V2CROSS.COM
+    type: vless
+    server: 151.241.228.254
+    port: 34754
+    uuid: 35762c02-ff2b-4526-b41b-e96e5d99528b
+    tls: true
+    client-fingerprint: chrome
+    servername: yahoo.com
     network: tcp
+    reality-opts:
+      public-key: eMijZKuJlNEciXbhyzdbewk-ot_JLMZVaA42bxKFcBM
+      short-id: c9eb0359fac0c345
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+    type: trojan
+    server: 130.94.104.210
+    port: 443
+    password: lTs6OZOMoqYAkDEbK10t-tE8KMjuREBW3m
+    tls: true
+    sni: www.cdn-structure.click
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司 2
+    type: trojan
+    server: 130.94.107.171
+    port: 443
+    password: s.wRSE4ANZp4=4h.=B_9Qbetw6XUc0V1SV
+    tls: true
+    sni: www.logger-guard.click
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+V2CROSS.COM
+    type: vless
+    server: 199.232.78.158
+    port: 443
+    uuid: b4a00211-ae46-49bc-8f36-0c4425eb7e86
+    tls: true
+    servername: default.ssl.fastly.net
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: nesfsheshab.global.ssl.fastly.net
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国+CloudFlare节点
+    type: vless
+    server: hyperlink-free.poweredproyuz.com
+    port: 443
+    uuid: 2be7b933-c720-4838-a35a-740ae50987ee
+    tls: true
+    servername: hyperlink-free.poweredproyuz.com
+    network: ws
+    ws-opts:
+      path: >-
+        /hyperlink-hyperlink-join-to-hyperlink-hyperlink_ch-hyperlink-hlink_robot-hyperlink
+      headers:
+        host: hyperlink-free.poweredproyuz.com
     tfo: false
     skip-cert-verify: false
     udp: true
   - name: 俄罗斯+V2CROSS.COM
     type: vless
-    server: 85.234.114.53
+    server: r1.mizulina.top
     port: 22231
     uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
     tls: true
@@ -1474,42 +1545,78 @@ proxies:
     skip-cert-verify: true
     udp: true
     flow: xtls-rprx-vision
-  - name: 美国+加利福尼亚
-    type: trojan
-    server: 64.176.65.85
+  - name: 俄罗斯+V2CROSS.COM 2
+    type: vless
+    server: 85.234.114.53
     port: 443
-    password: iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    tls: true
+    servername: r1.mizulina.top
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 德国+V2CROSS.COM
+    type: trojan
+    server: 91.233.8.138
+    port: 443
+    password: qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq
+    tls: true
+    sni: www.homelywebs.click
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国+Akamai科技公司CDN网络节点
+    type: trojan
+    server: 172.238.120.124
+    port: 443
+    password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
     tls: true
     sni: ''
     network: tcp
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+  - name: 德国+V2CROSS.COM 2
     type: trojan
-    server: 130.94.92.144
+    server: 91.233.8.25
     port: 443
-    password: oUAfbL8z87q-mhgjZ6g7mWQobf9=b7ut_F
+    password: I1vtf6pjYsAu-nFnraWAMjKTy90AHitdAz
     tls: true
-    sni: www.node-finder.click
+    sni: fra34.tracker-ws.click
     network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 法国+ONLINE+S.A.S.数据中心
-    type: hysteria2
-    server: 62.210.26.173
-    port: 64772
-    password: github.com/Alvin9999-newpac/fanqiang
-    sni: bing.com
+  - name: 美国+CloudFlare节点 2
+    type: vless
+    server: 104.18.155.229
+    port: 443
+    uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
+    tls: true
+    servername: www.genflix.co.id.r3xxe.eu.cc
+    network: ws
+    ws-opts:
+      path: /au-do
+      headers:
+        host: www.genflix.co.id.r3xxe.eu.cc
+    tfo: false
     skip-cert-verify: true
-  - name: 法国+ONLINE+S.A.S.数据中心 2
-    type: hysteria2
-    server: 62.210.29.98
-    port: 64772
-    password: github.com/Alvin9999-newpac/fanqiang
-    sni: bing.com
+    udp: true
+  - name: 比利时+V2CROSS.COM
+    type: vless
+    server: 150.251.158.76
+    port: 443
+    uuid: 10550754-cf62-3d3b-ba6a-50be27a275d7
+    tls: true
+    servername: s646.okgg.top
+    network: tcp
+    tfo: false
     skip-cert-verify: true
+    udp: true
+    flow: xtls-rprx-vision
   - name: 美国+德克萨斯州达拉斯Linode数据中心
     type: trojan
     server: 45.79.8.17
@@ -1519,61 +1626,18 @@ proxies:
     sni: 45.79.8.17
     network: tcp
     tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 俄罗斯+V2CROSS.COM 3
+    type: vless
+    server: 85.234.114.53
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    tls: true
+    servername: r1.mizulina.top
+    network: tcp
+    tfo: false
     skip-cert-verify: true
-    udp: true
-  - name: 巴西+V2CROSS.COM
-    type: vless
-    server: 152.233.28.198
-    port: 8443
-    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-    tls: true
-    servername: uk1.fromblancwithlove.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+V2CROSS.COM
-    type: vless
-    server: nld02.helpbot.click
-    port: 443
-    uuid: b95e6017-d54e-4016-b651-91c86aeaa463
-    tls: true
-    client-fingerprint: chrome
-    servername: nld02.helpbot.click
-    network: tcp
-    reality-opts:
-      public-key: M1a5zeQ6Ckoo1UybbRYD8696xaWb-fRcCY-7iaQ4wCA
-      short-id: fd3f0f2bce8083fe
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 欧盟+V2CROSS.COM
-    type: vless
-    server: 45.92.219.119
-    port: 7443
-    uuid: 0b0f0f45-b79a-4647-b466-d7879cd4aeea
-    tls: true
-    client-fingerprint: chrome
-    servername: www.microsoft.com
-    network: tcp
-    reality-opts:
-      public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
-      short-id: d82fb387
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 🇧🇪 比利时 | BEL
-    type: vless
-    server: 150.251.158.76
-    port: 443
-    uuid: 10550754-cf62-3d3b-ba6a-50be27a275d7
-    tls: true
-    servername: s646.okgg.top
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
   - name: 8,9|@KAFING_2
@@ -1594,7 +1658,7 @@ proxies:
     password: KevinZakarian
     sni: 179.61.132.96
     skip-cert-verify: true
-  - name: 9|@_𝐢🇩🇪(4)
+  - name: 9|  @vistav2ray  👈ا  ✅
     type: hysteria2
     server: 18.157.222.169
     port: 1040
@@ -1621,7 +1685,7 @@ proxies:
     password: Masir_Sefid
     sni: free.masir-sefid.shop
     skip-cert-verify: true
-  - name: '9|@internet_azad_2026 #3'
+  - name: '9|@internet_azad_2026 #4'
     type: hysteria2
     server: 18.157.222.169
     port: 443
@@ -1666,7 +1730,7 @@ proxies:
     password: Masir_Sefid
     sni: qs.masir-sefid.shop
     skip-cert-verify: true
-  - name: 9|@ 7
+  - name: 9|@ 6
     type: hysteria2
     server: 18.193.90.31
     port: 59826
@@ -1674,69 +1738,6 @@ proxies:
     obfs-password: Masir_Sefid
     password: Masir_Sefid
     sni: qs.masir-sefid.shop
-    skip-cert-verify: true
-  - name: 9|50436 | Telegram = t.me/SOSkey...
-    type: hysteria2
-    server: 195.15.201.34
-    port: 1040
-    obfs: salamander
-    obfs-password: Masir_Sefid
-    password: Masir_Sefid
-    sni: free.masir-sefid-1.my
-    skip-cert-verify: true
-  - name: 9|🇨🇭50439 | ⚡️Telegram = t.me/SO...
-    type: hysteria2
-    server: 195.15.201.34
-    port: 4040
-    obfs: salamander
-    obfs-password: Masir_Sefid
-    password: Masir_Sefid
-    sni: free.masir-sefid-1.my
-    skip-cert-verify: true
-  - name: 9|🇨🇭50441 | ⚡️Telegram = t.me/SO...
-    type: hysteria2
-    server: 195.15.201.34
-    port: 44044
-    obfs: salamander
-    obfs-password: Masir_Sefid
-    password: Masir_Sefid
-    sni: free.masir-sefid-1.my
-    skip-cert-verify: true
-  - name: 9|🇨🇭50433 | ⚡️Telegram = t.me/SO...
-    type: hysteria2
-    server: 195.15.201.34
-    port: 443
-    obfs: salamander
-    obfs-password: Masir_Sefid
-    password: Masir_Sefid
-    sni: free.masir-sefid-1.my
-    skip-cert-verify: true
-  - name: 9|🇨🇭50434 | ⚡️Telegram = t.me/SO...
-    type: hysteria2
-    server: 195.15.201.34
-    port: 444
-    obfs: salamander
-    obfs-password: Masir_Sefid
-    password: Masir_Sefid
-    sni: free.masir-sefid-1.my
-    skip-cert-verify: true
-  - name: 9|🇨🇭50440 | ⚡️Telegram = t.me/SO...
-    type: hysteria2
-    server: 195.15.201.34
-    port: 54040
-    obfs: salamander
-    obfs-password: Masir_Sefid
-    password: Masir_Sefid
-    sni: free.masir-sefid-1.my
-    skip-cert-verify: true
-  - name: 9|🇨🇭50435 | ⚡️Telegram = t.me/SO...
-    type: hysteria2
-    server: 195.15.201.34
-    port: 8880
-    obfs: salamander
-    obfs-password: Masir_Sefid
-    password: Masir_Sefid
-    sni: free.masir-sefid-1.my
     skip-cert-verify: true
   - name: 9|internet_azad_2026 3
     type: hysteria2
@@ -1747,7 +1748,7 @@ proxies:
     password: Masir_Sefid
     sni: free.masir-sefid-1.my
     skip-cert-verify: true
-  - name: '9|@internet_azad_2026 #7'
+  - name: '9|@internet_azad_2026 #8'
     type: hysteria2
     server: 195.15.254.245
     port: 444
@@ -1756,7 +1757,7 @@ proxies:
     password: Masir_Sefid
     sni: free.masir-sefid-1.my
     skip-cert-verify: true
-  - name: 9|⚡@V2ray_official
+  - name: 9|@V2ray_official
     type: hysteria2
     server: 34.196.169.182
     port: 1040
@@ -1765,7 +1766,7 @@ proxies:
     password: Masir_Sefid
     sni: masir-sefid.shop
     skip-cert-verify: true
-  - name: '9|⚡@V2ray_official #1'
+  - name: 9|⚡@V2ray_official
     type: hysteria2
     server: 34.196.169.182
     port: 15015
@@ -1774,7 +1775,7 @@ proxies:
     password: Masir_Sefid
     sni: masir-sefid.shop
     skip-cert-verify: true
-  - name: '9|⚡@V2ray_official #2'
+  - name: '9|⚡@V2ray_official #1'
     type: hysteria2
     server: 34.196.169.182
     port: 20830
@@ -1783,7 +1784,7 @@ proxies:
     password: Masir_Sefid
     sni: masir-sefid.shop
     skip-cert-verify: true
-  - name: '9|⚡@V2ray_official #3'
+  - name: '9|⚡@V2ray_official #2'
     type: hysteria2
     server: 34.196.169.182
     port: 44044
@@ -1792,7 +1793,7 @@ proxies:
     password: Masir_Sefid
     sni: masir-sefid.shop
     skip-cert-verify: true
-  - name: '9|⚡@V2ray_official #4'
+  - name: '9|⚡@V2ray_official #3'
     type: hysteria2
     server: 34.196.169.182
     port: 59826
@@ -1837,7 +1838,7 @@ proxies:
     password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
     sni: api.kermanshahi.org
     skip-cert-verify: true
-  - name: 9|🇩🇪DE-@VPNine1
+  - name: 9|@tootffarangi🍓hamrah
     type: hysteria2
     server: 18.157.51.145
     port: 443
@@ -1855,7 +1856,16 @@ proxies:
     password: masir_sefid
     sni: content.masir-sefid.shop
     skip-cert-verify: true
-  - name: 9|♾️40@oneclickvpnkeys
+  - name: 9|🇳🇱51381 | ⚡️Telegram = t.me/SO...
+    type: hysteria2
+    server: hy2.aspidnet.xyz
+    port: 443
+    obfs: salamander
+    obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+    password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+    sni: hy2.aspidnet.xyz
+    skip-cert-verify: true
+  - name: 9|️40@oneclickvpnkeys
     type: hysteria2
     server: 130.61.50.75
     port: 6443
@@ -1864,8 +1874,8 @@ proxies:
     skip-cert-verify: true
   - name: 11,12|香港3|@ripaojiedian
     type: trojan
-    server: 16.162.93.34
-    port: 2008
+    server: 43.198.226.205
+    port: 53018
     password: d84665c37878196ecf983cf6910e3b44
     tls: true
     sni: www.nintendogames.net
@@ -1873,21 +1883,10 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 11,12|香港4|@ripaojiedian
-    type: trojan
-    server: 95.40.84.43
-    port: 40748
-    password: BxceQaOe
-    tls: true
-    sni: t.me/ripaojiedian
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
   - name: 11,12|香港5|@ripaojiedian
     type: trojan
-    server: 18.183.163.141
-    port: 50712
+    server: 52.196.69.56
+    port: 4327
     password: BxceQaOe
     tls: true
     sni: t.me/ripaojiedian
@@ -1897,8 +1896,8 @@ proxies:
     udp: true
   - name: 11,12|日本|@ripaojiedian
     type: trojan
-    server: 95.40.84.43
-    port: 24370
+    server: 18.176.57.129
+    port: 4099
     password: BxceQaOe
     tls: true
     sni: t.me/ripaojiedian
@@ -1908,8 +1907,8 @@ proxies:
     udp: true
   - name: 11,12|日本2|@ripaojiedian
     type: trojan
-    server: 16.162.93.34
-    port: 31351
+    server: 18.167.42.231
+    port: 5701
     password: d84665c37878196ecf983cf6910e3b44
     tls: true
     sni: www.nintendogames.net
@@ -1919,8 +1918,8 @@ proxies:
     udp: true
   - name: 11,12|日本3|@ripaojiedian
     type: trojan
-    server: 16.162.32.32
-    port: 2511
+    server: 43.198.226.205
+    port: 37973
     password: d84665c37878196ecf983cf6910e3b44
     tls: true
     sni: www.nintendogames.net
@@ -1930,8 +1929,8 @@ proxies:
     udp: true
   - name: 11,12|新加坡|@ripaojiedian
     type: trojan
-    server: 16.162.93.34
-    port: 48402
+    server: 95.40.35.52
+    port: 12143
     password: d84665c37878196ecf983cf6910e3b44
     tls: true
     sni: www.nintendogames.net
@@ -1941,8 +1940,8 @@ proxies:
     udp: true
   - name: 11,12|新加坡2|@ripaojiedian
     type: trojan
-    server: 18.167.173.1
-    port: 2511
+    server: 18.167.42.231
+    port: 6357
     password: d84665c37878196ecf983cf6910e3b44
     tls: true
     sni: www.nintendogames.net
@@ -1952,8 +1951,8 @@ proxies:
     udp: true
   - name: 11,12|新加坡3|@ripaojiedian
     type: trojan
-    server: 54.46.44.219
-    port: 42710
+    server: 16.163.138.24
+    port: 41421
     password: BxceQaOe
     tls: true
     sni: t.me/ripaojiedian
@@ -1961,10 +1960,21 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
+  - name: 11,12|美国|@ripaojiedian
+    type: trojan
+    server: 95.40.35.52
+    port: 6604
+    password: d84665c37878196ecf983cf6910e3b44
+    tls: true
+    sni: www.nintendogames.net
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
   - name: 11,12|美国2|@ripaojiedian
     type: trojan
-    server: 16.162.93.34
-    port: 5224
+    server: 18.167.42.231
+    port: 17005
     password: d84665c37878196ecf983cf6910e3b44
     tls: true
     sni: www.nintendogames.net
@@ -1974,8 +1984,8 @@ proxies:
     udp: true
   - name: 11,12|美国3|@ripaojiedian
     type: trojan
-    server: 95.40.84.43
-    port: 2520
+    server: 95.40.40.218
+    port: 44265
     password: BxceQaOe
     tls: true
     sni: t.me/ripaojiedian
@@ -2127,14 +2137,241 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇺🇸US-45.79.8.17-0131
-    type: trojan
-    server: 45.79.8.17
+  - name: '>>@oneclickvpnkeys::US'
+    type: vless
+    server: 104.16.9.24
+    port: 80
+    uuid: 2ac6e527-6410-48ce-b9ba-cc8135ee2a3b
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: fragrant-recipe-09f4.wopecuyubak61.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '>>@configV2rayNG::US'
+    type: vless
+    server: 198.41.222.191
+    port: 80
+    uuid: e388fffb-03b0-4227-ac2c-2b5cec1f5c34
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      headers:
+        host: leecher56.matinheydri.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸+132+-+US+-+VLESS/WS+-+2052
+    type: vless
+    server: 104.18.13.229
+    port: 2052
+    uuid: 12d75b7d-8fdf-4785-8d62-d836854e7e63
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: parking-nfchbwa1-v2.parking-1ab.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇸🇬+Join+Telegram:@Farah_VPN+🇸🇬
+    type: vless
+    server: 162.159.153.4
     port: 443
-    password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf
+    uuid: f2a73750-3087-48ff-a763-1348c15dce68
     tls: true
-    sni: 45.79.8.17
-    network: tcp
+    servername: rAyAn-007.mAxImA.DpDnS.OrG
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: rAyAn-007.mAxImA.DpDnS.OrG
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '>>@oneclickvpnkeys::US 2'
+    type: vless
+    server: 104.16.164.44
+    port: 80
+    uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: amirvpn.amirhm00100.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸+545+-+US+-+VLESS/WS+-+8880
+    type: vless
+    server: africa.visa.com
+    port: 8880
+    uuid: 5b002005-7fb1-413e-8cbd-08e50c87c2ea
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: >-
+        /?ed=2560Join---V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz
+      headers:
+        host: wetfleagidc-8tsbi8xd-v3.wet-flea-gidc.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '>>@oneclickvpnkeys::US 3'
+    type: vless
+    server: 172.66.40.139
+    port: 443
+    uuid: 1679af35-6dd6-4c09-ae3b-18f239217f3e
+    tls: true
+    servername: rAyAn-007.pArViN.DpDnS.OrG
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: rAyAn-007.pArViN.DpDnS.OrG
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '>>@oneclickvpnkeys::US 4'
+    type: vless
+    server: 104.17.15.87
+    port: 80
+    uuid: f929cc78-e2a1-4ce3-8051-3e9538405144
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      headers:
+        host: germany.xydcqd.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '>>@oneclickvpnkeys::US 5'
+    type: vless
+    server: 104.21.224.5
+    port: 80
+    uuid: 93526fcb-8dbf-442e-a656-eb304f1da4ef
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: lucky-voice-d6f3.difat89954-0c6.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸+488+-+US+-+VLESS/WS+-+80
+    type: vless
+    server: 104.18.173.174
+    port: 80
+    uuid: 53342b53-157e-4475-9f3a-40439434e689
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: c.iamdt.dpdns.org
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '>>@oneclickvpnkeys::US 6'
+    type: vless
+    server: 172.66.43.117
+    port: 443
+    uuid: 1679af35-6dd6-4c09-ae3b-18f239217f3e
+    tls: true
+    servername: rAyAn-007.pArViN.DpDnS.OrG
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: rAyAn-007.pArViN.DpDnS.OrG
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '>>@oneclickvpnkeys::US 7'
+    type: vless
+    server: 172.66.40.99
+    port: 2083
+    uuid: ce035748-9913-40c9-9fb6-c8389f7cdcf3
+    tls: true
+    servername: yousef.varzesh.dpdns.org
+    network: ws
+    ws-opts:
+      headers:
+        host: yousef.varzesh.dpdns.org
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '>>@vmess_iran::US'
+    type: vless
+    server: 104.16.250.22
+    port: 443
+    uuid: 17ebee4e-97ea-4cad-8737-cc228478ca9d
+    tls: true
+    servername: lively-brook-c471.nedena3319.workers.dev
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: lively-brook-c471.nedena3319.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '>>@oneclickvpnkeys::US 8'
+    type: vless
+    server: 104.18.12.229
+    port: 2052
+    uuid: 12d75b7d-8fdf-4785-8d62-d836854e7e63
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: parking-nfchbwa1-v2.parking-1ab.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '>>@oneclickvpnkeys::US 9'
+    type: vless
+    server: 188.114.96.3
+    port: 443
+    uuid: a73b8135-ec7a-4f70-bac6-81fbccad4515
+    tls: true
+    servername: labeller.neonime83.workers.dev
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: labeller.neonime83.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: Fast+Deploy+Your+Own+Worker+For+Creation+Of+Configs+:+https
+    type: vless
+    server: medium.com
+    port: 443
+    uuid: f2a73750-3087-48ff-a763-1348c15dce68
+    tls: true
+    servername: rAyAn-007.mAxImA.DpDnS.OrG
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: rAyAn-007.mAxImA.DpDnS.OrG
     tfo: false
     skip-cert-verify: false
     udp: true
@@ -2154,6 +2391,21 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
+  - name: 🇺🇸+94+-+US+-+VLESS/WS/TLS+-+443
+    type: vless
+    server: 104.19.35.216
+    port: 443
+    uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+    tls: true
+    servername: amirvpn.amirhm00100.workers.dev
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: amirvpn.amirhm00100.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
   - name: 🇺🇸US-172.237.145.189-0132
     type: trojan
     server: 172.237.145.189
@@ -2165,7 +2417,7 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇲🇽+MX+1
+  - name: 🇲🇽+MX+2
     type: trojan
     server: 149.104.87.182
     port: 443
@@ -2173,6 +2425,204 @@ proxies:
     tls: true
     sni: www.jewelapp.click
     network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '>>@v2ray_configs_pool::US'
+    type: vless
+    server: '::ffff:104.21.69.164'
+    port: 2087
+    uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+    tls: true
+    servername: EMS.Arc-Time.Workers.DEV
+    network: ws
+    ws-opts:
+      path: /yyru4ludskje
+      headers:
+        host: ems.arc-time.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '>>@oneclickvpnkeys::US 10'
+    type: vless
+    server: 159.89.87.21
+    port: 28190
+    uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
+    tls: true
+    client-fingerprint: chrome
+    servername: aws.amazon.com
+    network: tcp
+    reality-opts:
+      public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 🇺🇸US美国8
+    type: trojan
+    server: 104.20.6.134
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmloud.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: t.me/iProxyChannel
+    type: trojan
+    server: 104.19.229.21
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmloud.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: t.me/iProxyChannel 2
+    type: trojan
+    server: 45.130.125.69
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmloud.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: t.me/iProxyChannel 3
+    type: trojan
+    server: 141.193.213.30
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmloud.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 未知11
+    type: trojan
+    server: 45.130.125.0
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmloud.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 未知21
+    type: trojan
+    server: 162.159.195.173
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmloud.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: t.me/iProxyChannel 4
+    type: trojan
+    server: 66.81.247.155
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmloud.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '@V2raysCollector+💕'
+    type: trojan
+    server: 185.18.250.245
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmlunch.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 未知23
+    type: trojan
+    server: 141.193.213.21
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmloud.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 未知38
+    type: trojan
+    server: 188.114.98.0
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmlunch.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: t.me/iProxyChannel 5
+    type: trojan
+    server: 104.17.121.71
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmloud.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 未知 5
+    type: trojan
+    server: 45.130.125.96
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmloud.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: t.me/iProxyChannel 6
+    type: trojan
+    server: 185.18.250.252
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmloud.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🚀@V2Ray_Hub1200
+    type: trojan
+    server: 188.114.97.57
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmloud.com
+    network: ws
+    ws-opts: {}
     tfo: false
     skip-cert-verify: false
     udp: true
@@ -2188,9 +2638,21 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: '@V2raysCollector+🤔'
+  - name: 🇩🇪DE-🚀@V2Ray_Hub1200
     type: trojan
-    server: 185.18.250.245
+    server: 89.116.46.68
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmloud.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸+30+-+US+-+Trojan/WS/TLS+-+443
+    type: trojan
+    server: 104.18.12.149
     port: 443
     password: humanity
     tls: true
@@ -2198,35 +2660,98 @@ proxies:
     network: ws
     ws-opts: {}
     tfo: false
-    skip-cert-verify: true
+    skip-cert-verify: false
     udp: true
-  - name: '@filembad'
+  - name: 🇺🇸+65+-+US+-+Trojan/WS/TLS+-+443
     type: trojan
-    server: 188.114.98.0
+    server: 172.67.180.92
     port: 443
     password: humanity
     tls: true
-    sni: www.calmlunch.com
+    sni: www.multiplydose.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸+44+-+US+-+Trojan/WS/TLS+-+443
+    type: trojan
+    server: 172.64.147.24
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.gossipglove.com
     network: ws
     ws-opts: {}
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 🎈74@oneclickvpnkeys
+  - name: 🇺🇸+83+-+US+-+Trojan/WS/TLS/UTLS+-+443
     type: trojan
-    server: 185.18.250.252
+    server: www.ignitelimit.com
     port: 443
     password: humanity
     tls: true
-    sni: www.calmlunch.com
+    sni: www.ignitelimit.com
     network: ws
     ws-opts: {}
     tfo: false
-    skip-cert-verify: true
+    skip-cert-verify: false
     udp: true
-  - name: 8https
+  - name: 🇺🇸+26+-+US+-+Trojan/WS/TLS+-+443
+    type: trojan
+    server: 104.18.11.110
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.multiplydose.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸US美国12
+    type: trojan
+    server: 104.18.152.229
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '@V2ray_confiig`'
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.creationlong.org
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 14https
     type: vless
-    server: 89.116.46.210
+    server: 89.116.46.68
+    port: 443
+    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+    tls: true
+    servername: octopusss4.com
+    network: ws
+    ws-opts:
+      path: /tsghdws
+      headers:
+        host: octopusss4.com
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '@v2ray_configs_pools'
+    type: vless
+    server: 172.64.32.75
     port: 443
     uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
     tls: true
@@ -2269,7 +2794,67 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: '@v2ray_configs_pools'
+  - name: 10https
+    type: vless
+    server: 104.17.121.71
+    port: 443
+    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+    tls: true
+    servername: octopusss4.com
+    network: ws
+    ws-opts:
+      path: /tsghdws
+      headers:
+        host: octopusss4.com
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 8https
+    type: vless
+    server: 89.116.46.210
+    port: 443
+    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+    tls: true
+    servername: octopusss4.com
+    network: ws
+    ws-opts:
+      path: /tsghdws
+      headers:
+        host: octopusss4.com
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '@v2ray_configs_pools 2'
+    type: vless
+    server: 173.245.58.75
+    port: 443
+    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+    tls: true
+    servername: octopusss4.com
+    network: ws
+    ws-opts:
+      path: /tsghdws
+      headers:
+        host: octopusss4.com
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 13https
+    type: vless
+    server: 141.193.213.10
+    port: 443
+    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+    tls: true
+    servername: octopusss4.com
+    network: ws
+    ws-opts:
+      path: /tsghdws
+      headers:
+        host: octopusss4.com
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '@v2ray_configs_pools 3'
     type: vless
     server: betty.ns.cloudflare.com
     port: 443
@@ -2284,111 +2869,18 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🌐+WS-TLS+|+@Express_alaki+|+src+@v2Line
-    type: trojan
-    server: 172.67.180.92
+  - name: '@v2ray_configs_pools 4'
+    type: vless
+    server: 172.64.147.137
     port: 443
-    password: humanity
+    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
     tls: true
-    sni: www.multiplydose.com
+    servername: octopusss4.com
     network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: trojan-45.130.125.160-443
-    type: trojan
-    server: 45.130.125.160
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.calmlunch.com
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: t.me/iProxyChannel
-    type: trojan
-    server: 141.193.213.21
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.calmloud.com
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸+30+-+US+-+Trojan/WS/TLS+-+443
-    type: trojan
-    server: 104.18.12.149
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.calmlunch.com
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+CloudFlare节点
-    type: trojan
-    server: 104.18.152.229
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 7https
-    type: trojan
-    server: 45.130.125.0
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.calmloud.com
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 未知26
-    type: trojan
-    server: 188.114.97.57
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.calmloud.com
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: t.me/iProxyChannel 2
-    type: trojan
-    server: 45.130.125.69
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.calmloud.com
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 未知21
-    type: trojan
-    server: 162.159.195.173
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.calmloud.com
-    network: ws
-    ws-opts: {}
+    ws-opts:
+      path: /tsghdws
+      headers:
+        host: octopusss4.com
     tfo: false
     skip-cert-verify: false
     udp: true
