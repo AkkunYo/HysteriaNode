@@ -671,197 +671,45 @@ proxies:
     udp: true
   - name: 每天更新，请加电报群防止失联
     type: vless
-    server: 31.76.91.89
-    port: 7443
-    uuid: 6ca8ea5b-e47f-4c19-adee-365456e1e87c
+    server: 85.234.114.53
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
     tls: true
-    client-fingerprint: chrome
-    servername: mi.com
+    servername: r1.mizulina.top
     network: tcp
-    reality-opts:
-      public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
-      short-id: d82fb387
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-    flow: xtls-rprx-vision
-  - name: 电报群：https
+    flow: xtls-rprx-vision-udp443
+  - name: 日本
     type: vless
-    server: 13.115.231.90
-    port: 37478
-    uuid: 22f1726b-0a24-414b-8901-3c1d053c1adb
+    server: 1.sdwan.realm-sync.com
+    port: 5454
+    uuid: 8faf6e38-0531-4d63-91f0-2aba5b9ff864
     tls: true
     client-fingerprint: chrome
-    servername: www.tesla.com
+    servername: swcdn.apple.com
     network: tcp
     reality-opts:
-      public-key: gwRoOSyzoJalrmAP6BWUUC1s7jfqBRS9LhIrYvibFlg
-      short-id: cc0b9c5e3dde06
+      public-key: 7Mb18pl7fH3NvhVevIVTgRdPlAorUucOWMlUaTrDV0o
+      short-id: 4265cc8365
     tfo: false
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 日期：06-09
+  - name: 荷兰
     type: vless
-    server: 13.231.185.74
-    port: 47381
-    uuid: c6508e59-dd68-4dc0-b14f-3192e84ef843
+    server: r1.mizulina.top
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
     tls: true
-    client-fingerprint: chrome
-    servername: www.yahoo.com
+    servername: r1.mizulina.top
     network: tcp
-    reality-opts:
-      public-key: kiMGo34R7wN3bHFbY_6MqIHePd7rlnOkxGCt-Ek1Ej0
-      short-id: '67e2075367998314'
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-    flow: xtls-rprx-vision
-  - name: 免费VPN：https
-    type: vless
-    server: 54.169.248.107
-    port: 29746
-    uuid: 3fd28704-112e-4451-8c5f-d6657f8ecf44
-    tls: true
-    client-fingerprint: chrome
-    servername: www.intel.com
-    network: tcp
-    reality-opts:
-      public-key: s1u_Iy1x_b1Ph9Tp3a7xdekHcbcqGy7VA4BpQtJ-mE0
-      short-id: 86c4bf418676a6e2
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国 12
-    type: vless
-    server: 46.137.225.209
-    port: 32946
-    uuid: 0ff7989d-59b3-4cbd-a2e4-960ac02fb2f1
-    tls: true
-    client-fingerprint: chrome
-    servername: www.amd.com
-    network: tcp
-    reality-opts:
-      public-key: zdEghV1Mt50wCSUBZSd601DSMoX4KBTfcKWZ2_mYTBk
-      short-id: 984d9ea72b9e81
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国 13
-    type: vless
-    server: 122.248.202.201
-    port: 45075
-    uuid: 452da0f8-3034-4e5d-9e7f-9c3f58abb8ff
-    tls: true
-    client-fingerprint: chrome
-    servername: www.tesla.com
-    network: tcp
-    reality-opts:
-      public-key: l6Z-68Q2EJ8nZ5mzWSAB53lp1-_nOHwV2Z18y3DT7xQ
-      short-id: 7185b14179922a5c
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国 14
-    type: vless
-    server: 47.129.160.222
-    port: 57496
-    uuid: fdb04591-c75e-441a-a154-a4928f83de4c
-    tls: true
-    client-fingerprint: chrome
-    servername: www.sony.com
-    network: tcp
-    reality-opts:
-      public-key: JPIs_p8SFL4U4duZZkAjuatv2gnEAw-iGG6eNAayQl8
-      short-id: 86d1653b7de555a2
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国 15
-    type: vless
-    server: 47.131.12.238
-    port: 59597
-    uuid: ba6c3fe7-19ba-4346-8ae3-41d6a2065f19
-    tls: true
-    client-fingerprint: chrome
-    servername: www.tesla.com
-    network: tcp
-    reality-opts:
-      public-key: pAg7gxX-dDZ68kwy3mEj9vyDrieu-kTvIAhxSRMJQ1w
-      short-id: be3e57dff1279a7d
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国 16
-    type: vless
-    server: 13.212.10.113
-    port: 51182
-    uuid: 2a222b39-411e-4d6d-800a-5d067199b6ec
-    tls: true
-    client-fingerprint: chrome
-    servername: www.tesla.com
-    network: tcp
-    reality-opts:
-      public-key: 7MC_kyGYEV7nG0zqKnfwUmvXsoA0fGG4g4chkqqSRGI
-      short-id: 5ac35e1cd8ce6720
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国 17
-    type: vless
-    server: 54.151.254.107
-    port: 46799
-    uuid: f232a803-ff05-4219-b16f-b4dc8497b938
-    tls: true
-    client-fingerprint: chrome
-    servername: www.tesla.com
-    network: tcp
-    reality-opts:
-      public-key: inxRtKQbaiuz18TGXqdYu0dyO_RplIhR7MDZ6rL42UA
-      short-id: af0d579034a74916
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国 18
-    type: vless
-    server: 47.129.152.131
-    port: 23123
-    uuid: 982ea8d2-d430-4e19-a12c-f69f2e3047a2
-    tls: true
-    client-fingerprint: chrome
-    servername: www.nvidia.com
-    network: tcp
-    reality-opts:
-      public-key: RMDp_xrYjgNV5VATfzCgADH32U4k_jISDCBw7G97x04
-      short-id: f9f213fbc392
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国 19
-    type: vless
-    server: 167.104.223.58
-    port: 7443
-    uuid: 6ca8ea5b-e47f-4c19-adee-365456e1e87c
-    tls: true
-    client-fingerprint: chrome
-    servername: www.microsoft.com
-    network: tcp
-    reality-opts:
-      public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
-      short-id: be0ce047
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国 20
+    flow: xtls-rprx-vision-udp443
+  - name: 德国 2
     type: vless
     server: 85.234.114.53
     port: 22231
@@ -870,10 +718,21 @@ proxies:
     servername: r1.mizulina.top
     network: tcp
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-    flow: xtls-rprx-vision-udp443
-  - name: 德国
+    flow: xtls-rprx-vision
+  - name: 德国 3
+    type: trojan
+    server: 3.70.90.66
+    port: 22222
+    password: telegram-id-privatevpns
+    tls: true
+    sni: trojan.burgerip.co.uk
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 德国 4
     type: vless
     server: 85.234.114.53
     port: 443
@@ -882,192 +741,36 @@ proxies:
     servername: r1.mizulina.top
     network: tcp
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
     flow: xtls-rprx-vision
-  - name: 芬兰
-    type: vless
-    server: bypass.fi-m247-01.com
-    port: 8443
-    uuid: 51be7e89-0c3c-4414-83c0-63c2eef13a91
+  - name: 德国 5
+    type: trojan
+    server: 18.196.209.211
+    port: 22222
+    password: telegram-id-privatevpns
     tls: true
-    client-fingerprint: chrome
-    servername: storage.yandex.net
+    sni: trojan.burgerip.co.uk
     network: tcp
-    reality-opts:
-      public-key: KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg
-      short-id: d020b987f84eb78a
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-    flow: xtls-rprx-vision
-  - name: 美国 22
+  - name: 德国 6
     type: vless
-    server: 34.213.172.16
-    port: 22189
-    uuid: 4889ee33-74e5-4819-86d8-b2a1a5bc8f46
+    server: cloudflare-ip.mofashi.ltd
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
     tls: true
-    client-fingerprint: chrome
-    servername: www.tesla.com
-    network: tcp
-    reality-opts:
-      public-key: 5tUZskKOCKpjz3j7hmuYaQHNfE1QRtZI9P62qvSs1GY
-      short-id: 47b6d14ff477fe59
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-    flow: xtls-rprx-vision
-  - name: 美国 23
-    type: vless
-    server: 16.176.222.48
-    port: 53887
-    uuid: 777d639d-48b7-4070-9215-48191a8edc4c
-    tls: true
-    client-fingerprint: chrome
-    servername: yahoo.com
-    network: tcp
-    reality-opts:
-      public-key: U8LtEUIKwyRlOQnuyXwaOHW540WuYC2SFHY8VvER3Wk
-      short-id: d7e4c1b7cd86e462
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国 24
-    type: vless
-    server: 194.58.41.121
-    port: 7443
-    uuid: 10484bee-8516-400a-9b1e-efb5144ad324
-    tls: true
-    client-fingerprint: chrome
-    servername: stackoverflow.com
-    network: tcp
-    reality-opts:
-      public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
-      short-id: d82fb387
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国 25
-    type: vless
-    server: 16.176.5.2
-    port: 58981
-    uuid: 649dcb36-db0c-41b0-ad50-26ec755bee55
-    tls: true
-    client-fingerprint: chrome
-    servername: yahoo.com
-    network: tcp
-    reality-opts:
-      public-key: 4pGooKDmjXPxY0u7IJoYAfj6fw2sf6Tbhi_tW0n34zw
-      short-id: 4333dc36
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
   - name: 俄罗斯 2
-    type: vless
-    server: ru-selectel-01.com
-    port: 8443
-    uuid: 8cd00214-09da-48d9-8004-8281ff918d36
-    tls: true
-    client-fingerprint: chrome
-    servername: sni.ru-selectel-01.com
-    network: tcp
-    reality-opts:
-      public-key: rZgu2lJcC2yrYnx66znee-Z75mW6m4TRfWt7_neoEVI
-      short-id: 1c74cf626ef50bb3
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国 26
-    type: vless
-    server: 122.8.44.3
-    port: 993
-    uuid: 2703cda8-5cf4-019d-c4bd-6cf0c2261946
-    tls: true
-    client-fingerprint: chrome
-    servername: dl.google.com
-    network: tcp
-    reality-opts:
-      public-key: UvQ2HZFkQXrBiaprbcmks-aFo1dvnfPlHXcUKcl-i04
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国 27
-    type: vless
-    server: 95.173.199.80
-    port: 8443
-    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-    tls: true
-    servername: buh-ro-01.fromblancwithlove.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 德国 2
-    type: trojan
-    server: 155.117.198.83
-    port: 46424
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: de.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 28
-    type: trojan
-    server: 155.117.198.86
-    port: 45553
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: ch.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 29
-    type: trojan
-    server: 155.117.198.82
-    port: 45619
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: fr.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 法国
-    type: trojan
-    server: 155.117.198.83
-    port: 45619
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: fr.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 日本
-    type: vless
-    server: 13.159.91.226
-    port: 20312
-    uuid: 5cbdfbb1-cdcc-4448-95c2-b1f3aed8d9c5
-    tls: true
-    client-fingerprint: chrome
-    servername: www.amd.com
-    network: tcp
-    reality-opts:
-      public-key: 0rtwJI2LRYd35hN1SsoG5tAiH0sasbxBs230lcCmSHE
-      short-id: 1a124fe241cd9fab
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 俄罗斯 3
     type: vless
     server: cloud.cdnru.net
     port: 443
@@ -1076,22 +779,313 @@ proxies:
     servername: cloud.cdnru.net
     network: tcp
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
     flow: xtls-rprx-vision
-  - name: 南非
+  - name: 俄罗斯 3
     type: vless
-    server: 156.244.43.22
+    server: r1.mizulina.top
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    tls: true
+    servername: r1.mizulina.top
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 俄罗斯 4
+    type: vless
+    server: 85.234.114.53
     port: 443
     uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
     tls: true
     servername: r1.mizulina.top
     network: tcp
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
     flow: xtls-rprx-vision-udp443
-  - name: 澳大利亚
+  - name: 法国 2
+    type: trojan
+    server: 90081bb25c.node.tro.cac.cab
+    port: 45619
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: fr.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 刚果(金)
+    type: vless
+    server: cf.008500.xyz
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 韩国
+    type: vless
+    server: 15.164.84.61
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 韩国 2
+    type: vless
+    server: 54.180.151.15
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 加拿大
+    type: vless
+    server: p.nooshindns.com
+    port: 8443
+    uuid: b9e32788-348d-4b38-ab6f-e999a8443dfd
+    tls: true
+    servername: p.nooshindns.com
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: p.nooshindns.com
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 加拿大 2
+    type: vless
+    server: speedtest.net
+    port: 80
+    uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: max-gb1.global.ssl.fastly.net
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 加拿大 3
+    type: vless
+    server: 199.232.197.131
+    port: 80
+    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: max-gb1.global.ssl.fastly.net
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 加拿大 4
+    type: vless
+    server: 151.101.0.1
+    port: 80
+    uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: max-gb1.global.ssl.fastly.net
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 加拿大 5
+    type: vless
+    server: 151.101.66.219
+    port: 80
+    uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: max-gb1.global.ssl.fastly.net
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国 16
+    type: trojan
+    server: 103.177.136.45
+    port: 47909
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: is.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 17
+    type: trojan
+    server: 103.177.136.43
+    port: 47909
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: is.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 18
+    type: trojan
+    server: 103.177.136.44
+    port: 41943
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: az.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 19
+    type: trojan
+    server: 188.253.12.90
+    port: 46424
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: de.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 20
+    type: trojan
+    server: 188.253.12.90
+    port: 48697
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: gh.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 21
+    type: trojan
+    server: 155.117.198.85
+    port: 46424
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: de.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 22
+    type: trojan
+    server: 188.253.12.93
+    port: 48697
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: gh.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 23
+    type: trojan
+    server: 188.253.12.96
+    port: 47909
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: is.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 24
+    type: vless
+    server: 31.56.188.90
+    port: 7443
+    uuid: adea61c0-0bb2-4ad3-8dba-7766eebd50f8
+    tls: true
+    client-fingerprint: chrome
+    servername: mi.com
+    network: tcp
+    reality-opts:
+      public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
+      short-id: be0ce047
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 美国 25
+    type: trojan
+    server: 188.253.12.99
+    port: 46424
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: de.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 26
+    type: trojan
+    server: 155.117.198.84
+    port: 46424
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: de.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 27
+    type: trojan
+    server: 155.117.198.3
+    port: 47909
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: is.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 28
+    type: trojan
+    server: 155.117.198.89
+    port: 48697
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: gh.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 29
     type: trojan
     server: 90081bb25c.node.tro.cac.cab
     port: 46424
@@ -1100,235 +1094,394 @@ proxies:
     sni: de.01.naiun.bilibili.com
     network: tcp
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 俄罗斯 4
-    type: vless
-    server: r1.mizulina.top
-    port: 22231
-    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-    tls: true
-    servername: ''
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 俄罗斯 5
-    type: vless
-    server: r1.mizulina.top
-    port: 22231
-    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-    tls: true
-    servername: r1.mizulina.top
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 澳大利亚 2
-    type: trojan
-    server: 90081bb25c.node.tro.cac.cab
-    port: 45619
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: fr.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 澳大利亚 3
-    type: trojan
-    server: 90081bb25c.node.tro.cac.cab
-    port: 47909
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: is.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 澳大利亚 4
-    type: trojan
-    server: 90081bb25c.node.tro.cac.cab
-    port: 45553
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: ch.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 俄罗斯 6
-    type: vless
-    server: r1.mizulina.top
-    port: 22231
-    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-    tls: true
-    servername: r1.mizulina.top
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision-udp443
-  - name: 南非 2
-    type: vless
-    server: 156.244.43.22
-    port: 443
-    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-    tls: true
-    servername: r1.mizulina.top
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
   - name: 美国 30
     type: trojan
-    server: 155.117.198.87
-    port: 45619
+    server: 155.117.198.84
+    port: 48697
     password: 4f4d1167-ef14-4304-9bce-0740472503ef
     tls: true
-    sni: fr.01.naiun.bilibili.com
+    sni: gh.01.naiun.bilibili.com
     network: tcp
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
   - name: 美国 31
     type: trojan
-    server: 155.117.198.87
-    port: 48697
+    server: 188.253.12.93
+    port: 47909
     password: 4f4d1167-ef14-4304-9bce-0740472503ef
     tls: true
-    sni: gh.01.naiun.bilibili.com
+    sni: is.01.naiun.bilibili.com
     network: tcp
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
   - name: 美国 32
     type: trojan
-    server: 155.117.198.87
+    server: 188.253.12.98
     port: 41943
     password: 4f4d1167-ef14-4304-9bce-0740472503ef
     tls: true
     sni: az.01.naiun.bilibili.com
     network: tcp
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
   - name: 美国 33
     type: trojan
-    server: 155.117.198.82
-    port: 47909
+    server: 188.253.12.92
+    port: 41943
     password: 4f4d1167-ef14-4304-9bce-0740472503ef
     tls: true
-    sni: is.01.naiun.bilibili.com
+    sni: az.01.naiun.bilibili.com
     network: tcp
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
   - name: 美国 34
     type: trojan
-    server: 155.117.198.82
-    port: 45553
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: ch.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 35
-    type: trojan
-    server: 155.117.198.87
-    port: 47909
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: is.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 36
-    type: trojan
-    server: 155.117.198.86
+    server: 188.253.12.92
     port: 45619
     password: 4f4d1167-ef14-4304-9bce-0740472503ef
     tls: true
     sni: fr.01.naiun.bilibili.com
     network: tcp
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 俄罗斯 7
-    type: vless
-    server: 85.234.114.53
-    port: 443
-    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  - name: 美国 35
+    type: trojan
+    server: 188.253.12.94
+    port: 48697
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
     tls: true
-    servername: r1.mizulina.top
+    sni: gh.01.naiun.bilibili.com
     network: tcp
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-    flow: xtls-rprx-vision-udp443
-  - name: 美国 37
+  - name: 美国 36
     type: trojan
-    server: 155.117.198.86
+    server: 188.253.12.93
     port: 41943
     password: 4f4d1167-ef14-4304-9bce-0740472503ef
     tls: true
     sni: az.01.naiun.bilibili.com
     network: tcp
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 37
+    type: trojan
+    server: 188.253.12.99
+    port: 45619
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: fr.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
     udp: true
   - name: 美国 38
     type: trojan
-    server: 155.117.198.83
+    server: 188.253.12.94
     port: 41943
     password: 4f4d1167-ef14-4304-9bce-0740472503ef
     tls: true
     sni: az.01.naiun.bilibili.com
     network: tcp
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 俄罗斯 8
-    type: vless
-    server: 85.234.114.53
-    port: 22231
-    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-    tls: true
-    servername: r1.mizulina.top
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
   - name: 美国 39
     type: trojan
-    server: 155.117.198.86
-    port: 48697
+    server: 188.253.12.93
+    port: 45619
     password: 4f4d1167-ef14-4304-9bce-0740472503ef
     tls: true
-    sni: gh.01.naiun.bilibili.com
+    sni: fr.01.naiun.bilibili.com
     network: tcp
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
   - name: 美国 40
     type: trojan
-    server: 90081bb25c.node.tro.cac.cab
+    server: 188.253.12.90
+    port: 41943
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: az.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 41
+    type: trojan
+    server: 188.253.12.96
     port: 48697
     password: 4f4d1167-ef14-4304-9bce-0740472503ef
     tls: true
     sni: gh.01.naiun.bilibili.com
     network: tcp
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 阿塞拜疆
+  - name: 美国 42
+    type: trojan
+    server: 188.253.12.90
+    port: 45619
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: fr.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 43
+    type: trojan
+    server: 188.253.12.96
+    port: 45553
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: ch.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 44
+    type: trojan
+    server: 188.253.12.98
+    port: 47909
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: is.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 45
+    type: trojan
+    server: 188.253.12.96
+    port: 46424
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: de.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 46
+    type: trojan
+    server: 188.253.12.94
+    port: 47909
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: is.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 47
+    type: trojan
+    server: 188.253.12.93
+    port: 45553
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: ch.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 48
+    type: trojan
+    server: 188.253.12.90
+    port: 45553
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: ch.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 49
+    type: trojan
+    server: 188.253.12.99
+    port: 45553
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: ch.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 50
+    type: trojan
+    server: 188.253.12.98
+    port: 45619
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: fr.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 51
+    type: trojan
+    server: 188.253.12.90
+    port: 47909
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: is.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 52
+    type: trojan
+    server: 188.253.12.99
+    port: 41943
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: az.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 53
+    type: trojan
+    server: 188.253.12.94
+    port: 45553
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: ch.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 54
+    type: trojan
+    server: 188.253.12.96
+    port: 41943
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: az.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 55
+    type: trojan
+    server: 155.117.198.90
+    port: 45553
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: ch.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 56
+    type: trojan
+    server: 155.117.198.89
+    port: 45619
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: fr.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 57
+    type: trojan
+    server: 155.117.198.89
+    port: 41943
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: az.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 58
+    type: trojan
+    server: 155.117.198.85
+    port: 41943
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: az.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 59
+    type: trojan
+    server: 155.117.198.85
+    port: 45553
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: ch.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 60
+    type: trojan
+    server: 155.117.198.90
+    port: 45619
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: fr.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 61
+    type: trojan
+    server: 155.117.198.84
+    port: 45553
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: ch.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 62
+    type: trojan
+    server: 155.117.198.89
+    port: 45553
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: ch.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 63
+    type: trojan
+    server: 155.117.198.90
+    port: 47909
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: is.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 64
+    type: trojan
+    server: 155.117.198.3
+    port: 45619
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: fr.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 65
     type: trojan
     server: 90081bb25c.node.tro.cac.cab
     port: 41943
@@ -1337,55 +1490,20 @@ proxies:
     sni: az.01.naiun.bilibili.com
     network: tcp
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 日本 2
+  - name: 美国 66
     type: trojan
-    server: adak.sonofthewinds.com
-    port: 34470
-    password: 825929f4-c702-35ce-9124-00d3f95b8c32
+    server: 90081bb25c.node.tro.cac.cab
+    port: 48697
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
     tls: true
-    sni: gj1.sonofthewinds.com
+    sni: gh.01.naiun.bilibili.com
     network: tcp
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 中国台湾
-    type: trojan
-    server: adak.sonofthewinds.com
-    port: 34450
-    password: 825929f4-c702-35ce-9124-00d3f95b8c32
-    tls: true
-    sni: tt1.sonofthewinds.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 中国香港 2
-    type: trojan
-    server: adak.sonofthewinds.com
-    port: 34436
-    password: 825929f4-c702-35ce-9124-00d3f95b8c32
-    tls: true
-    sni: hh4.sonofthewinds.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 41
-    type: vless
-    server: 54.178.110.17
-    port: 4443
-    uuid: 00000000-0000-4000-8000-000000000000
-    tls: true
-    servername: nn9jdg-k7yewrrk.acg.xx.kg
-    network: ws
-    ws-opts:
-      path: /@Marisa_kristi
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 42
+  - name: 美国 67
     type: vless
     server: mfa.gov.ua
     port: 443
@@ -1396,9 +1514,9 @@ proxies:
     ws-opts:
       path: /@Marisa_kristi
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 美国 43
+  - name: 美国 68
     type: vless
     server: 166.88.167.206
     port: 30715
@@ -1409,9 +1527,39 @@ proxies:
     ws-opts:
       path: /@Marisa_kristi
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 美国 44
+  - name: 美国 69
+    type: vless
+    server: 69.63.216.10
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 70
+    type: vless
+    server: 154.26.176.148
+    port: 8443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 71
     type: trojan
     server: 165.215.250.14
     port: 443
@@ -1424,22 +1572,9 @@ proxies:
       headers:
         host: www.ignitelimit.com
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 美国 45
-    type: vless
-    server: 69.63.218.168
-    port: 10101
-    uuid: 00000000-0000-4000-8000-000000000000
-    tls: true
-    servername: vfn-6o8h-kht7rpd.zipgd3vx91o.ddns-ip.net
-    network: ws
-    ws-opts:
-      path: /@Marisa_kristi
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 46
+  - name: 美国 72
     type: vless
     server: 146.70.20.110
     port: 20205
@@ -1450,24 +1585,22 @@ proxies:
     ws-opts:
       path: /@Marisa_kristi
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 美国 47
-    type: trojan
-    server: 165.215.250.14
-    port: 443
-    password: humanity
+  - name: 美国 73
+    type: vless
+    server: 93.179.99.130
+    port: 777
+    uuid: 00000000-0000-4000-8000-000000000000
     tls: true
-    sni: www.calmlunch.com
+    servername: nn9jdg-k7yewrrk.acg.xx.kg
     network: ws
     ws-opts:
-      path: /assignment
-      headers:
-        host: www.calmlunch.com
+      path: /@Marisa_kristi
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 美国 48
+  - name: 美国 74
     type: trojan
     server: 165.215.250.14
     port: 443
@@ -1480,22 +1613,24 @@ proxies:
       headers:
         host: www.creationlong.org
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 美国 49
+  - name: 美国 75
     type: vless
-    server: 93.179.99.130
-    port: 777
-    uuid: 00000000-0000-4000-8000-000000000000
+    server: 64.186.229.189
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
     tls: true
-    servername: nn9jdg-k7yewrrk.acg.xx.kg
+    servername: qsiim.jfpct.sbs
     network: ws
     ws-opts:
-      path: /@Marisa_kristi
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 美国 50
+  - name: 美国 76
     type: vless
     server: 209.97.170.177
     port: 74
@@ -1506,9 +1641,9 @@ proxies:
     ws-opts:
       path: /@Marisa_kristi
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 美国 51
+  - name: 美国 77
     type: vless
     server: 45.32.103.8
     port: 20742
@@ -1519,22 +1654,24 @@ proxies:
     ws-opts:
       path: /@Marisa_kristi
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 美国 52
+  - name: 美国 78
     type: vless
-    server: 91.149.203.13
-    port: 15429
-    uuid: 00000000-0000-4000-8000-000000000000
+    server: 154.17.13.158
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
     tls: true
-    servername: nn9jdg-k7yewrrk.acg.xx.kg
+    servername: qsiim.jfpct.sbs
     network: ws
     ws-opts:
-      path: /@Marisa_kristi
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 美国 53
+  - name: 美国 79
     type: vless
     server: 213.179.69.150
     port: 35130
@@ -1545,9 +1682,9 @@ proxies:
     ws-opts:
       path: /@Marisa_kristi
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 美国 54
+  - name: 美国 80
     type: vless
     server: 91.184.240.106
     port: 433
@@ -1558,1539 +1695,1343 @@ proxies:
     ws-opts:
       path: /@Marisa_kristi
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 德国 4
+  - name: 美国 81
     type: vless
-    server: 80.90.182.93
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
+    server: 91.149.203.13
+    port: 15429
+    uuid: 00000000-0000-4000-8000-000000000000
     tls: true
-    servername: linek.perry.us.kg
+    servername: nn9jdg-k7yewrrk.acg.xx.kg
     network: ws
     ws-opts:
-      path: /tool/act/blog
-      headers:
-        host: linek.perry.us.kg
+      path: /@Marisa_kristi
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 俄罗斯 9
+  - name: 美国 82
     type: vless
-    server: 147.45.70.221
+    server: 69.63.212.251
     port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
     tls: true
-    servername: linek.perry.us.kg
+    servername: qsiim.jfpct.sbs
     network: ws
     ws-opts:
-      path: /app
+      path: /
       headers:
-        host: linek.perry.us.kg
+        host: qsiim.jfpct.sbs
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: Nofound
+  - name: 美国 83
     type: vless
-    server: 178.255.222.148
+    server: 154.21.87.223
     port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
     tls: true
-    servername: linek.perry.us.kg
+    servername: qsiim.jfpct.sbs
     network: ws
     ws-opts:
-      path: /mobile/about/friends
+      path: /
       headers:
-        host: linek.perry.us.kg
+        host: qsiim.jfpct.sbs
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 保加利亚 3
+  - name: 美国 84
     type: vless
-    server: 193.37.212.56
+    server: yx.cloudflare.182682.xyz
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 85
+    type: vless
+    server: cf.877774.xyz
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 86
+    type: vless
+    server: www.shopify.com
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 87
+    type: vless
+    server: 64.186.227.87
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 88
+    type: vless
+    server: 64.186.252.166
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 89
+    type: vless
+    server: 69.63.214.61
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 90
+    type: vless
+    server: 154.17.22.207
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 91
+    type: vless
+    server: 154.21.82.135
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 92
+    type: vless
+    server: 64.186.232.60
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 93
+    type: vless
+    server: 154.26.180.8
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 94
+    type: vless
+    server: 154.17.23.239
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 95
+    type: vless
+    server: 154.17.26.200
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 96
+    type: vless
+    server: 69.63.212.192
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 97
+    type: vless
+    server: 154.17.26.148
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 98
+    type: vless
+    server: 154.26.187.69
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 99
+    type: vless
+    server: 154.26.186.78
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 100
+    type: vless
+    server: 154.21.94.7
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 101
+    type: vless
+    server: 69.63.213.250
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 102
+    type: vless
+    server: 154.21.95.59
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 103
+    type: vless
+    server: 154.17.1.231
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 104
+    type: vless
+    server: 154.17.24.174
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 105
+    type: vless
+    server: 154.17.12.91
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 106
+    type: vless
+    server: 64.186.225.82
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 107
+    type: vless
+    server: 64.186.236.167
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 108
+    type: vless
+    server: 154.17.22.175
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 109
+    type: vless
+    server: 154.17.9.145
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 110
+    type: vless
+    server: 154.26.181.85
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 111
+    type: vless
+    server: 64.186.241.154
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 112
+    type: vless
+    server: 69.63.217.6
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 113
+    type: vless
+    server: 154.21.95.165
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 114
+    type: vless
+    server: 154.26.187.44
+    port: 8443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 115
+    type: vless
+    server: 154.17.6.235
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 116
+    type: vless
+    server: 64.186.230.172
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 117
+    type: vless
+    server: 154.17.8.84
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 118
+    type: vless
+    server: 64.186.238.108
+    port: 8443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 119
+    type: vless
+    server: 64.186.236.235
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 120
+    type: vless
+    server: 64.186.228.41
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 121
+    type: vless
+    server: 64.186.226.62
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 122
+    type: vless
+    server: 154.17.25.156
+    port: 8443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 123
+    type: vless
+    server: 69.63.212.210
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 124
+    type: vless
+    server: 64.186.239.202
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 125
+    type: vless
+    server: 64.186.235.57
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 126
+    type: vless
+    server: 69.63.211.169
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 127
+    type: vless
+    server: 64.186.232.37
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 128
+    type: vless
+    server: 154.17.4.26
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 129
+    type: vless
+    server: 154.17.13.184
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 130
+    type: vless
+    server: 154.17.4.159
     port: 2053
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
     tls: true
-    servername: linek.perry.us.kg
+    servername: qsiim.jfpct.sbs
     network: ws
     ws-opts:
-      path: /data
+      path: /
       headers:
-        host: linek.perry.us.kg
+        host: qsiim.jfpct.sbs
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 美国 55
+  - name: 美国 131
     type: vless
-    server: 144.31.4.235
+    server: 64.186.231.175
     port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
     tls: true
-    servername: linek.perry.us.kg
+    servername: qsiim.jfpct.sbs
     network: ws
     ws-opts:
-      path: /pdf
+      path: /
       headers:
-        host: linek.perry.us.kg
+        host: qsiim.jfpct.sbs
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 新加坡 4
+  - name: 美国 132
     type: vless
-    server: 149.28.129.157
-    port: 2053
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
+    server: 69.63.223.47
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
     tls: true
-    servername: linek.perry.us.kg
+    servername: qsiim.jfpct.sbs
     network: ws
     ws-opts:
-      path: /thread/forum/res
+      path: /
       headers:
-        host: linek.perry.us.kg
+        host: qsiim.jfpct.sbs
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 保加利亚 4
+  - name: 美国 133
     type: vless
-    server: 185.177.59.153
-    port: 2053
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
+    server: 69.63.223.42
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
     tls: true
-    servername: linek.perry.us.kg
+    servername: qsiim.jfpct.sbs
     network: ws
     ws-opts:
-      path: /pics/downloads
+      path: /
       headers:
-        host: linek.perry.us.kg
+        host: qsiim.jfpct.sbs
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 英国 8
+  - name: 美国 134
     type: vless
-    server: 45.89.244.103
+    server: 154.17.11.153
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 135
+    type: vless
+    server: 64.186.233.224
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 136
+    type: vless
+    server: 154.26.183.243
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 137
+    type: vless
+    server: 69.63.193.64
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 138
+    type: vless
+    server: 154.21.81.140
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 139
+    type: vless
+    server: 64.186.232.121
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 140
+    type: vless
+    server: 154.17.14.241
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 141
+    type: vless
+    server: 64.186.248.118
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 142
+    type: vless
+    server: 69.63.218.168
+    port: 10101
+    uuid: 00000000-0000-4000-8000-000000000000
+    tls: true
+    servername: vfn-6o8h-kht7rpd.zipgd3vx91o.ddns-ip.net
+    network: ws
+    ws-opts:
+      path: /@Marisa_kristi
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 143
+    type: vless
+    server: 69.63.206.96
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 144
+    type: vless
+    server: 69.63.222.124
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 145
+    type: vless
+    server: 154.26.184.229
     port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
     tls: true
-    servername: linek.perry.us.kg
+    servername: qsiim.jfpct.sbs
     network: ws
     ws-opts:
-      path: /html
+      path: /
       headers:
-        host: linek.perry.us.kg
+        host: qsiim.jfpct.sbs
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 英国 9
+  - name: 美国 146
     type: vless
-    server: 89.28.236.192
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /programs
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 荷兰
-    type: vless
-    server: 194.5.98.105
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /contact
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 荷兰 2
-    type: vless
-    server: 194.5.98.105
-    port: 2053
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /intro/chat
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 罗马尼亚
-    type: vless
-    server: 5.252.178.146
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /clip/shop
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 瑞典
-    type: vless
-    server: 193.181.214.98
-    port: 2083
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /dh/favorite/docs
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 法国 2
-    type: vless
-    server: 194.32.76.242
+    server: 64.186.225.11
     port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
     tls: true
-    servername: linek.perry.us.kg
+    servername: qsiim.jfpct.sbs
     network: ws
     ws-opts:
-      path: /travel
+      path: /
       headers:
-        host: linek.perry.us.kg
+        host: qsiim.jfpct.sbs
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 瑞士
+  - name: 美国 147
     type: vless
-    server: 83.228.217.38
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /star/ads/files
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 56
-    type: vless
-    server: 45.83.20.29
+    server: 154.17.2.59
     port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
     tls: true
-    servername: linek.perry.us.kg
+    servername: qsiim.jfpct.sbs
     network: ws
     ws-opts:
-      path: /member/community
+      path: /
       headers:
-        host: linek.perry.us.kg
+        host: qsiim.jfpct.sbs
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 白俄罗斯
+  - name: 美国 148
     type: vless
-    server: 93.85.88.60
-    port: 2053
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /uploads/clips/drama
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 瑞士 2
-    type: vless
-    server: 45.90.57.139
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /mall/collect
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 57
-    type: vless
-    server: 132.243.203.218
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /seller/novel
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 比利时
-    type: vless
-    server: 104.155.124.198
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /account
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 波兰
-    type: vless
-    server: 31.133.0.133
-    port: 2053
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /forum/star/season
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 58
-    type: vless
-    server: 132.243.203.221
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /uploads/events
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 59
-    type: vless
-    server: 208.85.19.254
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /version/directory/list
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 白俄罗斯 2
-    type: vless
-    server: 93.85.88.60
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /urls/photos/mag
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 阿联酋 2
-    type: vless
-    server: 193.123.74.174
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /help/f
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 葡萄牙
-    type: vless
-    server: 45.92.70.176
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /blogs/clip/contact
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 瑞典 2
-    type: vless
-    server: 193.180.215.69
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /picture
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 60
-    type: vless
-    server: 132.243.203.223
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /tools/channels
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 61
-    type: vless
-    server: 132.243.203.211
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /programs
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 印度
-    type: vless
-    server: 180.149.37.38
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /doc/favorite
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 62
-    type: vless
-    server: 94.131.123.74
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /mall/seasons
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 保加利亚 5
-    type: vless
-    server: 94.156.35.128
-    port: 2053
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /clip/library/favorite
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 63
-    type: vless
-    server: 132.243.203.120
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /home
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 伊朗
-    type: vless
-    server: 31.57.190.22
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /go.php/task/content
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 64
-    type: vless
-    server: 132.243.203.244
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /zh-cn
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 奥地利
-    type: vless
-    server: 46.183.184.60
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /read
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 俄罗斯 12
-    type: vless
-    server: 147.45.245.15
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /task
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 乌克兰 2
-    type: vless
-    server: 92.113.146.87
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /trade
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 俄罗斯 13
-    type: vless
-    server: 45.89.52.124
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /resource/comics/live
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 匈牙利
-    type: vless
-    server: 91.219.237.49
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /html/teacher
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 65
-    type: vless
-    server: 38.180.100.80
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /lives/topic/ads
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 保加利亚 6
-    type: vless
-    server: 87.121.38.57
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /out/my/clips
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 以色列
-    type: vless
-    server: 185.47.172.172
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /outbound/categories/doc
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 俄罗斯 14
-    type: vless
-    server: 185.125.100.160
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /retrieve
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 匈牙利 2
-    type: vless
-    server: 91.219.236.202
-    port: 2053
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /download/study
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 南非 3
-    type: vless
-    server: 156.38.157.171
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /pdf/register/teacher
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: Nofound 2
-    type: vless
-    server: 195.16.74.73
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /picture
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 保加利亚 7
-    type: vless
-    server: 185.82.218.224
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /temp/jump.html
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 罗马尼亚 2
-    type: vless
-    server: 185.247.226.138
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /jp
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 南非 4
-    type: vless
-    server: 156.38.157.171
-    port: 2053
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /out
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 66
-    type: vless
-    server: 132.243.203.210
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /app/city
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 亚美尼亚
-    type: vless
-    server: 2.56.204.183
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /feedback/forums
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 67
-    type: vless
-    server: 132.243.203.193
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /show
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 意大利
-    type: vless
-    server: 89.46.70.46
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /book/team
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 德国 5
-    type: vless
-    server: 195.245.229.66
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /act
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 法国 3
-    type: vless
-    server: 195.246.230.125
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /p/url
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 68
-    type: vless
-    server: 94.131.123.173
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /pay/html
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 尼日利亚
-    type: vless
-    server: 83.229.6.134
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /doc/vod/archive
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 土耳其
-    type: vless
-    server: 82.117.84.47
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /details
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 69
-    type: vless
-    server: 38.79.154.92
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /downloads
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 匈牙利 3
-    type: vless
-    server: 89.147.111.223
-    port: 2053
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /pictures
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 新加坡 5
-    type: vless
-    server: 45.76.185.254
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /item/code/dh
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 亚美尼亚 2
-    type: vless
-    server: 91.198.108.191
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /member/clips
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 俄罗斯 15
-    type: vless
-    server: 176.124.220.32
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /acg/class
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 多米尼加共和国
-    type: vless
-    server: 181.36.229.212
-    port: 2096
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /m/articles
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 匈牙利 4
-    type: vless
-    server: 89.147.109.212
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /trade
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 意大利 2
-    type: vless
-    server: 80.211.48.113
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /doujin/music
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 乌克兰 3
-    type: vless
-    server: 185.86.77.181
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /album
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 瑞士 3
-    type: vless
-    server: 81.29.149.219
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /files/edu
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 荷兰 3
-    type: vless
-    server: 151.236.29.97
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /programs/share/buy
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 德国 6
-    type: vless
-    server: 207.180.252.131
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /topics
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 多米尼加共和国 2
-    type: vless
-    server: 181.36.229.212
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /urls
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 多米尼加共和国 3
-    type: vless
-    server: 181.36.229.212
-    port: 2087
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /playlist/about/jump.php
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 立陶宛 2
-    type: vless
-    server: 195.238.126.150
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /messages
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 加拿大
-    type: vless
-    server: 206.53.48.65
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /archives/products/seller
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 多米尼加共和国 4
-    type: vless
-    server: 181.36.229.212
-    port: 2083
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /go.php
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 冰岛
-    type: vless
-    server: 151.236.24.54
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /files/ad/collect
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 俄罗斯 18
-    type: vless
-    server: 45.129.141.188
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /seller
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 多米尼加共和国 5
-    type: vless
-    server: 181.36.229.212
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /games/m/mag
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 多米尼加共和国 6
-    type: vless
-    server: 181.36.229.212
-    port: 2053
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /uploads/item
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 塞浦路斯
-    type: vless
-    server: 185.205.187.139
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /pic
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 70
-    type: vless
-    server: 64.176.10.195
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /documents/stream/photos
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 英国 10
-    type: vless
-    server: 31.76.113.157
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /city
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 71
-    type: vless
-    server: 139.84.235.99
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /ep/tech
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 72
-    type: vless
-    server: 139.84.236.69
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /vip
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 罗马尼亚 3
-    type: vless
-    server: 217.156.67.40
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /magnet/cn
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 73
-    type: vless
-    server: 94.131.19.19
-    port: 2053
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /ajax/cp
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 俄罗斯 19
-    type: vless
-    server: 94.141.97.10
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /help/tag
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 74
-    type: vless
-    server: 64.176.15.110
-    port: 2053
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /store/favorite/ads
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 韩国
-    type: vless
-    server: 123.111.169.70
-    port: 2083
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /jumping
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 奥地利 2
-    type: vless
-    server: 46.183.185.142
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /page
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 75
-    type: vless
-    server: 216.238.110.198
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /temp/study/streaming
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 以色列 2
-    type: vless
-    server: 80.178.58.56
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /reg/torrent/products
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 英国 11
-    type: vless
-    server: 84.8.142.203
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /playlist
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 哈萨克斯坦 2
-    type: vless
-    server: 195.49.215.254
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /thread/apps
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 哈萨克斯坦 3
-    type: vless
-    server: 195.210.47.233
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /games/go.php
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 俄罗斯 20
-    type: vless
-    server: 95.139.91.132
-    port: 443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /course/anime/event
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国 76
-    type: vless
-    server: 64.176.4.154
-    port: 8443
-    uuid: 36af4874-d6a3-4f7c-82a7-1cb724961b52
-    tls: true
-    servername: linek.perry.us.kg
-    network: ws
-    ws-opts:
-      path: /games
-      headers:
-        host: linek.perry.us.kg
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 德国 7
-    type: vless
-    server: 194.5.206.20
-    port: 10443
-    uuid: c08309ad-4671-43af-882b-b022f3a171a0
+    server: 31.185.108.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     tls: false
     servername: ''
     network: ws
     ws-opts:
       path: /
+      headers:
+        host: vms.lifetime23.workers.dev
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 美国+CloudFlare节点
+  - name: 美国 149
     type: vless
-    server: 108.162.192.75
+    server: 64.186.229.220
     port: 443
-    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
     tls: true
-    servername: octopusss4.com
+    servername: qsiim.jfpct.sbs
     network: ws
     ws-opts:
-      path: /tsghdws
+      path: /
       headers:
-        host: octopusss4.com
+        host: qsiim.jfpct.sbs
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 美国+CloudFlare节点 2
+  - name: 美国 150
     type: vless
-    server: 108.162.195.45
+    server: www.ntu.edu.sg
     port: 443
-    uuid: 7270612b-49f6-4b04-999c-34d8263da767
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
     tls: true
-    servername: picassooo.info
+    servername: qsiim.jfpct.sbs
     network: ws
     ws-opts:
-      path: /aymdlws
+      path: /
       headers:
-        host: picassooo.info
+        host: qsiim.jfpct.sbs
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 美国+CloudFlare节点 3
+  - name: 美国 151
     type: vless
-    server: 162.159.12.41
+    server: 154.26.189.70
     port: 443
-    uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
     tls: true
-    servername: hhlfy.twiladaphne.ndjp.net
+    servername: qsiim.jfpct.sbs
     network: ws
     ws-opts:
-      path: /fp=random
+      path: /
       headers:
-        host: hhlfy.twiladaphne.ndjp.net
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 152
+    type: vless
+    server: 174.136.205.24
+    port: 8443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 153
+    type: vless
+    server: 136.175.179.113
+    port: 8443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 154
+    type: vless
+    server: 154.17.225.54
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国 155
+    type: vless
+    server: 23.141.52.196
+    port: 51700
+    uuid: e6082798-61ab-4167-9653-67883f5f0166
+    tls: true
+    client-fingerprint: chrome
+    servername: www.amd.com
+    network: tcp
+    reality-opts:
+      public-key: cJ0oDse0aPBi7c4UCxQgMP1UNoBPZ2NDB8aL_17G0HQ
+      short-id: d18340
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 奥地利+V2CROSS.COM
+    flow: xtls-rprx-vision
+  - name: 日本 3
+    type: vless
+    server: 8.209.231.3
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 日本 4
+    type: vless
+    server: 54.199.97.220
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 日本 5
+    type: vless
+    server: 8.211.161.198
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 日本 6
+    type: vless
+    server: 54.248.143.139
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 日本 7
+    type: vless
+    server: 35.74.74.6
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 日本 8
+    type: vless
+    server: 52.194.99.211
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 日本 9
+    type: vless
+    server: 52.193.174.161
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 日本 10
+    type: vless
+    server: 16.76.68.102
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 日本 11
+    type: vless
+    server: 54.65.58.58
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 日本 12
+    type: vless
+    server: 8.216.5.125
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 日本 13
+    type: vless
+    server: 8.219.195.31
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 日本 14
+    type: vless
+    server: 8.219.155.125
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 日本 15
+    type: vless
+    server: 8.222.193.153
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 日本 16
+    type: vless
+    server: 8.222.185.236
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 未知
     type: trojan
-    server: 212.183.88.136
+    server: 165.215.250.14
     port: 443
     password: humanity
     tls: true
@@ -3101,18 +3042,161 @@ proxies:
       headers:
         host: www.calmlunch.com
     tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 未知 2
+    type: trojan
+    server: 104.20.6.134
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmloud.com
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        host: www.calmloud.com
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 未知 3
+    type: trojan
+    server: 45.130.125.96
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmloud.com
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        host: www.calmloud.com
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 香港 2
+    type: vless
+    server: releases.capitaledge.blog
+    port: 8448
+    uuid: af2e1391-e1df-4939-906f-93ee993c940e
+    tls: true
+    client-fingerprint: chrome
+    servername: aliusfilms.ru
+    network: tcp
+    reality-opts:
+      public-key: cynncQk7kKzEQaExg-FN7pMqFaZPSXEi_Ggy7AXXmVg
+      short-id: bb44cc55
+    tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 德国+V2CROSS.COM
+    flow: xtls-rprx-vision
+  - name: 香港 3
     type: trojan
-    server: 91.233.8.138
-    port: 443
-    password: qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq
+    server: 90081bb25c.node.tro.cac.cab
+    port: 47909
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
     tls: true
-    sni: www.homelywebs.click
+    sni: is.01.naiun.bilibili.com
     network: tcp
     tfo: false
     skip-cert-verify: true
+    udp: true
+  - name: 香港 4
+    type: trojan
+    server: 90081bb25c.node.tro.cac.cab
+    port: 45553
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: ch.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 新加坡 4
+    type: vless
+    server: 13.250.131.37
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 新加坡 5
+    type: vless
+    server: 52.76.97.123
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 新加坡 6
+    type: vless
+    server: 8.219.154.217
+    port: 8443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 新加坡 7
+    type: vless
+    server: 47.82.155.79
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 新加坡 8
+    type: vless
+    server: 47.82.178.58
+    port: 443
+    uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+    tls: true
+    servername: qsiim.jfpct.sbs
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: qsiim.jfpct.sbs
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 中国香港 2
+    type: vless
+    server: 47.86.55.200
+    port: 19321
+    uuid: 394086c4-d8a4-4298-9b62-f70fa711082d
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
     udp: true
   - name: 美国+德克萨斯州达拉斯Linode数据中心
     type: trojan
@@ -3123,19 +3207,137 @@ proxies:
     sni: 45.79.8.17
     network: tcp
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 149.104.87.182
-    port: 443
-    password: PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA
+  - name: 韩国+蘑菇主机BGP数据中心
+    type: vless
+    server: 103.214.68.51
+    port: 10702
+    uuid: 00000000-0000-4000-8000-000000000000
     tls: true
-    sni: www.jewelapp.click
-    network: tcp
+    servername: 49ax00d7kmg3ijp3vbkua090bws.majusti.dpdns.org
+    network: ws
+    ws-opts:
+      path: /@Marisa_kristifp=chrome
+      headers:
+        host: 49ax00d7kmg3ijp3vbkua090bws.majusti.dpdns.org
     tfo: false
     skip-cert-verify: true
     udp: true
+  - name: 英国+V2CROSS.COM
+    type: vless
+    server: 158.178.225.153
+    port: 41493
+    uuid: 00000000-0000-4000-8000-000000000000
+    tls: true
+    servername: 020g5uxcxmqlndg.luyuju.dpdns.org
+    network: ws
+    ws-opts:
+      path: /@Marisa_kristi
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 捷克+V2CROSS.COM
+    type: vless
+    server: ams1.fromblancwithlove.com
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    tls: true
+    servername: ams1.fromblancwithlove.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 法国+ONLINE+S.A.S.数据中心
+    type: hysteria2
+    server: 62.210.26.173
+    port: 64772
+    password: github.com/Alvin9999-newpac/fanqiang
+    sni: bing.com
+    skip-cert-verify: true
+  - name: 德国+V2CROSS.COM
+    type: hysteria2
+    server: 185.227.108.195
+    port: 11000
+    password: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
+    sni: de-node.farnet.top
+    skip-cert-verify: true
+  - name: 美国+加利福尼亚
+    type: vless
+    server: 64.188.77.219
+    port: 443
+    uuid: 9bc4a008-bc91-4ec2-aa3d-589584511965
+    tls: true
+    client-fingerprint: chrome
+    servername: nid.hatvpn.org
+    network: tcp
+    reality-opts:
+      public-key: PfG1V1-ODHD8CegoTVg8m4G4mw5S1QiA751yWKCkhBc
+      short-id: 054602d818379876
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 美国+CloudFlare节点
+    type: vless
+    server: personal.sabteahval.qzz.io
+    port: 2083
+    uuid: 8ea46bde-de0a-4864-96f0-af5c6ac9da36
+    tls: true
+    servername: PersOnAL.sAbTeAHVAL.Qzz.iO
+    network: ws
+    ws-opts:
+      path: >-
+        /eyJqdW5rIjoibXhLcG43Z3hKR1pqRkRzIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
+      headers:
+        host: personal.sabteahval.qzz.io
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: ''
+  - name: 爱尔兰+V2CROSS.COM
+    type: vless
+    server: 89.125.37.151
+    port: 443
+    uuid: 9c04338e-99e4-4d7a-b829-bcbd94bd68c0
+    tls: true
+    client-fingerprint: chrome
+    servername: se-cdn.ru
+    network: tcp
+    reality-opts:
+      public-key: nF_kEdHan2dgl2tlQ_dtNaKZ4oORhuiFrXHbtEDcT2Q
+      short-id: 2d6d073dc88f22a8
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 美国+CloudFlare节点 2
+    type: vless
+    server: www.speedtest.org
+    port: 8080
+    uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: tr-cd.sublink-vip2.com
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇷🇺 俄罗斯 | RUS
+    type: vless
+    server: r1.mizulina.top
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    tls: true
+    servername: r1.mizulina.top
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
   - name: 8|美国2
     type: hysteria2
     server: mg2.mangshe.xyz
@@ -3194,50 +3396,7 @@ proxies:
     password: e7965e64-e001-4e8c-8273-39c61ff4a094
     sni: bing.com
     skip-cert-verify: true
-  - name: 9|🇯🇵JP-@VPNine1
-    type: hysteria2
-    server: hk01.jgpy.help
-    port: 10085
-    password: 573402b7-156e-4141-8c3b-f01b6ebedf05
-    sni: apple.com
-    skip-cert-verify: true
-  - name: 9|🇯🇵JP-🚀@VPNine1
-    type: hysteria2
-    server: hk03.jgpy.help
-    port: 10089
-    password: 573402b7-156e-4141-8c3b-f01b6ebedf05
-    sni: apple.com
-    skip-cert-verify: true
-  - name: 9|🇺🇸US-🚀@VPNine1
-    type: hysteria2
-    server: us01.jgpy.help
-    port: 10078
-    password: 573402b7-156e-4141-8c3b-f01b6ebedf05
-    sni: apple.com
-    skip-cert-verify: true
-  - name: 9|🇺🇸59409 | ⚡️Telegram = t.me/SO...
-    type: hysteria2
-    server: 32.195.51.20
-    port: 39150
-    obfs: salamander
-    obfs-password: dlxmzvxvcp3i6v0e
-    password: 5z15av99psrlhdqp
-    sni: 32.195.51.20
-    skip-cert-verify: false
-    alpn:
-      - h3
-      - http/1.1
-      - h2
-  - name: 9|  ای   TelegramID Express_free...
-    type: hysteria2
-    server: Express_freevp
-    port: .nan
-    obfs: salamander
-    obfs-password: Express_freevpn
-    password: ''
-    sni: free.masir-sefid.shop
-    skip-cert-verify: true
-  - name: 9|@FreakConfig
+  - name: 9|🇩🇪@FreakConfig
     type: hysteria2
     server: Masir_Sefi
     port: .nan
@@ -3255,7 +3414,7 @@ proxies:
     password: KevinZakarian
     sni: 179.61.132.96
     skip-cert-verify: true
-  - name: 9|@V2ray_official
+  - name: '9|@confiig_hub #2'
     type: hysteria2
     server: 18.157.222.169
     port: 1040
@@ -3264,16 +3423,7 @@ proxies:
     password: Masir_Sefid
     sni: free.masir-sefid.shop
     skip-cert-verify: true
-  - name: 9|⚡@V2ray_official
-    type: hysteria2
-    server: 18.157.222.169
-    port: 444
-    obfs: salamander
-    obfs-password: Masir_Sefid
-    password: Masir_Sefid
-    sni: free.masir-sefid.shop
-    skip-cert-verify: true
-  - name: '9|⚡@V2ray_official #1'
+  - name: '9|@confiig_hub #3'
     type: hysteria2
     server: 18.157.222.169
     port: 8880
@@ -3282,7 +3432,7 @@ proxies:
     password: Masir_Sefid
     sni: free.masir-sefid.shop
     skip-cert-verify: true
-  - name: '9|@V2ray_official #1'
+  - name: 9|@V2ray_official
     type: hysteria2
     server: cdn.accuratenetworkchecker.ir
     port: 59095
@@ -3703,6 +3853,240 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
+  - name: '>>@oneclickvpnkeys::US'
+    type: vless
+    server: 172.67.150.254
+    port: 2095
+    uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: iioo.iioou.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸+132+-+US+-+VLESS/WS+-+2052
+    type: vless
+    server: 104.18.13.229
+    port: 2052
+    uuid: 12d75b7d-8fdf-4785-8d62-d836854e7e63
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: parking-nfchbwa1-v2.parking-1ab.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '>>@oneclickvpnkeys::US 2'
+    type: vless
+    server: 104.21.224.5
+    port: 80
+    uuid: 93526fcb-8dbf-442e-a656-eb304f1da4ef
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: lucky-voice-d6f3.difat89954-0c6.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '>>@oneclickvpnkeys::US 3'
+    type: vless
+    server: 104.17.15.87
+    port: 80
+    uuid: f929cc78-e2a1-4ce3-8051-3e9538405144
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      headers:
+        host: germany.xydcqd.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '>>@oneclickvpnkeys::US 4'
+    type: vless
+    server: 104.18.12.229
+    port: 2052
+    uuid: 12d75b7d-8fdf-4785-8d62-d836854e7e63
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: parking-nfchbwa1-v2.parking-1ab.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸+167+-+US+-+VLESS/WS/TLS/UTLS+-+443
+    type: vless
+    server: 104.16.250.22
+    port: 443
+    uuid: 17ebee4e-97ea-4cad-8737-cc228478ca9d
+    tls: true
+    servername: lively-brook-c471.nedena3319.workers.dev
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: lively-brook-c471.nedena3319.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸+488+-+US+-+VLESS/WS+-+80
+    type: vless
+    server: 104.18.173.174
+    port: 80
+    uuid: 53342b53-157e-4475-9f3a-40439434e689
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: c.iamdt.dpdns.org
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '>>@configV2rayNG::US'
+    type: vless
+    server: 198.41.222.191
+    port: 80
+    uuid: e388fffb-03b0-4227-ac2c-2b5cec1f5c34
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      headers:
+        host: leecher56.matinheydri.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸+545+-+US+-+VLESS/WS+-+8880
+    type: vless
+    server: africa.visa.com
+    port: 8880
+    uuid: 5b002005-7fb1-413e-8cbd-08e50c87c2ea
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: >-
+        /?ed=2560Join---V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz
+      headers:
+        host: wetfleagidc-8tsbi8xd-v3.wet-flea-gidc.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: Fast+Deploy+Your+Own+Worker+For+Creation+Of+Configs+:+https
+    type: vless
+    server: medium.com
+    port: 443
+    uuid: f2a73750-3087-48ff-a763-1348c15dce68
+    tls: true
+    servername: rAyAn-007.mAxImA.DpDnS.OrG
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: rAyAn-007.mAxImA.DpDnS.OrG
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸+美国+德克萨斯州达拉斯Linode数据中心
+    type: trojan
+    server: 45.79.8.17
+    port: 443
+    password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf
+    tls: true
+    sni: 45.79.8.17
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+V2CROSS.COM
+    type: vless
+    server: 192.169.220.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: vms.lifetime38.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '>>@v2ray_configs_pool::US'
+    type: vless
+    server: '::ffff:104.21.69.164'
+    port: 2087
+    uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+    tls: true
+    servername: EMS.Arc-Time.Workers.DEV
+    network: ws
+    ws-opts:
+      path: /yyru4ludskje
+      headers:
+        host: ems.arc-time.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '>>@oneclickvpnkeys::US 5'
+    type: vless
+    server: 188.114.96.3
+    port: 443
+    uuid: a73b8135-ec7a-4f70-bac6-81fbccad4515
+    tls: true
+    servername: labeller.neonime83.workers.dev
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: labeller.neonime83.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: '>>@oneclickvpnkeys::US 6'
+    type: vless
+    server: 172.66.40.99
+    port: 2083
+    uuid: ce035748-9913-40c9-9fb6-c8389f7cdcf3
+    tls: true
+    servername: yousef.varzesh.dpdns.org
+    network: ws
+    ws-opts:
+      headers:
+        host: yousef.varzesh.dpdns.org
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇸🇬+Join+Telegram:@Farah_VPN+🇸🇬
+    type: vless
+    server: 162.159.153.4
+    port: 443
+    uuid: f2a73750-3087-48ff-a763-1348c15dce68
+    tls: true
+    servername: rAyAn-007.mAxImA.DpDnS.OrG
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: rAyAn-007.mAxImA.DpDnS.OrG
+    tfo: false
+    skip-cert-verify: false
+    udp: true
   - name: 🇺🇸+418+-+US+-+VLESS/REALITY/PBK/SID/VISION/UTLS+-+23576
     type: vless
     server: 15.204.97.214
@@ -3719,18 +4103,6 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 🔴🇺🇸[📺]_github.com/Ruk1ng001_427cf40a
-    type: vless
-    server: fm3.pages.dev
-    port: 443
-    uuid: dcc5fe42-3ae9-4218-a5ed-2e642177a147
-    tls: true
-    servername: fm3.pages.dev
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
   - name: 🔴🇺🇸[📺]_github.com/Ruk1ng001_c4978d24
     type: vless
     server: 44.242.50.106
@@ -3747,7 +4119,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 🇺🇸+140+-+US+-+VLESS/REALITY/PBK/VISION/UTLS+-+28190
+  - name: '>>@oneclickvpnkeys::US 7'
     type: vless
     server: 159.89.87.21
     port: 28190
@@ -3762,7 +4134,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 🇲🇽+MX+3
+  - name: 🇺🇸+美国+V2CROSS.COM
     type: trojan
     server: 149.104.87.182
     port: 443
@@ -3770,6 +4142,18 @@ proxies:
     tls: true
     sni: www.jewelapp.click
     network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸+US+1
+    type: trojan
+    server: usa2.bw8848.org
+    port: 443
+    password: S8wG5SmFw5wVDeLG4K2N6Mqr2mSPjrpBd7QCHcK4F8fYRfiN
+    tls: true
+    sni: usa2.bw8848.org
+    network: ws
+    ws-opts: {}
     tfo: false
     skip-cert-verify: false
     udp: true
@@ -3789,31 +4173,37 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 🇫🇷FR-217.69.2.107-0105
-    type: trojan
-    server: 217.69.2.107
-    port: 443
-    password: YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh
-    tls: true
-    sni: www.weavenet.click
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: '>>@oneclickvpnkeys::GB'
+  - name: 🟢🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_3511248f
     type: vless
-    server: 152.233.28.198
-    port: 8443
-    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    server: 103.134.35.107
+    port: 22335
+    uuid: a3a8c354-a85c-477b-90f3-dbe08cadf31c
     tls: true
-    servername: uk1.fromblancwithlove.com
+    client-fingerprint: chrome
+    servername: www.yahoo.com
     network: tcp
+    reality-opts:
+      public-key: zPM3iLhD0ppwxYWzwiXFhQd1PwXCjFN9u28DbXdy604
+      short-id: a2346cd0
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🌐+WS-TLS+|+@Express_alaki+|+src+@V2rayng_Fast```
+    flow: xtls-rprx-vision
+  - name: 🇺🇸+US+16
     type: trojan
-    server: 188.114.96.3
+    server: www.calmloud.com
+    port: 443
+    password: humanity
+    tls: true
+    sni: ''
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🎈74@oneclickvpnkeys
+    type: trojan
+    server: 185.18.250.252
     port: 443
     password: humanity
     tls: true
@@ -3821,30 +4211,20 @@ proxies:
     network: ws
     ws-opts: {}
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 🔴🇰🇷[🎬🤖📺]_github.com/Ruk1ng001_6946ee89
+  - name: 美国+Fastly全球Anycast节点
     type: vless
-    server: 47.80.13.96
-    port: 443
-    uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-    tls: true
-    client-fingerprint: chrome
-    servername: api.company-target.com
-    network: tcp
-    reality-opts:
-      public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇰🇷+KR+7
-    type: trojan
-    server: 130.94.29.102
-    port: 443
-    password: d1UH4TrhvCmjc-s4nmChew1qGqX3MNMqel
-    tls: true
-    sni: www.ws-converter.click
-    network: tcp
+    server: 151.101.0.1
+    port: 80
+    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: max-gb1.global.ssl.fastly.net
     tfo: false
     skip-cert-verify: false
     udp: true
@@ -3863,6 +4243,18 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
+  - name: 美国+CloudFlare节点 3
+    type: trojan
+    server: 104.20.6.134
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmloud.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
   - name: '@filembad'
     type: trojan
     server: 188.114.98.0
@@ -3874,6 +4266,18 @@ proxies:
     ws-opts: {}
     tfo: false
     skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸US美国9
+    type: trojan
+    server: www.ignitelimit.com
+    port: 443
+    password: humanity
+    tls: true
+    sni: ''
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
     udp: true
   - name: 🇺🇸+30+-+US+-+Trojan/WS/TLS+-+443
     type: trojan
@@ -3887,9 +4291,9 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🎈74@oneclickvpnkeys
+  - name: 🌐+WS-TLS+|+@Express_alaki+|+src+@V2rayng_Fast```
     type: trojan
-    server: 185.18.250.252
+    server: 188.114.96.3
     port: 443
     password: humanity
     tls: true
@@ -3897,7 +4301,31 @@ proxies:
     network: ws
     ws-opts: {}
     tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸+44+-+US+-+Trojan/WS/TLS+-+443
+    type: trojan
+    server: 172.64.147.24
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.gossipglove.com
+    network: ws
+    ws-opts: {}
+    tfo: false
     skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸+26+-+US+-+Trojan/WS/TLS+-+443
+    type: trojan
+    server: 104.18.11.110
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.multiplydose.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
     udp: true
   - name: 🌐+WS-TLS+|+@Express_alaki+|+src+@v2Line
     type: trojan
@@ -3911,137 +4339,28 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 🇯🇵+JP+2
-    type: trojan
-    server: node2.bw8848.org
-    port: 443
-    password: hV66LcSGyxUdHq2aAeqxmLfpBDQmRYxo8Wte43oZr8L379SS
-    tls: true
-    sni: node2.bw8848.org
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001_b31db3ef
+  - name: 立陶宛+V2CROSS.COM
     type: vless
-    server: 51.44.16.107
-    port: 31413
-    uuid: 5454343b-541b-4c96-8c2a-52e81079d124
-    tls: true
-    client-fingerprint: chrome
-    servername: yahoo.com
-    network: tcp
-    reality-opts:
-      public-key: nMlxwhP34_5wFPscbso_hOfRDmsj9DonMpDSXUrnJR8
-      short-id: ead3d6f82a9d
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 🇯🇵+JP+7
-    type: trojan
-    server: jp2.bw8848.org
+    server: 89.116.46.210
     port: 443
-    password: 5YYALHHZEiMDssHZwTMQxbuT8CZVP5Y25ppCtpZnvK4asz73
+    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
     tls: true
-    sni: jp2.bw8848.org
+    servername: octopusss4.com
     network: ws
-    ws-opts: {}
+    ws-opts:
+      path: /tsghdws
+      headers:
+        host: octopusss4.com
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇩🇪+DE+1
+  - name: '@V2ray_confiig`'
     type: trojan
-    server: gm2.bw8848.org
-    port: 443
-    password: cczQCxQBdYzynosgqLVSmUnZzwjJcWEnpWnMAjZQUy94hDdN
-    tls: true
-    sni: gm2.bw8848.org
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇩🇪+DE+5
-    type: trojan
-    server: gm1.bw8848.org
-    port: 443
-    password: RaxTmLsUysCCyFnHeEbw87Z93F4rGEhxmCEzvTLAssP9zuMA
-    tls: true
-    sni: gm1.bw8848.org
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸+US+20
-    type: trojan
-    server: www.calmloud.com
+    server: 172.64.152.23
     port: 443
     password: humanity
     tls: true
-    sni: ''
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇸🇬+SG+1
-    type: trojan
-    server: node1.bw8848.org
-    port: 443
-    password: 5JKj82yC2BNxy8LAZha8Gsj2BAexJJU7ttTfeFcuHzmLjAiZ
-    tls: true
-    sni: node1.bw8848.org
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸US美国9
-    type: trojan
-    server: 104.18.152.219
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸+83+-+US+-+Trojan/WS/TLS/UTLS+-+443
-    type: trojan
-    server: www.ignitelimit.com
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: '@TeleGetHub+join+telegram'
-    type: trojan
-    server: static.cloudflareinsights.com
-    port: 443
-    password: 09548571-364e-4876-8e92-98f423e73913
-    tls: true
-    sni: aaa.r-o-o-t2.ir
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸+26+-+US+-+Trojan/WS/TLS+-+443
-    type: trojan
-    server: 104.18.11.110
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.multiplydose.com
+    sni: www.creationlong.org
     network: ws
     ws-opts: {}
     tfo: false
