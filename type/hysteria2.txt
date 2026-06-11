@@ -1,4 +1,3 @@
-hysteria2://d1db0080-669a-4357-ab9f-ab16719ed736@192.9.179.140:51000?allowInsecure=1&insecure=1&security=tls&sni=cn.cremedelamer.com#%E7%BE%8E%E5%9B%BD+Nokia
 hysteria2://78c2bad7-f5f3-41f2-88cc-81de9d05040b@mg2.mangshe.xyz:2056?insecure=1&sni=mg2.mangshe.xyz#8%7C%E7%BE%8E%E5%9B%BD2
 hysteria2://78c2bad7-f5f3-41f2-88cc-81de9d05040b@xjp1.mangshe.xyz:2055?insecure=1&sni=xjp1.mangshe.xyz#8%7C1
 hysteria2://95D27EEF-B7AE-4076-BA39-40FDFA3D0F61@jp7.dexlos.com:13778?insecure=1#8%7CJP
@@ -22,8 +21,9 @@ hysteria2://Masir_Sefid@206.189.58.246:443?insecure=0&sni=Api1.masir-sefid-1.my&
 hysteria2://Masir_Sefid@206.189.58.246:54040?insecure=0&sni=Api1.masir-sefid-1.my&obfs=salamander&obfs-password=Masir_Sefid#9%7C%40meliproxyy%20%235
 hysteria2://Masir_Sefid@206.189.58.246:8443?insecure=0&sni=Api1.masir-sefid-1.my&obfs=salamander&obfs-password=Masir_Sefid#9%7C%40prrofile_purple%20%20%E2%99%A5%EF%B8%8F%F0%9F%91%88%20%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85%20%231
 hysteria2://Masir_Sefid@207.154.242.160:4040?insecure=0&sni=Api.masir-sefid-1.my&obfs=salamander&obfs-password=Masir_Sefid#9%7C%E2%9A%AB%2018%20%E2%80%A2%20%40spotfyhits%20%E2%9D%A4
-hysteria2://Masir_Sefid@84.234.28.207:443?insecure=0&sni=Api.masir-sefid-1.my&obfs=salamander&obfs-password=Masir_Sefid#9%7C%40internet_azad_2026%20%235
-hysteria2://Masir_Sefid@84.234.29.238:443?insecure=0&sni=Api.masir-sefid-1.my&obfs=salamander&obfs-password=Masir_Sefid#9%7C%40internet_azad_2026%20%236
+hysteria2://Masir_Sefid@37.156.46.29:443?insecure=0&sni=api.masir-sefid-1.my&obfs=salamander&obfs-password=Masir_Sefid#9%7C65244%20%7C%20%EF%B8%8FTelegram%20%3D%20t.me/SOSke...
+hysteria2://Masir_Sefid@84.234.28.207:443?insecure=0&sni=Api.masir-sefid-1.my&obfs=salamander&obfs-password=Masir_Sefid#9%7C%40internet_azad_2026%20%236
+hysteria2://Masir_Sefid@84.234.29.238:443?insecure=0&sni=Api.masir-sefid-1.my&obfs=salamander&obfs-password=Masir_Sefid#9%7C%40internet_azad_2026%20%237
 hysteria2://Vitamini_Channel@cdn.accuratenetworkchecker.ir:59095?insecure=1&sni=cdn.accuratenetworkchecker.ir&obfs=salamander&obfs-password=ao5xmpi6qiedxrs2#9%7C%40V2ray_official
 hysteria2://Yet-Another-Public-Config-1@206.71.158.37:35000?insecure=1&sni=YAPC-1.afshin.ir&obfs=salamander&obfs-password=Yet-Another-Public-Config-1#9%7C%20-%20NL%20-%20%40FreeOnlineVPN
 hysteria2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@5.175.249.174:35000?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi#9%7C%40KAFING_2%20%232
