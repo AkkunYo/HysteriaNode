@@ -2663,112 +2663,35 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 亚太地区+V2CROSS.COM
+  - name: 伊朗+V2CROSS.COM
     type: vless
-    server: 103.200.28.142
-    port: 7443
-    uuid: 89304de3-af59-4313-b18d-c93dadf54537
+    server: 46.225.155.159
+    port: 1006
+    uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
     tls: true
     client-fingerprint: chrome
-    servername: icloud.com
+    servername: yahoo.com
     network: tcp
     reality-opts:
-      public-key: _GHDETa6pflP7WjkBT-2jMYnb0xRs-e8LrCu93Z_CHo
-      short-id: d82fb387
+      public-key: 2iijxUyJsanFAkX0ctH6H4RTW1N4mQYnIsaP8qrbbS8
+      short-id: 0c3a409c2ba7d083
     tfo: false
     skip-cert-verify: false
     udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点
-    type: trojan
-    server: 104.20.6.134
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.calmloud.com
-    network: ws
-    ws-opts:
-      path: /assignment
-      headers:
-        host: www.calmloud.com
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 美国+CloudFlare节点 2
+  - name: 克罗地亚+V2CROSS.COM
     type: vless
-    server: 172.65.111.43
-    port: 22
-    uuid: 8a38623a-3e7f-5598-bdc9-894cbad4c5b6
-    tls: false
-    servername: ''
+    server: cdn7-09.vk-cdnvideo.com
+    port: 8443
+    uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+    tls: true
+    servername: cdn7-09.vk-cdnvideo.com
     network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 瑞士+V2CROSS.COM
+  - name: 立陶宛+V2CROSS.COM
     type: vless
-    server: 83.228.235.106
-    port: 443
-    uuid: 83989465-4ec6-4dbe-97c6-2779df88d9e0
-    tls: true
-    client-fingerprint: chrome
-    servername: varzesh3.com
-    network: tcp
-    reality-opts:
-      public-key: MK3NN842R-fVl71Rdcn9oLAQNJrd-igvxPaKS_c6928
-      short-id: accd8c
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 俄罗斯+V2CROSS.COM
-    type: vless
-    server: 91.193.58.17
-    port: 2083
-    uuid: af475b0e-0c07-40fe-b4db-3dea2c0a481d
-    tls: true
-    servername: edgetunnel-cmliu.lyqnihao.dpdns.org
-    network: ws
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        host: edgetunnel-cmliu.lyqnihao.dpdns.org
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 美国+CloudFlare节点 3
-    type: vless
-    server: adf.ly
-    port: 443
-    uuid: 1679af35-6dd6-4c09-ae3b-18f239217f3e
-    tls: true
-    servername: rAyAn-007.pArViN.DpDnS.OrG
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: rayan-007.parvin.dpdns.org
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 英国+V2CROSS.COM
-    type: vless
-    server: de.pink-perfect.ru
-    port: 443
-    uuid: 8ea0665e-dee3-418c-8822-1f70f350f2db
-    tls: true
-    client-fingerprint: chrome
-    servername: yandex.net
-    network: tcp
-    reality-opts:
-      public-key: 2fgsbEAn-ALVpjnE4ZTPrzaZY70vVplYwldCnslInE0
-      short-id: 86b80f1e713a33ad
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点 4
-    type: vless
-    server: 104.17.108.189
+    server: 89.116.46.68
     port: 443
     uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
     tls: true
@@ -2781,84 +2704,112 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 英国+V2CROSS.COM 2
+  - name: 南非+V2CROSS.COM
     type: vless
-    server: 31.76.38.84
-    port: 7443
-    uuid: 1c0277ad-bb4d-496f-bc0c-40ccee03fca5
+    server: fr-gt-01.com
+    port: 8443
+    uuid: a6349c3f-5234-4821-80b4-d99b33f0924d
     tls: true
     client-fingerprint: chrome
-    servername: stackoverflow.com
+    servername: storage.yandex.net
     network: tcp
     reality-opts:
-      public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
-      short-id: be0ce047
+      public-key: 1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA
+      short-id: f34818a561dfd1fe
     tfo: false
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 北美地区+V2CROSS.COM
+  - name: 美国+CloudFlare节点
+    type: trojan
+    server: 104.20.6.134
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.multiplydose.com
+    network: ws
+    ws-opts:
+      path: /assignment
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国+V2CROSS.COM
     type: vless
-    server: 104.254.140.30
+    server: 45.131.5.144
     port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    uuid: Shh-proxy
     tls: false
     servername: ''
     network: ws
     ws-opts:
-      path: /
+      path: /---@SHH_PROXY/---@SHH_PROXY/---@SHH_PROXY/---@SHH_PROXY/---@SHH_PROXY
       headers:
-        host: vms.lifetime54.workers.dev
+        host: shhp.akbarjoojeh.shop
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 法国+巴黎Choopa数据中心
-    type: trojan
-    server: 217.69.2.107
-    port: 443
-    password: YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh
+  - name: 🔵@chillguy_vpn
+    type: vless
+    server: library2.ketabkhane.dpdns.org
+    port: 2083
+    uuid: 95497965-318f-4c12-81e5-248698de07ed
     tls: true
-    sni: www.weavenet.click
+    servername: library2.ketabkhane.dpdns.org
+    network: ws
+    ws-opts:
+      path: /api
+      headers:
+        host: library2.ketabkhane.dpdns.org
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国+V2CROSS.COM
+    type: trojan
+    server: 185.126.236.44
+    port: 443
+    password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL
+    tls: true
+    sni: www.mesaly.click
     network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 7|美国2
+  - name: 8|美国2
     type: hysteria2
     server: mg2.mangshe.xyz
     port: 2056
     password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
     sni: mg2.mangshe.xyz
     skip-cert-verify: true
-  - name: 7|1
+  - name: 8|1
     type: hysteria2
     server: xjp1.mangshe.xyz
     port: 2055
     password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
     sni: xjp1.mangshe.xyz
     skip-cert-verify: true
-  - name: 7|JP
+  - name: 8|JP
     type: hysteria2
     server: jp7.dexlos.com
     port: 13778
     password: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61
     sni: ''
     skip-cert-verify: true
-  - name: 7|DE
+  - name: 8|DE
     type: hysteria2
     server: de.eyucdn.xyz
     port: 2056
     password: a084933d-0b41-4571-ae0c-7163b8c71ed1
     sni: de.eyucdn.xyz
     skip-cert-verify: true
-  - name: 7| HK
+  - name: 8| HK
     type: hysteria2
     server: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
     port: 443
     password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
     sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
     skip-cert-verify: false
-  - name: 7,8|@KAFING_2
+  - name: 8,9|@KAFING_2
     type: hysteria2
     server: 181.214.99.162
     port: 35000
@@ -2867,28 +2818,28 @@ proxies:
     password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
     sni: api.kermanshahi.org
     skip-cert-verify: true
-  - name: 7|SG
+  - name: 8|SG
     type: hysteria2
     server: sg3.oomz.ru
     port: 30000
     password: e7965e64-e001-4e8c-8273-39c61ff4a094
     sni: bing.com
     skip-cert-verify: true
-  - name: 7|TW
+  - name: 8|TW
     type: hysteria2
     server: tw.oomz.ru
     port: 30000
     password: e7965e64-e001-4e8c-8273-39c61ff4a094
     sni: bing.com
     skip-cert-verify: true
-  - name: 8|🪬41@oneclickvpnkeys
+  - name: 9|🪬41@oneclickvpnkeys
     type: hysteria2
     server: us3.xiaoliyu.cyou
     port: 4433
     password: 4543ebb9-3fa5-438d-8791-cb3d9a9e4137
     sni: ''
     skip-cert-verify: true
-  - name: 8|@confiig_hub
+  - name: 9|@confiig_hub
     type: hysteria2
     server: Masir_Sefi
     port: .nan
@@ -2897,7 +2848,7 @@ proxies:
     password: ''
     sni: free.masir-sefid.shop
     skip-cert-verify: true
-  - name: 8|+@Azarakhsh_Proxy+
+  - name: 9|+@Azarakhsh_Proxy+
     type: hysteria2
     server: 179.61.132.96
     port: 8443
@@ -2906,7 +2857,7 @@ proxies:
     password: KevinZakarian
     sni: 179.61.132.96
     skip-cert-verify: true
-  - name: 8|@prrofile_purple
+  - name: 9|@prrofile_purple
     type: hysteria2
     server: 206.189.58.246
     port: 1040
@@ -2915,7 +2866,7 @@ proxies:
     password: Masir_Sefid
     sni: Api1.masir-sefid-1.my
     skip-cert-verify: true
-  - name: 8|@prrofile_purple  ♥️👈 تلگرام
+  - name: 9|@prrofile_purple  ♥️👈 تلگرام
     type: hysteria2
     server: 206.189.58.246
     port: 2053
@@ -2924,7 +2875,7 @@ proxies:
     password: Masir_Sefid
     sni: Api1.masir-sefid-1.my
     skip-cert-verify: true
-  - name: '8|@internet_azad_2026 #1'
+  - name: '9|@internet_azad_2026 #1'
     type: hysteria2
     server: 206.189.58.246
     port: 2087
@@ -2933,7 +2884,7 @@ proxies:
     password: Masir_Sefid
     sni: Api1.masir-sefid-1.my
     skip-cert-verify: true
-  - name: '8|@internet_azad_2026 #2'
+  - name: '9|@internet_azad_2026 #2'
     type: hysteria2
     server: 206.189.58.246
     port: 4040
@@ -2942,7 +2893,7 @@ proxies:
     password: Masir_Sefid
     sni: Api1.masir-sefid-1.my
     skip-cert-verify: true
-  - name: 8| 19  @spotfyhits
+  - name: 9| 19  @spotfyhits
     type: hysteria2
     server: 206.189.58.246
     port: 443
@@ -2951,7 +2902,7 @@ proxies:
     password: Masir_Sefid
     sni: Api1.masir-sefid-1.my
     skip-cert-verify: true
-  - name: '8|@internet_azad_2026 #3'
+  - name: '9|@internet_azad_2026 #3'
     type: hysteria2
     server: 206.189.58.246
     port: 54040
@@ -2960,7 +2911,7 @@ proxies:
     password: Masir_Sefid
     sni: Api1.masir-sefid-1.my
     skip-cert-verify: true
-  - name: '8|@prrofile_purple  ♥️👈 تلگرام #1'
+  - name: '9|@prrofile_purple  ♥️👈 تلگرام #1'
     type: hysteria2
     server: 206.189.58.246
     port: 8443
@@ -2969,7 +2920,7 @@ proxies:
     password: Masir_Sefid
     sni: Api1.masir-sefid-1.my
     skip-cert-verify: true
-  - name: 8|⚫ 18 • @spotfyhits ❤
+  - name: 9|⚫ 18 • @spotfyhits ❤
     type: hysteria2
     server: 207.154.242.160
     port: 4040
@@ -2978,7 +2929,7 @@ proxies:
     password: Masir_Sefid
     sni: Api.masir-sefid-1.my
     skip-cert-verify: true
-  - name: 8|@vmesskhodam
+  - name: 9|@vmesskhodam
     type: hysteria2
     server: 37.156.46.29
     port: 443
@@ -2987,7 +2938,7 @@ proxies:
     password: Masir_Sefid
     sni: api.masir-sefid-1.my
     skip-cert-verify: true
-  - name: '8|@internet_azad_2026 #6'
+  - name: '9|@internet_azad_2026 #6'
     type: hysteria2
     server: 84.234.28.207
     port: 443
@@ -2996,7 +2947,7 @@ proxies:
     password: Masir_Sefid
     sni: Api.masir-sefid-1.my
     skip-cert-verify: true
-  - name: '8|@internet_azad_2026 #7'
+  - name: '9|@internet_azad_2026 #7'
     type: hysteria2
     server: 84.234.29.238
     port: 443
@@ -3005,7 +2956,7 @@ proxies:
     password: Masir_Sefid
     sni: Api.masir-sefid-1.my
     skip-cert-verify: true
-  - name: 8|@V2ray_official
+  - name: 9|@V2ray_official
     type: hysteria2
     server: cdn.accuratenetworkchecker.ir
     port: 59095
@@ -3014,7 +2965,7 @@ proxies:
     password: Vitamini_Channel
     sni: cdn.accuratenetworkchecker.ir
     skip-cert-verify: true
-  - name: 8| - NL - @FreeOnlineVPN
+  - name: 9| - NL - @FreeOnlineVPN
     type: hysteria2
     server: 206.71.158.37
     port: 35000
@@ -3023,7 +2974,7 @@ proxies:
     password: Yet-Another-Public-Config-1
     sni: YAPC-1.afshin.ir
     skip-cert-verify: true
-  - name: '8|@KAFING_2 #2'
+  - name: '9|@KAFING_2 #2'
     type: hysteria2
     server: 5.175.249.174
     port: 35000
@@ -3032,7 +2983,7 @@ proxies:
     password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
     sni: api.kermanshahi.org
     skip-cert-verify: true
-  - name: 8|https
+  - name: 9|https
     type: hysteria2
     server: 18.157.51.145
     port: 443
@@ -3041,7 +2992,7 @@ proxies:
     password: masir_sefid
     sni: content.masir-sefid.shop
     skip-cert-verify: true
-  - name: 8|⚫ 12 • @spotfyhits ❤
+  - name: 9|⚫ 12 • @spotfyhits ❤
     type: hysteria2
     server: hy2.aspidnet.xyz
     port: 443
@@ -3050,7 +3001,7 @@ proxies:
     password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
     sni: ''
     skip-cert-verify: true
-  - name: 10,11|香港3|@ripaojiedian
+  - name: 11,12|香港3|@ripaojiedian
     type: trojan
     server: 18.183.58.98
     port: 53018
@@ -3061,7 +3012,7 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 10,11|香港4|@ripaojiedian
+  - name: 11,12|香港4|@ripaojiedian
     type: trojan
     server: 18.166.62.24
     port: 1123
@@ -3072,7 +3023,7 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 10,11|香港5|@ripaojiedian
+  - name: 11,12|香港5|@ripaojiedian
     type: trojan
     server: 95.40.19.84
     port: 1123
@@ -3083,7 +3034,7 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 10,11|日本|@ripaojiedian
+  - name: 11,12|日本|@ripaojiedian
     type: trojan
     server: 18.183.150.2
     port: 47655
@@ -3094,7 +3045,7 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 10,11|日本3|@ripaojiedian
+  - name: 11,12|日本3|@ripaojiedian
     type: trojan
     server: 18.162.244.255
     port: 5701
@@ -3105,7 +3056,7 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 10,11|新加坡|@ripaojiedian
+  - name: 11,12|新加坡|@ripaojiedian
     type: trojan
     server: 18.162.244.255
     port: 48738
@@ -3116,7 +3067,7 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 10,11|新加坡2|@ripaojiedian
+  - name: 11,12|新加坡2|@ripaojiedian
     type: trojan
     server: 16.162.163.189
     port: 48738
@@ -3127,7 +3078,7 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 10,11|新加坡3|@ripaojiedian
+  - name: 11,12|新加坡3|@ripaojiedian
     type: trojan
     server: 43.199.36.58
     port: 32434
@@ -3138,7 +3089,7 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 10,11|美国|@ripaojiedian
+  - name: 11,12|美国|@ripaojiedian
     type: trojan
     server: 18.162.244.255
     port: 48277
@@ -3149,7 +3100,7 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 10,11|美国2|@ripaojiedian
+  - name: 11,12|美国2|@ripaojiedian
     type: trojan
     server: 16.162.163.189
     port: 17005
@@ -3160,7 +3111,7 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 10,11|美国3|@ripaojiedian
+  - name: 11,12|美国3|@ripaojiedian
     type: trojan
     server: 18.166.30.83
     port: 17801
@@ -3171,7 +3122,7 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 12|GB_speednode_0002
+  - name: 13|GB_speednode_0002
     type: vless
     server: 82.40.60.172
     port: 443
@@ -3183,7 +3134,7 @@ proxies:
     skip-cert-verify: true
     udp: true
     flow: xtls-rprx-vision-udp443
-  - name: 12|LB_speednode_0004
+  - name: 13|LB_speednode_0004
     type: vless
     server: 213.165.56.102
     port: 443
@@ -3195,7 +3146,7 @@ proxies:
     skip-cert-verify: true
     udp: true
     flow: xtls-rprx-vision-udp443
-  - name: 12|NL_speednode_0005
+  - name: 13|NL_speednode_0005
     type: vless
     server: 147.45.145.127
     port: 443
@@ -3206,59 +3157,17 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 🔴🇺🇸[🤖📺]_github.com/Ruk1ng001_ace7e9a1
-    type: vless
-    server: 47.77.214.201
-    port: 10035
-    uuid: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
-    tls: false
-    servername: ''
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸+132+-+US+-+VLESS/WS+-+2052
-    type: vless
-    server: 104.18.13.229
-    port: 2052
-    uuid: 12d75b7d-8fdf-4785-8d62-d836854e7e63
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: parking-nfchbwa1-v2.parking-1ab.workers.dev
-    tfo: false
-    skip-cert-verify: false
-    udp: true
   - name: '>>@oneclickvpnkeys::US'
     type: vless
-    server: 104.18.12.229
-    port: 2052
-    uuid: 12d75b7d-8fdf-4785-8d62-d836854e7e63
-    tls: false
-    servername: ''
+    server: 172.66.40.99
+    port: 2083
+    uuid: ce035748-9913-40c9-9fb6-c8389f7cdcf3
+    tls: true
+    servername: yousef.varzesh.dpdns.org
     network: ws
     ws-opts:
-      path: /
       headers:
-        host: parking-nfchbwa1-v2.parking-1ab.workers.dev
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸+488+-+US+-+VLESS/WS+-+80
-    type: vless
-    server: 104.18.173.174
-    port: 80
-    uuid: 53342b53-157e-4475-9f3a-40439434e689
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: c.iamdt.dpdns.org
+        host: yousef.varzesh.dpdns.org
     tfo: false
     skip-cert-verify: false
     udp: true
@@ -3277,125 +3186,13 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: '>>@oneclickvpnkeys::US 3'
-    type: vless
-    server: 172.66.40.99
-    port: 2083
-    uuid: ce035748-9913-40c9-9fb6-c8389f7cdcf3
-    tls: true
-    servername: yousef.varzesh.dpdns.org
-    network: ws
-    ws-opts:
-      headers:
-        host: yousef.varzesh.dpdns.org
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: '>>@v2ray_configs_pool::US 2'
-    type: vless
-    server: '::ffff:104.21.69.164'
-    port: 2087
-    uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-    tls: true
-    servername: EMS.Arc-Time.Workers.DEV
-    network: ws
-    ws-opts:
-      path: /yyru4ludskje
-      headers:
-        host: ems.arc-time.workers.dev
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: '>>@oneclickvpnkeys::US 4'
-    type: vless
-    server: 104.16.164.44
-    port: 80
-    uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: amirvpn.amirhm00100.workers.dev
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇸🇬+Join+Telegram:@Farah_VPN+🇸🇬
-    type: vless
-    server: 162.159.153.4
+  - name: 🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001_e504c7df
+    type: hysteria2
+    server: 104.168.76.175
     port: 443
-    uuid: f2a73750-3087-48ff-a763-1348c15dce68
-    tls: true
-    servername: rAyAn-007.mAxImA.DpDnS.OrG
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: rAyAn-007.mAxImA.DpDnS.OrG
-    tfo: false
+    password: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
+    sni: u727887us175.ayxj.top
     skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸+167+-+US+-+VLESS/WS/TLS/UTLS+-+443
-    type: vless
-    server: 104.16.250.22
-    port: 443
-    uuid: 17ebee4e-97ea-4cad-8737-cc228478ca9d
-    tls: true
-    servername: lively-brook-c471.nedena3319.workers.dev
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: lively-brook-c471.nedena3319.workers.dev
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: '>>@oneclickvpnkeys::US 5'
-    type: vless
-    server: 104.21.224.5
-    port: 80
-    uuid: 93526fcb-8dbf-442e-a656-eb304f1da4ef
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: lucky-voice-d6f3.difat89954-0c6.workers.dev
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: Fast+Deploy+Your+Own+Worker+For+Creation+Of+Configs+:+https
-    type: vless
-    server: medium.com
-    port: 443
-    uuid: f2a73750-3087-48ff-a763-1348c15dce68
-    tls: true
-    servername: rAyAn-007.mAxImA.DpDnS.OrG
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: rAyAn-007.mAxImA.DpDnS.OrG
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸+94+-+US+-+VLESS/WS/TLS+-+443
-    type: vless
-    server: 104.19.35.216
-    port: 443
-    uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
-    tls: true
-    servername: amirvpn.amirhm00100.workers.dev
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: amirvpn.amirhm00100.workers.dev
-    tfo: false
-    skip-cert-verify: false
-    udp: true
   - name: 🇺🇸+418+-+US+-+VLESS/REALITY/PBK/SID/VISION/UTLS+-+23576
     type: vless
     server: 15.204.97.214
@@ -3428,44 +3225,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: '>>@oneclickvpnkeys::US 6'
-    type: vless
-    server: 172.67.150.254
-    port: 2095
-    uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: iioo.iioou.workers.dev
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸US-149.104.87.182-0122
-    type: trojan
-    server: 149.104.87.182
-    port: 443
-    password: PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA
-    tls: true
-    sni: www.jewelapp.click
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇨🇦CA-172.105.9.126-0694
-    type: trojan
-    server: 172.105.9.126
-    port: 443
-    password: lTLVIqIvFqp+es9giS.0o77ztLrCQLaxVh
-    tls: true
-    sni: ''
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: '>>@oneclickvpnkeys::US 7'
+  - name: 🇺🇸+140+-+US+-+VLESS/REALITY/PBK/VISION/UTLS+-+28190
     type: vless
     server: 159.89.87.21
     port: 28190
@@ -3480,6 +3240,28 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
+  - name: 🇨🇦CA-172.105.9.126-0059
+    type: trojan
+    server: 172.105.9.126
+    port: 443
+    password: lTLVIqIvFqp+es9giS.0o77ztLrCQLaxVh
+    tls: true
+    sni: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸US-149.104.87.182-0117
+    type: trojan
+    server: 149.104.87.182
+    port: 443
+    password: PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA
+    tls: true
+    sni: www.jewelapp.click
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
   - name: 🔴🇯🇵[🤖🔍]_github.com/Ruk1ng001_099da661
     type: vless
     server: 13.193.215.148
@@ -3523,26 +3305,10 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇳🇱+426+-+NL+-+VLESS/REALITY/PBK/SID/VISION/UTLS+-+23576
-    type: vless
-    server: 51.158.206.26
-    port: 23576
-    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-    tls: true
-    client-fingerprint: chrome
-    servername: fuck.rkn
-    network: tcp
-    reality-opts:
-      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-      short-id: '01'
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: Russia
+  - name: 🟡🇬🇪[🎬🤖📺🔍]_github.com/Ruk1ng001_e333f36f
     type: vless
     server: 85.234.114.53
-    port: 22231
+    port: 443
     uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
     tls: true
     servername: r1.mizulina.top
@@ -3551,45 +3317,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 🔴🇷🇺[📺]_github.com/Ruk1ng001_0dad2241
-    type: vless
-    server: 213.108.2.130
-    port: 443
-    uuid: 5e8ee155-0962-4307-98f2-b65f6bbbd5bb
-    tls: true
-    client-fingerprint: chrome
-    servername: cloudflare.com
-    network: tcp
-    reality-opts:
-      public-key: c9eCHF41FReFLIdarpg8M5edw4_E133EJBzrvYS02Ck
-      short-id: cd9a5f0edff48da4
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 🇰🇷+KR+3
-    type: trojan
-    server: 130.94.29.102
-    port: 443
-    password: d1UH4TrhvCmjc-s4nmChew1qGqX3MNMqel
-    tls: true
-    sni: www.ws-converter.click
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
   - name: 🇺🇸+US美国(mibei77.com+米贝节点分享)
-    type: trojan
-    server: 155.117.198.89
-    port: 41943
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: az.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸+US美国(mibei77.com+米贝节点分享) 2
     type: trojan
     server: 155.117.198.84
     port: 48697
@@ -3600,7 +3328,7 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: ⚡+b2n.ir/v2ray-configs+|+760
+  - name: 🇺🇸+US美国(mibei77.com+米贝节点分享) 2
     type: trojan
     server: 155.117.198.3
     port: 45619
@@ -3611,29 +3339,7 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 🇨🇦_CA_加拿大->🇦🇿_AZ_阿塞拜疆
-    type: trojan
-    server: 90081bb25c.node.tro.cac.cab
-    port: 41943
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: az.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
   - name: 🇺🇸+US美国(mibei77.com+米贝节点分享) 3
-    type: trojan
-    server: 155.117.198.84
-    port: 46424
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: de.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸+US美国(mibei77.com+米贝节点分享) 4
     type: trojan
     server: 155.117.198.89
     port: 45619
@@ -3644,9 +3350,9 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 🇺🇸+US美国(mibei77.com+米贝节点分享) 5
+  - name: 🇺🇸+US美国(mibei77.com+米贝节点分享) 4
     type: trojan
-    server: 90081bb25c.node.tro.cac.cab
+    server: 155.117.198.84
     port: 45553
     password: 4f4d1167-ef14-4304-9bce-0740472503ef
     tls: true
@@ -3655,7 +3361,7 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 🇺🇸+US美国(mibei77.com+米贝节点分享) 6
+  - name: '@Hope_Net-join-us-on-Telegram'
     type: trojan
     server: 155.117.198.89
     port: 48697
@@ -3666,7 +3372,40 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
+  - name: 🇺🇸+US美国(mibei77.com+米贝节点分享) 5
+    type: trojan
+    server: 155.117.198.89
+    port: 45553
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: ch.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
   - name: 🇬🇧+GB英国(mibei77.com+米贝节点分享)
+    type: trojan
+    server: 155.117.198.84
+    port: 47909
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: is.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸+US美国(mibei77.com+米贝节点分享) 6
+    type: trojan
+    server: 155.117.198.89
+    port: 41943
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: az.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇬🇧+GB英国(mibei77.com+米贝节点分享) 2
     type: trojan
     server: 155.117.198.89
     port: 47909
@@ -3679,28 +3418,6 @@ proxies:
     udp: true
   - name: 🇺🇸+US美国(mibei77.com+米贝节点分享) 7
     type: trojan
-    server: 155.117.198.89
-    port: 45553
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: ch.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸+US美国(mibei77.com+米贝节点分享) 8
-    type: trojan
-    server: 155.117.198.84
-    port: 45553
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: ch.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸+US美国(mibei77.com+米贝节点分享) 9
-    type: trojan
     server: 155.117.198.3
     port: 47909
     password: 4f4d1167-ef14-4304-9bce-0740472503ef
@@ -3710,13 +3427,13 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 🇬🇧+GB英国(mibei77.com+米贝节点分享) 2
+  - name: 🇺🇸+US美国(mibei77.com+米贝节点分享) 8
     type: trojan
     server: 155.117.198.84
-    port: 47909
+    port: 46424
     password: 4f4d1167-ef14-4304-9bce-0740472503ef
     tls: true
-    sni: is.01.naiun.bilibili.com
+    sni: de.01.naiun.bilibili.com
     network: tcp
     tfo: false
     skip-cert-verify: true
@@ -3732,49 +3449,14 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 🇺🇸_US_美国->🇩🇪_DE_德国
+  - name: 🇰🇷+KR+10
     type: trojan
-    server: 90081bb25c.node.tro.cac.cab
-    port: 46424
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: de.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🔴🇬🇭_github.com/Ruk1ng001_0a2111fe
-    type: trojan
-    server: 90081bb25c.node.tro.cac.cab
-    port: 48697
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: gh.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸+65+-+US+-+Trojan/WS/TLS+-+443
-    type: trojan
-    server: 172.67.180.92
+    server: 130.94.29.102
     port: 443
-    password: humanity
+    password: d1UH4TrhvCmjc-s4nmChew1qGqX3MNMqel
     tls: true
-    sni: www.multiplydose.com
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸+26+-+US+-+Trojan/WS/TLS+-+443
-    type: trojan
-    server: 104.18.11.110
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.multiplydose.com
-    network: ws
-    ws-opts: {}
+    sni: www.ws-converter.click
+    network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
@@ -3789,52 +3471,25 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 🔥@bubuv2raybot
-    type: trojan
-    server: 104.18.12.149
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.multiplydose.com
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: '@V2ray_confiig`'
-    type: trojan
-    server: 172.64.152.23
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.creationlong.org
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+CloudFlare节点 5
-    type: vless
-    server: 104.17.108.189
-    port: 443
-    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-    tls: true
-    servername: octopusss4.com
-    network: ws
-    ws-opts:
-      path: /tsghdws
-      headers:
-        host: octopusss4.com
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: '@filembad'
+  - name: 未知38
     type: trojan
     server: 188.114.98.0
     port: 443
     password: humanity
     tls: true
     sni: www.calmlunch.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🌐+WS-TLS+|+@Express_alaki+|+src+@v2Line
+    type: trojan
+    server: 172.67.180.92
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.multiplydose.com
     network: ws
     ws-opts: {}
     tfo: false
@@ -3852,13 +3507,186 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 美国+CloudFlare节点 6
+  - name: 🇺🇸+US美国(mibei77.com+米贝节点分享) 9
     type: trojan
-    server: 104.20.6.134
+    server: 90081bb25c.node.tro.cac.cab
+    port: 45553
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: ch.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸_US_美国->🇩🇪_DE_德国
+    type: trojan
+    server: 90081bb25c.node.tro.cac.cab
+    port: 46424
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: de.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸+26+-+US+-+Trojan/WS/TLS+-+443
+    type: trojan
+    server: 104.18.11.110
     port: 443
     password: humanity
     tls: true
-    sni: www.calmloud.com
+    sni: www.multiplydose.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🔥@bubuv2raybot
+    type: trojan
+    server: 104.18.12.149
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.multiplydose.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🔴🇬🇭_github.com/Ruk1ng001_0a2111fe
+    type: trojan
+    server: 90081bb25c.node.tro.cac.cab
+    port: 48697
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: gh.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: '@V2ray_confiig`'
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.creationlong.org
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇨🇦_CA_加拿大->🇦🇿_AZ_阿塞拜疆
+    type: trojan
+    server: 90081bb25c.node.tro.cac.cab
+    port: 41943
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: az.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 巴西圣保罗+CloudFlare节点
+    type: vless
+    server: 188.114.97.3
+    port: 443
+    uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+    tls: true
+    servername: octopusss4.com
+    network: ws
+    ws-opts:
+      path: /tsghdws
+      headers:
+        host: octopusss4.com
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸+US美国(mibei77.com+米贝节点分享) 10
+    type: trojan
+    server: 103.177.136.43
+    port: 46424
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: de.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇬🇧+GB英国(mibei77.com+米贝节点分享) 3
+    type: trojan
+    server: 103.177.136.44
+    port: 45553
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: ch.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸+US美国(mibei77.com+米贝节点分享) 11
+    type: trojan
+    server: 103.177.136.43
+    port: 47909
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: is.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸+US美国(mibei77.com+米贝节点分享) 12
+    type: trojan
+    server: 103.177.136.44
+    port: 41943
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: az.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇬🇧+GB英国(mibei77.com+米贝节点分享) 4
+    type: trojan
+    server: 103.177.136.44
+    port: 46424
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: de.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇬🇧+GB英国(mibei77.com+米贝节点分享) 5
+    type: trojan
+    server: 103.177.136.44
+    port: 47909
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: is.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国+CloudFlare节点 2
+    type: trojan
+    server: 104.16.174.121
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸+83+-+US+-+Trojan/WS/TLS/UTLS+-+443
+    type: trojan
+    server: www.ignitelimit.com
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
     network: ws
     ws-opts: {}
     tfo: false
@@ -3888,81 +3716,14 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇺🇸+US美国(mibei77.com+米贝节点分享) 10
-    type: trojan
-    server: 103.177.136.43
-    port: 47909
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: is.01.naiun.bilibili.com
+  - name: 🔴🇺🇸[🤖📺]_github.com/Ruk1ng001_ace7e9a1
+    type: vless
+    server: 47.77.214.201
+    port: 10035
+    uuid: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
+    tls: false
+    servername: ''
     network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇬🇧+GB英国(mibei77.com+米贝节点分享) 3
-    type: trojan
-    server: 103.177.136.44
-    port: 45553
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: ch.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇬🇧+GB英国(mibei77.com+米贝节点分享) 4
-    type: trojan
-    server: 103.177.136.44
-    port: 46424
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: de.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇬🇧+GB英国(mibei77.com+米贝节点分享) 5
-    type: trojan
-    server: 103.177.136.44
-    port: 47909
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: is.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸+US美国(mibei77.com+米贝节点分享) 11
-    type: trojan
-    server: 103.177.136.44
-    port: 41943
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: az.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸+US美国(mibei77.com+米贝节点分享) 12
-    type: trojan
-    server: 103.177.136.43
-    port: 46424
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: de.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸+83+-+US+-+Trojan/WS/TLS/UTLS+-+443
-    type: trojan
-    server: www.ignitelimit.com
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts: {}
     tfo: false
     skip-cert-verify: false
     udp: true
