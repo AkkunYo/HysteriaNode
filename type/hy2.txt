@@ -1,1 +1,1 @@
-hy2://dongtaiwang.com@62.210.124.146:22000?insecure=1&sni=www.microsoft.com#+By+EbraSha+%F0%9F%93%9F
+hy2://dongtaiwang.com@62.210.124.146:22000?insecure=1&sni=www.microsoft.com#+By+EbraSha+%F0%9F%8C%90
