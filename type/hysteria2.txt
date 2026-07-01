@@ -1,2 +1,0 @@
-hysteria2://c059a786-3a03-4300-9ace-4f9cda0f360c@wlte9.nimarko.org:8451?allowInsecure=0&insecure=0&security=tls&sni=testing7.nimarko.org#%E4%BF%84%E7%BD%97%E6%96%AF+V2CROSS.COM
-hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@vpn-sg-003.fastervpn.world:443?insecure=1&sni=vpn-sg-003.fastervpn.world#%F0%9F%87%B8%F0%9F%87%AC%20%E6%96%B0%E5%8A%A0%E5%9D%A1%20%7C%20SGP
