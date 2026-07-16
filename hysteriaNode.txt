@@ -29,5 +29,4 @@ hysteria2://p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR@130.49.161.70:443?sni=hy2.aspidnet.
 hysteria2://rs2mR3g9bZiMloftx6lZQ59Um1Ld@80.66.81.78:9443?sni=tunel1.washing.help&obfs=salamander&obfs-password=oMgvuBy5Lj5kYM57sGsnjpjNcSEQ#9%7C%20t.me/bigAVPN%20%D8%A7%DB%8C%D8%A7%20%D8%A7%D8%AF%20%F0%9F%91%91
 hysteria2://tf5LINcpQy@91.107.152.188:40460?insecure=1&sni=www.amd.com&obfs=salamander&obfs-password=t-me-V2RayyNGvpn#9%7C%40Alpha_v2rayIP%F0%9F%8D%93
 hysteria2://vVaz4PV7B7@140.233.177.48:33884?insecure=1&sni=www.oracle.com&obfs=salamander&obfs-password=t-me-V2RayyNGvpn#9%7C%F0%9F%87%A8%DA%A9%D8%A7%D9%86%D8%A7%D9%84%20%D9%85%D8%A7%20%40V2RayyNGvpn
-hysteria2://user1%3AlhBCuvh5lxKoj5NJ@38.148.249.252:8443?sni=superjay.cc#%2BBy%2BEbraSha%2B%F0%9F%8C%AA%EF%B8%8F
-hysteria2://dongtaiwang.com@62.210.124.146:22000?insecure=1&sni=www.microsoft.com#%2BBy%2BEbraSha%2B%E2%99%A6%EF%B8%8F
+hysteria2://dongtaiwang.com@62.210.124.146:22000?insecure=1&sni=www.microsoft.com#%2BBy%2BEbraSha%2B%F0%9F%94%AE
