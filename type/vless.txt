@@ -57,12 +57,6 @@ vless://7896c501-248f-4068-bc2f-363c91ba5122@45.198.87.33:8443?security=tls&flow
 vless://52faee73-e0fe-4661-992d-67259257170f@45.206.0.29:8443?security=tls&flow=xtls-rprx-vision&type=tcp#TW_speednode_0053
 vless://3e06720a-86f0-49b9-8f00-062681e3b385@vip.bcjdvip.com:14005?security=tls&flow=xtls-rprx-vision&type=tcp#US_speednode_0055
 vless://057f3c26-0fe7-4315-aabc-90c79d413d70@38.244.20.69:443?security=tls&flow=xtls-rprx-vision&type=tcp#US_speednode_0056
-vless://eeb6823c-b926-4ea2-866a-5542edd26e59@104.26.5.60:443?security=tls&sni=t1s1.rittbo.kdns.fr&type=ws&path=%2F&host=t1s1.rittbo.kdns.fr#%E7%BE%8E%E5%9B%BD%2BCloudFlare%E8%8A%82%E7%82%B9
-vless://f75814f6-8f81-4847-b792-168c41f2dc85@45.196.201.180:443?flow=xtls-rprx-vision&sni=storage.yandex.net&type=tcp#%E5%8D%97%E9%9D%9E%2BV2CROSS.COM
-vless://153560b0-1a33-4b44-b059-ca5b22e55c19@201.51.12.73:443?flow=xtls-rprx-vision&sni=corelink.su&type=tcp#%E5%B7%B4%E8%A5%BF%2BV2CROSS.COM
-vless://11e57eeb-ffdf-4983-a9fa-ad352dea7253@154.193.55.183:443?flow=xtls-rprx-vision&sni=storage.yandex.net&type=tcp#%E5%8D%97%E9%9D%9E%2BV2CROSS.COM
-vless://b9ab00a9-5fd0-42eb-a474-cc18265df70d@fast.motorbazan.com:443?security=tls&sni=ssl.fastly.com&type=ws&path=%2FTELEGRAM_NUFiLTER%2CTELEGRAM_NUFiLTER%2CTELEGRAM_NUFiLTER%2CTELEGRAM_NUFiLTER%2CTELEGRAM_NUFiLTER%2CTELEGRAM_NUFiLTER%2CTELEGRAM_NUFiLTER%3Fed%3D2053&host=pan1.global.ssl.fastly.net#%E7%BE%8E%E5%9B%BD%2BV2CROSS.COM
-vless://11e57eeb-ffdf-4983-a9fa-ad352dea7253@45.206.5.122:443?flow=xtls-rprx-vision&sni=storage.yandex.net&type=tcp#%E5%8D%97%E9%9D%9E%2BV2CROSS.COM
 vless://5a4ea216-9597-4df7-a119-02949a3b6b82@94.159.101.193:443?security=tls&sni=ger.wafer.fun&type=ws&path=%2FTs7kIzm7a8mYEOrQCXl1&host=ger.wafer.fun#%E6%AF%8F%E5%A4%A9%E6%9B%B4%E6%96%B0%EF%BC%8C%E8%AF%B7%E5%8A%A0%E7%94%B5%E6%8A%A5%E7%BE%A4%E9%98%B2%E6%AD%A2%E5%A4%B1%E8%81%94
 vless://5a4ea216-9597-4df7-a119-02949a3b6b82@94.159.105.148:443?security=tls&sni=ger.wafer.fun&type=ws&path=%2FTs7kIzm7a8mYEOrQCXl1&host=ger.wafer.fun#%E7%94%B5%E6%8A%A5%E7%BE%A4%EF%BC%9Ahttps%3A//t.me/vvkj11
 vless://5a4ea216-9597-4df7-a119-02949a3b6b82@194.48.140.109:443?security=tls&sni=ger.wafer.fun&type=ws&path=%2FTs7kIzm7a8mYEOrQCXl1&host=ger.wafer.fun#%E6%97%A5%E6%9C%9F%EF%BC%9A07-23
@@ -491,6 +485,12 @@ vless://c1d62d53-2fcd-4951-ab96-c81486f59775@se-vlss.w-mebel.pro:443?flow=xtls-r
 vless://64beb03f-886e-48be-9bdf-2fa68156fd74@us3.boboly.ir:43780?sni=ourworldindata.org&type=tcp#%F0%9F%87%B3%F0%9F%87%B1_%E8%8D%B7%E5%85%B0_489
 vless://f0cbfddd-772a-4c8f-b2e1-08cba9e247d8@31.177.111.140:443?flow=xtls-rprx-vision&sni=wargm.ru&type=tcp#%F0%9F%87%B7%F0%9F%87%BA_%E4%BF%84%E7%BD%97%E6%96%AF_490
 vless://56b812e4-2d96-4ce5-b365-6c801663a37a@nl-1-tb.124515.xyz:443?flow=xtls-rprx-vision&sni=nl-1-tb.124515.xyz&type=tcp#%F0%9F%87%A9%F0%9F%87%AA_%E5%BE%B7%E5%9B%BD_491
+vless://eeb6823c-b926-4ea2-866a-5542edd26e59@104.21.227.134:443?security=tls&sni=t1s1.rittbo.kdns.fr&type=ws&path=%2F%3FTELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI%3Fed%3D2560&host=t1s1.rittbo.kdns.fr#%E7%BE%8E%E5%9B%BD%2BCloudFlare%E8%8A%82%E7%82%B9
+vless://3b2e0eab-f47f-45b0-87b2-71de9feef5c6@176.124.221.208:58500?type=ws&path=%2Ffree#%E4%BF%84%E7%BD%97%E6%96%AF%2BV2CROSS.COM
+vless://7e544a9d-7667-413b-bbb0-b3bb1aac6d77@104.26.14.137:443?security=tls&sni=shegeftihaaa.net&type=ws&path=%2Frsedgws&host=shegeftihaaa.net#%E7%BE%8E%E5%9B%BD%2BCloudFlare%E8%8A%82%E7%82%B9
+vless://eab915bc-d2df-73d1-47d0-6eb240497055@fn.fifapes.monster:2090?type=raw#%E4%BC%8A%E6%9C%97%2BV2CROSS.COM
+vless://f75814f6-8f81-4847-b792-168c41f2dc85@45.196.201.96:443?flow=xtls-rprx-vision&sni=storage.yandex.net&type=tcp#%E5%8D%97%E9%9D%9E%2BV2CROSS.COM
+vless://11e57eeb-ffdf-4983-a9fa-ad352dea7253@45.206.5.122:443?flow=xtls-rprx-vision&sni=storage.yandex.net&type=tcp#%F0%9F%87%A8%F0%9F%87%A6%20%E5%8A%A0%E6%8B%BF%E5%A4%A7%20%7C%20CAN
 vless://e912f8d6-f59a-48b1-b5ad-bbe548d7ebf3@Animall-Zooke.fardaty.ir:8080?sni=www.yahoo.com&type=xhttp#%F0%9F%87%A8%F0%9F%87%AD%20%E7%91%9E%E5%A3%AB%20%7C%20CHE
 vless://e912f8d6-f59a-48b1-b5ad-bbe548d7ebf3@animall-zooke.fardaty.ir:8080?sni=www.yahoo.com&type=xhttp#%F0%9F%87%A8%F0%9F%87%AD%20%E7%91%9E%E5%A3%AB%20%7C%20CHE
 vless://bf0899bc-5abd-40b8-b376-f108e2d8cb6f@vs-fl2.vibesignal.space:443?flow=xtls-rprx-vision&sni=ajax.googleapis.com&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20%E5%BE%B7%E5%9B%BD%20%7C%20DEU
@@ -504,7 +504,6 @@ vless://e4514801-0d5a-42ba-869f-39bd605aef9e@63.185.19.86:22224?type=tcp#%F0%9F%
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@52.58.62.164:22222?type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20%E5%BE%B7%E5%9B%BD%20%7C%20DEU
 vless://d385a48f-9f6f-406a-8d3c-e409b371c565@gr1.panel11.ru:443?flow=xtls-rprx-vision&sni=gr1.panel11.ru&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20%E5%BE%B7%E5%9B%BD%20%7C%20DEU
 vless://9b13e10c-74a8-46bf-9b13-64d791941b35@gb.sv.temas-bor.ir:22012?sni=login.yahoo.com&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20%E5%BE%B7%E5%9B%BD%20%7C%20DEU
-vless://eab915bc-d2df-73d1-47d0-6eb240497055@fn.fifapes.monster:2090?type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20%E5%BE%B7%E5%9B%BD%20%7C%20DEU
 vless://d385a48f-9f6f-406a-8d3c-e409b371c565@spain1.panel11.ru:443?flow=xtls-rprx-vision&sni=spain1.panel11.ru&type=tcp#%F0%9F%87%AA%F0%9F%87%B8%20%E8%A5%BF%E7%8F%AD%E7%89%99%20%7C%20ESP
 vless://7b81d175-d180-4ec8-bbc5-dfe80e8d3b68@2.27.26.51:443?sni=draftnest-rrew.ru&type=grpc#%F0%9F%87%AA%F0%9F%87%B8%20%E8%A5%BF%E7%8F%AD%E7%89%99%20%7C%20ESP
 vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.188.211.23:22224?type=tcp#%F0%9F%87%AB%F0%9F%87%B7%20%E6%B3%95%E5%9B%BD%20%7C%20FRA
