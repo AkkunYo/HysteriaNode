@@ -16,6 +16,7 @@
 ```
 .
 ├── subscribe.txt          # 所有协议可用节点（推荐）
+├── selected.txt           # 特选指定国家精选节点（每国至多2个）
 ├── hysteriaNode.txt       # 仅 Hysteria2 节点
 ├── type/                  # 按协议分类
 │   ├── vmess.txt
@@ -35,6 +36,10 @@
 ### 全类型聚合（推荐）
 - 源地址：`https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/subscribe.txt`
 - 加速地址：`https://hk.gh-proxy.org/https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/subscribe.txt`
+
+### 特选指定国家精选（西班牙/墨西哥/巴西/英国/菲律宾/印度/日本/新加坡）
+- 源地址：`https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/selected.txt`
+- 加速地址：`https://hk.gh-proxy.org/https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/selected.txt`
 
 ### Clash 配置文件
 - 源地址：`https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/yaml/clash.yaml`

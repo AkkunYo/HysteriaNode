@@ -11,6 +11,7 @@ on:
 jobs:
   run-csjs:
     runs-on: ubuntu-22.04
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@main  #采用main分支下的
       - name: Prepare Env

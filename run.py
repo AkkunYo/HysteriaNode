@@ -771,6 +771,10 @@ def _query_ip_geo(ip, reader):
             "Australia": "澳大利亚",
             "Russia": "俄罗斯",
             "India": "印度",
+            "Spain": "西班牙",
+            "Mexico": "墨西哥",
+            "Brazil": "巴西",
+            "Philippines": "菲律宾",
         }
         zh_name = name_map.get(zh_name, zh_name)
         return iso, zh_name
@@ -839,6 +843,8 @@ def standardize_proxy_names(proxies):
 
         new_name = f"{flag} {country_name} {idx:02d} [{p_type}]"
         p_new["name"] = new_name
+        p_new["_country"] = country_name
+        p_new["_iso"] = iso
         standardized.append(p_new)
 
     if reader:
@@ -907,6 +913,31 @@ def main():
     hy2_links = [l for l in lines if l.startswith("hysteria2://")]
     Path('./hysteriaNode.txt').write_text("\n".join(hy2_links) + "\n")
     log(f"Generated hysteriaNode.txt with {len(hy2_links)} hysteria2 nodes")
+
+    # Generate special selected countries node list (max 2 per country)
+    # 西班牙 墨西哥 巴西 英国 菲律宾 印度 日本 新加坡
+    target_countries = [
+        ("西班牙", "ES"),
+        ("墨西哥", "MX"),
+        ("巴西", "BR"),
+        ("英国", "GB"),
+        ("菲律宾", "PH"),
+        ("印度", "IN"),
+        ("日本", "JP"),
+        ("新加坡", "SG"),
+    ]
+    selected_proxies = []
+    for c_name, iso in target_countries:
+        matched = [
+            p for p in valid_proxies
+            if p.get("_country") == c_name or p.get("_iso") == iso
+        ]
+        selected_proxies.extend(matched[:2])
+
+    selected_links = [to_link(p) for p in selected_proxies]
+    selected_links = [l for l in selected_links if l]
+    Path('./selected.txt').write_text("\n".join(selected_links) + "\n")
+    log(f"Generated selected.txt with {len(selected_links)} nodes across target countries")
 
     # Classify nodes into type/
     type_dir = Path('./type')
