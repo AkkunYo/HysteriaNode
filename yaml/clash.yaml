@@ -130,53 +130,7 @@ proxies:
 - name: 🟢 直连
   type: direct
   udp: true
-- name: 🇻🇳 越南 01 [TROJAN]
-  server: 103.9.77.6
-  port: 443
-  type: trojan
-  password: 5a92d674-308c-4d95-b283-28383e63a59b
-  skip-cert-verify: true
-  udp: true
-  _country: 越南
-  _iso: VN
-- name: 🇬🇧 英国 01 [TROJAN]
-  server: 51.38.65.155
-  port: 443
-  type: trojan
-  password: 1d7692c0-f51c-11ee-91eb-1239d0255272
-  skip-cert-verify: true
-  udp: true
-  _country: 英国
-  _iso: GB
-- name: 🇳🇱 荷兰 01 [TROJAN]
-  server: 142.93.226.128
-  port: 443
-  type: trojan
-  password: 8c03bc97-6dd1-485b-9ae6-c0539929592c
-  skip-cert-verify: true
-  udp: true
-  _country: 荷兰
-  _iso: NL
-- name: 🇸🇬 新加坡 01 [TROJAN]
-  server: 139.162.49.215
-  port: 443
-  type: trojan
-  password: b3965d2d-3b82-45cc-927b-1336aca3f3fe
-  skip-cert-verify: true
-  udp: true
-  _country: 新加坡
-  _iso: SG
 - name: 🇺🇸 美国 01 [TROJAN]
-  server: 216.128.147.13
-  port: 443
-  type: trojan
-  password: wkmY1R4EcP
-  sni: z-v2-003274.kailib.com
-  skip-cert-verify: true
-  udp: true
-  _country: 美国
-  _iso: US
-- name: 🇺🇸 美国 02 [TROJAN]
   network: tcp
   password: BxceQaOe
   port: 443
@@ -187,31 +141,125 @@ proxies:
   udp: true
   _country: 美国
   _iso: US
-- name: 🇫🇷 法国 01 [VLESS]
-  type: vless
-  server: 13.36.253.48
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇸🇬 新加坡 01 [TROJAN]
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10044
+  server: z-sg1.6send.com
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
   udp: true
-  network: tcp
-  _country: 法国
-  _iso: FR
-- name: 🇺🇸 美国 03 [VLESS]
+  _country: 新加坡
+  _iso: SG
+- name: 🇸🇬 新加坡 02 [TROJAN]
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10045
+  server: z-sg1.6send.com
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+  _country: 新加坡
+  _iso: SG
+- name: 🇯🇵 日本 01 [TROJAN]
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10010
+  server: z-jp2.1card.cc
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+  _country: 日本
+  _iso: JP
+- client-fingerprint: chrome
+  name: 🇭🇰 香港 02 [TROJAN]
+  password: d742752c-4231-4695-801e-f06d77f0f277
+  port: '52224'
+  server: hk04.qianmoip.win
+  skip-cert-verify: true
+  sni: taobao.com
+  type: trojan
+  udp: true
+  _country: 香港
+  _iso: HK
+- name: 🇺🇸 美国 02 [VLESS]
   type: vless
-  server: 104.21.13.79
+  server: freshjuniper.download
   port: 443
-  uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
-  udp: true
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  servername: localhost
   tls: true
-  sni: 7-m9.56e2241d-b6f5-4eb7-8ed9-c89e0e22d6b4.kdns.fr
-  network: ws
-  ws-opts:
-    path: /BzuntJ8qZN0TRKbC8TveMxJ0
-    headers:
-      Host: 7-m9.56e2241d-b6f5-4eb7-8ed9-c89e0e22d6b4.kdns.fr
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  skip-cert-verify: true
+  udp: true
   _country: 美国
   _iso: US
-- name: 🇳🇱 荷兰 02 [VLESS]
+- name: 🇺🇸 美国 03 [VLESS]
+  type: vless
+  server: brightharbor.download
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  servername: localhost
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  skip-cert-verify: true
+  udp: true
+  _country: 美国
+  _iso: US
+- name: 🇺🇸 美国 04 [VLESS]
+  type: vless
+  server: 130.12.102.125
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  servername: localhost
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  skip-cert-verify: true
+  udp: true
+  _country: 美国
+  _iso: US
+- name: 🇯🇵 日本 02 [TROJAN]
+  type: trojan
+  server: z-jp2.1card.cc
+  port: 10012
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+  _country: 日本
+  _iso: JP
+- name: 🇯🇵 日本 03 [TROJAN]
+  type: trojan
+  server: z-jp2.1card.cc
+  port: 10011
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+  _country: 日本
+  _iso: JP
+- name: 🇺🇸 美国 05 [VLESS]
+  type: vless
+  server: 130.12.102.26
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  servername: localhost
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  skip-cert-verify: true
+  udp: true
+  _country: 美国
+  _iso: US
+- name: 🇳🇱 荷兰 01 [VLESS]
   type: vless
   server: 31.59.150.174
   port: 9443
@@ -227,35 +275,31 @@ proxies:
   udp: true
   _country: 荷兰
   _iso: NL
-- name: 🇵🇱 波兰 01 [VLESS]
-  type: vless
-  server: 178.95.170.83
-  port: 2087
-  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /4bc027a44532
-  skip-cert-verify: true
-  udp: true
-  _country: 波兰
-  _iso: PL
-- name: 🇺🇸 美国 04 [VLESS]
-  type: vless
-  server: 130.12.102.26
+- name: 🇬🇧 英国 01 [HYSTERIA2]
+  password: 3b8c82ed-fe66-472d-915e-034ccb57103f
   port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  servername: localhost
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  server: labs.frkn.org
   skip-cert-verify: true
+  sni: labs.frkn.org
+  tls: false
+  type: hysteria2
   udp: true
-  _country: 美国
-  _iso: US
-- name: 🇵🇱 波兰 02 [HYSTERIA2]
+  _country: 英国
+  _iso: GB
+- name: 🇷🇴 罗马尼亚 01 [HYSTERIA2]
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  port: 443
+  server: 162.249.125.133
+  skip-cert-verify: false
+  sni: hy2-new.aspidnet.xyz
+  tls: false
+  type: hysteria2
+  udp: true
+  _country: 罗马尼亚
+  _iso: RO
+- name: 🇵🇱 波兰 01 [HYSTERIA2]
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   port: 443
   server: 45.192.12.93
@@ -265,7 +309,18 @@ proxies:
   udp: true
   _country: 波兰
   _iso: PL
-- name: 🇺🇸 美国 05 [HYSTERIA2]
+- name: 🇵🇱 波兰 02 [HYSTERIA2]
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  port: 443
+  server: admin.wwwinternetvideo.click
+  skip-cert-verify: true
+  sni: admin.wwwinternetvideo.click
+  tls: false
+  type: hysteria2
+  udp: true
+  _country: 波兰
+  _iso: PL
+- name: 🇺🇸 美国 06 [HYSTERIA2]
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
   password: cd74c0a406664a5bc0bac098220a2468
@@ -278,7 +333,7 @@ proxies:
   udp: true
   _country: 美国
   _iso: US
-- name: 🇺🇸 美国 06 [HYSTERIA2]
+- name: 🇺🇸 美国 07 [HYSTERIA2]
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
   password: cd74c0a406664a5bc0bac098220a2468
@@ -304,7 +359,7 @@ proxies:
   udp: true
   _country: 阿联酋
   _iso: AE
-- name: 🇺🇸 美国 07 [HYSTERIA2]
+- name: 🇺🇸 美国 08 [HYSTERIA2]
   password: suAmQS9LlInNq4Wumh-FUF4GGlpgmG_g
   port: 8443
   server: 159.223.157.129
@@ -317,7 +372,24 @@ proxies:
   _iso: US
 - client-fingerprint: chrome
   encryption: none
-  name: 🇺🇸 美国 08 [VLESS]
+  name: 🇺🇸 美国 09 [VLESS]
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    short-id: ''
+  server: freshjuniper.download
+  servername: localhost
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  xudp: true
+  _country: 美国
+  _iso: US
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸 美国 10 [VLESS]
   network: tcp
   port: '443'
   reality-opts:
@@ -332,16 +404,76 @@ proxies:
   xudp: true
   _country: 美国
   _iso: US
-- client-fingerprint: chrome
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇺🇸 美国 11 [TROJAN]
+  network: ws
+  password: humanity
+  port: '443'
+  server: 216.24.57.7
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/64.0.3282.186 Safari/537.36
+    path: /assignment
+  _country: 美国
+  _iso: US
+- name: 🇭🇰 香港 05 [TROJAN]
+  network: tcp
+  password: d742752c-4231-4695-801e-f06d77f0f277
+  port: 52224
+  server: hk04.qianmoip.win
+  skip-cert-verify: true
+  sni: taobao.com
+  type: trojan
+  udp: true
+  _country: 香港
+  _iso: HK
+- name: 🇯🇵 日本 04 [TROJAN]
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10009
+  server: z-jp1.1card.cc
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+  _country: 日本
+  _iso: JP
+- alpn:
+  - v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus
+  client-fingerprint: chrome
   encryption: none
-  name: 🇺🇸 美国 09 [VLESS]
+  flow: xtls-rprx-vision
+  name: 🇩🇪 德国 01 [VLESS]
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: ELFdNdI6NYwuEq5OqCkYwnUInHvIpsUhd4z2ud7pOCM
+    short-id: 0172b7681806bc97
+  server: eu-north-sw-1.hanvpn.biz
+  servername: eu-north-sw-1.hanvpn.biz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  xudp: true
+  _country: 德国
+  _iso: DE
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸 美国 12 [VLESS]
   network: tcp
   port: '443'
   reality-opts:
     public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
     short-id: ''
-  server: 130.12.102.135
-  servername: localhost
+  server: brightharbor.download
+  servername: brightharbor.download
   tls: true
   type: vless
   udp: true
@@ -349,88 +481,47 @@ proxies:
   xudp: true
   _country: 美国
   _iso: US
-- name: 🇧🇬 保加利亚 01 [TROJAN]
-  server: 193.239.160.134
-  port: 443
+- name: 🇯🇵 日本 05 [TROJAN]
+  server: z-jp2.1card.cc
+  port: 10009
   type: trojan
-  password: humanity
-  sni: www.calmlunch.com
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  sni: www.cloudflare.com
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
   udp: true
-  _country: 保加利亚
-  _iso: BG
-- name: 🇺🇸 美国 10 [VLESS]
-  server: 140.248.186.45
-  port: 443
-  type: vless
-  uuid: XpnTeam-4
-  tls: true
-  alpn:
-  - http/1.1
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-  udp: true
-  _country: 美国
-  _iso: US
-- name: 🇩🇪 德国 01 [VLESS]
-  server: 144.31.215.48
-  port: 443
-  type: vless
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: w0J3H-DEyHEK-Nj7bst_5sQqzcPl700ybHpqq5mFz0U
-    short-id: 12a3b7681806bc97
-  servername: eu-central-de2.hanvpn.biz
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-  _country: 德国
-  _iso: DE
-- name: 🇦🇹 奥地利 01 [TROJAN]
-  server: 212.183.88.136
-  port: 443
+  _country: 日本
+  _iso: JP
+- name: 🇸🇬 新加坡 03 [TROJAN]
+  server: z-sg1.6send.com
+  port: 10046
   type: trojan
-  password: humanity
-  sni: www.calmlunch.com
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  sni: www.cloudflare.com
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
   udp: true
-  _country: 奥地利
-  _iso: AT
-- name: 🇷🇺 俄罗斯联邦 01 [VLESS]
-  server: 46.173.16.77
-  port: 443
-  type: vless
-  uuid: 476d23b8-ab0e-4297-aebf-2c373f7538f0
-  tls: true
-  reality-opts:
-    public-key: yQfhPYAXsz1EqKpOglHh72NzJsf9YoPuD1bjMC-DDiM
-  servername: api-maps.yandex.ru
-  client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /api/v2/updates
-    host: api-maps.yandex.ru
+  _country: 新加坡
+  _iso: SG
+- name: 🇯🇵 日本 06 [TROJAN]
+  server: z-jp1.1card.cc
+  port: 10008
+  type: trojan
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  sni: www.cloudflare.com
+  skip-cert-verify: true
   udp: true
-  _country: 俄罗斯联邦
-  _iso: RU
-- name: 🇺🇸 美国 11 [VLESS]
+  _country: 日本
+  _iso: JP
+- name: 🇯🇵 日本 07 [TROJAN]
+  server: z-jp1.1card.cc
+  port: 10012
+  type: trojan
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+  _country: 日本
+  _iso: JP
+- name: 🇺🇸 美国 13 [VLESS]
   server: 51.81.203.63
   port: 443
   type: vless
@@ -446,25 +537,56 @@ proxies:
   udp: true
   _country: 美国
   _iso: US
-- name: 🇺🇸 美国 12 [VLESS]
-  type: vless
-  server: 172.67.190.103
-  port: 443
-  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
-  tls: true
-  servername: 6-m16.CHIANG-rai2036.KDnS.fR
+- name: 🇯🇵 日本 08 [TROJAN]
+  server: z-jp1.1card.cc
+  port: 10010
+  type: trojan
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  sni: www.cloudflare.com
   skip-cert-verify: true
+  udp: true
+  _country: 日本
+  _iso: JP
+- name: 🇰🇷 韩国 01 [TROJAN]
+  server: smooth-lark.rooster465.autos
+  port: 443
+  type: trojan
+  password: CF68213490
+  skip-cert-verify: false
+  udp: true
+  _country: 韩国
+  _iso: KR
+- name: 🇺🇸 美国 17 [VLESS]
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  udp: true
+  tls: true
+  sni: a.cwvps.eu.org
   network: ws
   ws-opts:
-    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
+    path: /ws
     headers:
-      Host: 6-m16.chIAnG-rAI2036.kDNS.FR
-  udp: true
+      Host: a.cwvps.eu.org
   _country: 美国
   _iso: US
-- name: 🇺🇸 美国 13 [VLESS]
+- name: 🇺🇸 美国 18 [VLESS]
   type: vless
-  server: 162.159.254.3
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  _country: 美国
+  _iso: US
+- name: 🇺🇸 美国 19 [VLESS]
+  type: vless
+  server: 172.67.156.147
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -477,90 +599,19 @@ proxies:
       Host: jp3.yohototo.top
   _country: 美国
   _iso: US
-- name: 🇺🇸 美国 14 [VLESS]
+- name: 🇺🇸 美国 20 [VLESS]
   type: vless
-  server: 104.21.55.229
-  port: 8880
-  uuid: f769b7ea-9cd1-4d61-b578-7644b7c8eb3d
-  udp: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: quiet-waterfall-e914.180-ac4.workers.dev
-  _country: 美国
-  _iso: US
-- name: 🇺🇸 美国 15 [VLESS]
-  type: vless
-  server: 104.18.37.233
-  port: 2053
-  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
+  server: 104.21.5.156
+  port: 443
+  uuid: 1aa96574-c28b-4ee9-855d-ebdbbf1f7e90
   udp: true
   tls: true
-  sni: us.105794.xyz
+  sni: 5-M13.1332afdc-0737-4BB1-8CA8-EE4F0cd20Bc6.KdNs.FR
   network: ws
   ws-opts:
-    path: /download/v3/installer-x64.bin
+    path: /ED3ZQPu7lqyeDGD58KabZ
     headers:
-      Host: us.105794.xyz
-  _country: 美国
-  _iso: US
-- name: 🇺🇸 美国 16 [VLESS]
-  type: vless
-  server: 104.18.1.1
-  port: 2083
-  uuid: 273e9057-8167-4d17-8de3-d44c82037cda
-  udp: true
-  tls: true
-  sni: old-sky-2b90.seyowkclient.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: old-sky-2b90.seyowkclient.workers.dev
-  _country: 美国
-  _iso: US
-- name: 🇺🇸 美国 17 [VLESS]
-  type: vless
-  server: 172.64.151.134
-  port: 8880
-  uuid: 878dd962-027b-4bd3-a1f8-66be68a03c4d
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: young-wind-3c58.240-2ce.workers.dev
-  _country: 美国
-  _iso: US
-- name: 🇺🇸 美国 18 [VLESS]
-  type: vless
-  server: 104.26.12.54
-  port: 8443
-  uuid: 31aa0950-eb19-45ff-94a2-af416deb3b90
-  udp: true
-  tls: true
-  sni: SquarE-saLaD-EbDe.ZDFGVcCfgUUYgGG.wOrKeRS.DEV
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZm5INktPV0lGcHI1NjNSOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0?ed=8443
-    headers:
-      Host: square-salad-ebde.zdfgvccfguuyggg.workers.dev
-  _country: 美国
-  _iso: US
-- name: 🇺🇸 美国 19 [VLESS]
-  type: vless
-  server: 104.26.12.54
-  port: 2083
-  uuid: fc8a0708-951a-4027-860f-2a154ebc4dd7
-  udp: true
-  tls: true
-  sni: crimson-king-301d.nexoxnet.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: crimson-king-301d.nexoxnet.workers.dev
+      Host: 5-m13.1332aFDC-0737-4bB1-8cA8-Ee4f0cD20bC6.Kdns.fR
   _country: 美国
   _iso: US
 - name: 🇺🇸 美国 21 [VLESS]
@@ -578,27 +629,31 @@ proxies:
       Host: 8-M16.AyuTThayA2029.kdNS.fr
   _country: 美国
   _iso: US
-- name: 🇯🇵 日本 01 [VLESS]
-  type: vless
-  server: 14.137.238.193
-  port: 10000
-  uuid: 8b92dfff-ddfd-4a37-841d-6f7bf7ab43b6
+- name: 🇺🇸 美国 22 [TROJAN]
+  type: trojan
+  server: 34.94.125.227
+  port: 443
+  password: M7v%w11Se*
   udp: true
-  network: tcp
-  _country: 日本
-  _iso: JP
+  sni: mxlo.wsone.icu
+  _country: 美国
+  _iso: US
 - name: 🇬🇧 英国 02 [VLESS]
   type: vless
-  server: 82.24.203.20
-  port: 2087
-  uuid: 5fcdc9b7-e70f-4a5c-85c3-e018ad818326
+  server: 129.121.95.159
+  port: 443
+  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
   udp: true
+  tls: true
+  sni: 129.121.95.159
   network: ws
   ws-opts:
-    path: /fd5ba98a3970
+    path: /connect
+    headers:
+      Host: 129.121.95.159
   _country: 英国
   _iso: GB
-- name: 🇩🇪 德国 03 [VLESS]
+- name: 🇩🇪 德国 02 [VLESS]
   type: vless
   server: 163.8.195.241
   port: 2087
@@ -609,26 +664,65 @@ proxies:
     path: /29c8fed7ca22
   _country: 德国
   _iso: DE
-- name: 🇩🇪 德国 04 [VLESS]
+- name: 🇳🇱 荷兰 02 [VLESS]
   type: vless
-  server: 91.107.179.8
-  port: 15003
-  uuid: 69d8dc73-20ff-4241-bdd8-a9d6d07553b6
-  udp: true
-  network: tcp
-  _country: 德国
-  _iso: DE
-- name: 🇺🇸 美国 23 [VLESS]
-  type: vless
-  server: 2.27.205.59
+  server: 31.76.76.28
   port: 443
-  uuid: c21631d5-36c9-4664-b575-97eca17456be
+  uuid: de5906f3-df38-4463-aa9d-2b01320cc6ea
   udp: true
   network: ws
   ws-opts:
     path: /
-  _country: 美国
-  _iso: US
+  _country: 荷兰
+  _iso: NL
+- name: 🇬🇧 英国 03 [VLESS]
+  type: vless
+  server: 82.24.203.20
+  port: 2087
+  uuid: 5fcdc9b7-e70f-4a5c-85c3-e018ad818326
+  udp: true
+  network: ws
+  ws-opts:
+    path: /fd5ba98a3970
+  _country: 英国
+  _iso: GB
+- name: 🇵🇱 波兰 03 [VLESS]
+  type: vless
+  server: 94.183.209.43
+  port: 443
+  uuid: 5e7ecc47-e424-4653-876e-c7515a2c82b4
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+  _country: 波兰
+  _iso: PL
+- name: 🇵🇱 波兰 04 [VLESS]
+  type: vless
+  server: 94.183.209.58
+  port: 443
+  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pl2.lckdwn.ru
+  _country: 波兰
+  _iso: PL
+- name: 🇱🇻 拉脱维亚 01 [VLESS]
+  type: vless
+  server: 89.36.161.222
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: laoye.in-gect.fun
+  _country: 拉脱维亚
+  _iso: LV
 - name: 🇬🇷 希腊 01 [VLESS]
   type: vless
   server: 185.126.238.87
@@ -640,78 +734,105 @@ proxies:
     grpc-service-name: security.debian.org
   _country: 希腊
   _iso: GR
-- name: 🇷🇺 俄罗斯联邦 02 [VLESS]
+- name: 🇪🇬 埃及 01 [VLESS]
   type: vless
-  server: 46.8.200.91
-  port: 443
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
-  udp: true
-  tls: true
-  sni: cf3.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /casc
-    headers:
-      Host: cf3.rumedia-cdn.com
-  _country: 俄罗斯联邦
-  _iso: RU
-- name: 🇺🇿 乌兹别克斯坦 01 [VLESS]
-  type: vless
-  server: 189.74.97.47
+  server: 38.54.59.209
   port: 2087
-  uuid: 894fe9f0-b998-49c0-8003-a5007de921e1
+  uuid: cd842ef8-9577-47f3-83ca-627147ed291b
   udp: true
   network: ws
   ws-opts:
-    path: /755276b33b6f
-  _country: 乌兹别克斯坦
-  _iso: UZ
-- name: 🇺🇸 美国 24 [VLESS]
+    path: /d1000b16fe76
+  _country: 埃及
+  _iso: EG
+- name: 🇰🇷 韩国 02 [VLESS]
   type: vless
-  server: 104.21.80.194
+  server: 130.94.29.111
+  port: 2087
+  uuid: 84da6391-1539-4583-a3d9-d6efd796b4d6
+  udp: true
+  network: ws
+  ws-opts:
+    path: /e17586a75123
+  _country: 韩国
+  _iso: KR
+- name: 🇬🇧 英国 04 [VLESS]
+  type: vless
+  server: fcs013.getdcz.me
   port: 443
-  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
+  uuid: f081b5e2-f3a0-4ef5-833b-1ea59e0797b6
   udp: true
   tls: true
-  sni: 9-M19.sOUTH-AFRIcA-LINK.CCWu.cC
+  sni: fcs013.getdcz.me
   network: ws
   ws-opts:
-    path: /CjBjB9sn5pCvaSwScc
+    path: /6d2fed050b30
     headers:
-      Host: 9-m19.South-AfrIcA-liNK.CcWU.CC
+      Host: fcs013.getdcz.me
+  _country: 英国
+  _iso: GB
+- name: 🇻🇳 越南 01 [TROJAN]
+  server: 103.9.77.6
+  port: 443
+  type: trojan
+  password: 5a92d674-308c-4d95-b283-28383e63a59b
+  skip-cert-verify: true
+  udp: true
+  _country: 越南
+  _iso: VN
+- name: 🇬🇧 英国 05 [TROJAN]
+  server: 51.38.65.155
+  port: 443
+  type: trojan
+  password: 1d7692c0-f51c-11ee-91eb-1239d0255272
+  skip-cert-verify: true
+  udp: true
+  _country: 英国
+  _iso: GB
+- name: 🇳🇱 荷兰 03 [TROJAN]
+  server: 142.93.226.128
+  port: 443
+  type: trojan
+  password: 8c03bc97-6dd1-485b-9ae6-c0539929592c
+  skip-cert-verify: true
+  udp: true
+  _country: 荷兰
+  _iso: NL
+- name: 🇸🇬 新加坡 04 [TROJAN]
+  server: 139.162.49.215
+  port: 443
+  type: trojan
+  password: b3965d2d-3b82-45cc-927b-1336aca3f3fe
+  skip-cert-verify: true
+  udp: true
+  _country: 新加坡
+  _iso: SG
+- name: 🇺🇸 美国 24 [TROJAN]
+  server: 216.128.147.13
+  port: 443
+  type: trojan
+  password: wkmY1R4EcP
+  sni: z-v2-003274.kailib.com
+  skip-cert-verify: true
+  udp: true
   _country: 美国
   _iso: US
 - name: 🇺🇸 美国 25 [VLESS]
   type: vless
-  server: 172.67.179.82
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
+  server: 104.17.25.208
+  port: 2096
+  uuid: 42c62a5a-cd31-4551-80ef-908732370287
   udp: true
   tls: true
-  sni: 0-m20.be434a1f-0c04-40c9-a43a-87cc7d7da502.kdns.fr
+  sni: fq.jp188.dpdns.org
   network: ws
   ws-opts:
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
+    path: /proxyip=154.17.22.207,69.63.210.157,134.195.211.13,172.236.245.153,209.146.115.209,64.186.224.194,149.28.94.52,107.151.188.57
     headers:
-      Host: 0-m20.be434a1f-0c04-40c9-a43a-87cc7d7da502.kdns.fr
+      Host: fq.jp188.dpdns.org
   _country: 美国
   _iso: US
 - name: 🇺🇸 美国 26 [VLESS]
-  type: vless
-  server: 172.64.158.37
-  port: 443
-  uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-  udp: true
-  tls: true
-  sni: gy-cffc4-node-31z7yxejlog9qfu0.lancelot.dpdns.org
-  network: ws
-  ws-opts:
-    path: /data/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-    headers:
-      Host: gy-cffc4-node-31z7yxejlog9qfu0.lancelot.dpdns.org
-  _country: 美国
-  _iso: US
-- name: 🇺🇸 美国 27 [VLESS]
   type: vless
   server: 104.21.12.3
   port: 443
@@ -726,109 +847,97 @@ proxies:
       Host: 6-m19.mExiCo-pOrT.cCwu.cc
   _country: 美国
   _iso: US
-- name: 🇺🇸 美国 28 [VLESS]
+- name: 🇺🇸 美国 27 [VLESS]
   type: vless
-  server: 172.67.179.98
-  port: 8880
-  uuid: caa0f615-2598-4b78-b339-2824658a602b
-  udp: true
-  sni: soft-dream-429a.319.workers.dev
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: soft-dream-429a.319.workers.dev
-  _country: 美国
-  _iso: US
-- name: 🇺🇸 美国 29 [VLESS]
-  type: vless
-  server: 104.25.178.92
-  port: 443
-  uuid: d9abc6e3-83bf-4c28-ae68-72465e2abe39
-  udp: true
-  tls: true
-  sni: ikT-KKC25F27k-3Tehr8MC.ADE-1007.WOrKErS.DEV
-  network: ws
-  ws-opts:
-    path: /vl/xQhNe7rLrdM0emZlaW5LMsNwcoIgnT?ed=2560
-    headers:
-      Host: ikt-kkc25f27k-3tehr8mc.ade-1007.workers.dev
-  _country: 美国
-  _iso: US
-- name: 🇺🇸 美国 30 [VLESS]
-  type: vless
-  server: 172.67.177.227
+  server: 172.67.190.103
   port: 443
   uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
   udp: true
   tls: true
-  sni: 4-m16.cHiAN-mai-7.kdnS.fr
+  sni: 6-m16.CHIANG-rai2036.KDnS.fR
   network: ws
   ws-opts:
     path: /JRr6VGcSLFc034DC6sDbwyWJLbB
     headers:
-      Host: 4-m16.ChIAn-mai-7.kDnS.fr
+      Host: 6-m16.chIAnG-rAI2036.kDNS.FR
+  _country: 美国
+  _iso: US
+- name: 🇸🇪 瑞典 01 [VLESS]
+  type: vless
+  server: 202.155.11.249
+  port: 443
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  udp: true
+  tls: true
+  sni: cf2.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: cf2.rumedia-cdn.com
+  _country: 瑞典
+  _iso: SE
+- name: 🇺🇸 美国 28 [VLESS]
+  type: vless
+  server: 104.19.146.98
+  port: 2083
+  uuid: 42c62a5a-cd31-4551-80ef-908732370287
+  udp: true
+  tls: true
+  sni: fq.jp188.dpdns.org
+  network: ws
+  ws-opts:
+    path: /proxyip=154.17.22.207,69.63.210.157,134.195.211.13,172.236.245.153,209.146.115.209,64.186.224.194,149.28.94.52,107.151.188.57
+    headers:
+      Host: fq.jp188.dpdns.org
+  _country: 美国
+  _iso: US
+- name: 🇺🇸 美国 29 [VLESS]
+  type: vless
+  server: 104.17.156.230
+  port: 2053
+  uuid: 42c62a5a-cd31-4551-80ef-908732370287
+  udp: true
+  tls: true
+  sni: fq.jp188.dpdns.org
+  network: ws
+  ws-opts:
+    path: /proxyip=154.17.22.207,69.63.210.157,134.195.211.13,172.236.245.153,209.146.115.209,64.186.224.194,149.28.94.52,107.151.188.57
+    headers:
+      Host: fq.jp188.dpdns.org
+  _country: 美国
+  _iso: US
+- name: 🇺🇸 美国 30 [VLESS]
+  type: vless
+  server: 104.16.157.175
+  port: 8443
+  uuid: 42c62a5a-cd31-4551-80ef-908732370287
+  udp: true
+  tls: true
+  sni: fq.jp188.dpdns.org
+  network: ws
+  ws-opts:
+    path: /proxyip=154.17.22.207,69.63.210.157,134.195.211.13,172.236.245.153,209.146.115.209,64.186.224.194,149.28.94.52,107.151.188.57
+    headers:
+      Host: fq.jp188.dpdns.org
   _country: 美国
   _iso: US
 - name: 🇺🇸 美国 31 [VLESS]
   type: vless
-  server: 172.67.209.127
-  port: 8880
-  uuid: 8bcfe782-60c4-4c09-b46c-330f1aa3741c
+  server: 104.17.20.32
+  port: 2087
+  uuid: 42c62a5a-cd31-4551-80ef-908732370287
   udp: true
+  tls: true
+  sni: fq.jp188.dpdns.org
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /proxyip=154.17.22.207,69.63.210.157,134.195.211.13,172.236.245.153,209.146.115.209,64.186.224.194,149.28.94.52,107.151.188.57
     headers:
-      Host: snowy-lab-6cab.237-2da.workers.dev
+      Host: fq.jp188.dpdns.org
   _country: 美国
   _iso: US
 - name: 🇺🇸 美国 32 [VLESS]
-  type: vless
-  server: 104.17.133.166
-  port: 2053
-  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
-  udp: true
-  tls: true
-  sni: us.105794.xyz
-  network: ws
-  ws-opts:
-    path: /download/v3/installer-x64.bin
-    headers:
-      Host: us.105794.xyz
-  _country: 美国
-  _iso: US
-- name: 🇺🇸 美国 33 [VLESS]
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  sni: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-  _country: 美国
-  _iso: US
-- name: 🇺🇸 美国 34 [VLESS]
-  type: vless
-  server: 104.21.33.59
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  sni: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-  _country: 美国
-  _iso: US
-- name: 🇺🇸 美国 35 [VLESS]
   type: vless
   server: 104.21.70.21
   port: 443
@@ -843,28 +952,7 @@ proxies:
       Host: jp3.yohototo.top
   _country: 美国
   _iso: US
-- name: 🇦🇺 澳大利亚 01 [VLESS]
-  type: vless
-  server: 103.75.119.126
-  port: 2087
-  uuid: 731f177e-00aa-480c-b935-661456139a32
-  udp: true
-  network: ws
-  ws-opts:
-    path: /7586c69d3dc9
-  _country: 澳大利亚
-  _iso: AU
-- name: 🇩🇪 德国 07 [HYSTERIA2]
-  type: hysteria2
-  server: 144.31.221.57
-  port: 443
-  password: V1UQuwa-4PRIDW2paxrPe58RcxXHPGyFIGS-5QojaM8
-  udp: true
-  skip-cert-verify: true
-  sni: player.wwwinternetvideo.click
-  _country: 德国
-  _iso: DE
-- name: 🇯🇵 日本 04 [VLESS]
+- name: 🇯🇵 日本 11 [VLESS]
   type: vless
   server: 137.220.221.179
   port: 443
@@ -873,70 +961,7 @@ proxies:
   network: tcp
   _country: 日本
   _iso: JP
-- name: 🇲🇾 马来西亚 01 [VLESS]
-  type: vless
-  server: 38.60.168.98
-  port: 2087
-  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
-  udp: true
-  network: ws
-  ws-opts:
-    path: /db55c40bbc75
-  _country: 马来西亚
-  _iso: MY
-- name: 🇸🇬 新加坡 02 [VLESS]
-  type: vless
-  server: 95.111.197.114
-  port: 80
-  uuid: 5f82e7d7-38dc-4381-9ded-a025342fb330
-  udp: true
-  network: ws
-  ws-opts:
-    path: /FREE by Tharuwa (0767597317)
-    headers:
-      Host: m.zoom.us
-  _country: 新加坡
-  _iso: SG
-- name: 🇸🇬 新加坡 03 [VLESS]
-  type: vless
-  server: 134.122.154.210
-  port: 443
-  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
-  udp: true
-  network: tcp
-  _country: 新加坡
-  _iso: SG
-- name: 🇰🇷 韩国 02 [VLESS]
-  type: vless
-  server: 130.94.29.111
-  port: 2087
-  uuid: 84da6391-1539-4583-a3d9-d6efd796b4d6
-  udp: true
-  network: ws
-  ws-opts:
-    path: /e17586a75123
-  _country: 韩国
-  _iso: KR
-- name: 🇳🇱 荷兰 04 [VLESS]
-  type: vless
-  server: 193.23.194.167
-  port: 443
-  uuid: 32349ee8-8551-45fa-a265-8704cec72936
-  udp: true
-  network: ws
-  _country: 荷兰
-  _iso: NL
-- name: 🇳🇱 荷兰 05 [VLESS]
-  type: vless
-  server: 31.76.76.28
-  port: 443
-  uuid: de5906f3-df38-4463-aa9d-2b01320cc6ea
-  udp: true
-  sni: 31.76.76.28
-  network: ws
-  _country: 荷兰
-  _iso: NL
-- name: 🇺🇸 美国 41 [VLESS]
+- name: 🇺🇸 美国 33 [VLESS]
   type: vless
   server: 188.114.97.6
   port: 443
@@ -951,7 +976,111 @@ proxies:
       Host: jp3.yohototo.top
   _country: 美国
   _iso: US
-- name: 🇫🇷 法国 02 [VLESS]
+- name: 🇺🇸 美国 34 [VLESS]
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  sni: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+  _country: 美国
+  _iso: US
+- name: 🇺🇸 美国 35 [VLESS]
+  type: vless
+  server: 172.67.217.240
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  sni: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+  _country: 美国
+  _iso: US
+- name: 🇲🇾 马来西亚 01 [VLESS]
+  type: vless
+  server: 38.60.168.98
+  port: 2087
+  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
+  udp: true
+  network: ws
+  ws-opts:
+    path: /db55c40bbc75
+  _country: 马来西亚
+  _iso: MY
+- name: 🇺🇸 美国 37 [VLESS]
+  type: vless
+  server: 104.21.33.59
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  sni: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+  _country: 美国
+  _iso: US
+- name: 🇸🇬 新加坡 05 [VLESS]
+  type: vless
+  server: 134.122.154.210
+  port: 443
+  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
+  udp: true
+  network: tcp
+  _country: 新加坡
+  _iso: SG
+- name: 🇩🇪 德国 06 [HYSTERIA2]
+  type: hysteria2
+  server: 144.31.221.57
+  port: 443
+  password: V1UQuwa-4PRIDW2paxrPe58RcxXHPGyFIGS-5QojaM8
+  udp: true
+  skip-cert-verify: true
+  sni: player.wwwinternetvideo.click
+  _country: 德国
+  _iso: DE
+- name: 🇦🇺 澳大利亚 01 [VLESS]
+  type: vless
+  server: 103.75.119.126
+  port: 2087
+  uuid: 731f177e-00aa-480c-b935-661456139a32
+  udp: true
+  network: ws
+  ws-opts:
+    path: /7586c69d3dc9
+  _country: 澳大利亚
+  _iso: AU
+- name: 🇩🇪 德国 07 [VLESS]
+  type: vless
+  server: 91.107.179.8
+  port: 15003
+  uuid: 69d8dc73-20ff-4241-bdd8-a9d6d07553b6
+  udp: true
+  network: tcp
+  _country: 德国
+  _iso: DE
+- name: 🇳🇱 荷兰 04 [VLESS]
+  type: vless
+  server: 193.23.194.167
+  port: 443
+  uuid: 32349ee8-8551-45fa-a265-8704cec72936
+  udp: true
+  network: ws
+  _country: 荷兰
+  _iso: NL
+- name: 🇫🇷 法国 01 [VLESS]
   type: vless
   server: 45.144.28.39
   port: 2096
@@ -961,15 +1090,26 @@ proxies:
   network: ws
   _country: 法国
   _iso: FR
-- name: 🇫🇷 法国 03 [VLESS]
-  type: vless
-  server: 13.36.253.48
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇩🇪 德国 08 [HYSTERIA2]
+  type: hysteria2
+  server: 144.31.148.87
+  port: 443
+  password: 2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f
   udp: true
-  network: tcp
-  _country: 法国
-  _iso: FR
+  sni: replay.wwwinternetvideo.click
+  _country: 德国
+  _iso: DE
+- name: 🇨🇦 加拿大 03 [VLESS]
+  type: vless
+  server: 130.94.115.231
+  port: 2087
+  uuid: 8a51f3d9-30cc-44e6-8d31-700211a29066
+  udp: true
+  network: ws
+  ws-opts:
+    path: /721740e567c7
+  _country: 加拿大
+  _iso: CA
 proxy-groups:
   - {name: 🚀 节点选择, type: select, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Proxy.png, proxies: [☢ 负载均衡-散列, ☢ 负载均衡-轮询, ♻️ 自动选择, 🌐 全部节点, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇸🇬 新加坡, 🇰🇷 韩国, 🇺🇲 美国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇪🇸 西班牙节点, 🇲🇽 墨西哥节点, 🇧🇷 巴西节点, 🇵🇭 菲律宾节点, 🇮🇳 印度节点, 🇹🇷 土耳其节点, 🧿 其它地区, 🟢 直连]}
   - {name: ♻️ 自动选择, type: url-test, icon: https://hk.gh-proxy.org/https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Auto.png, include-all: true, tolerance: 30, interval: 300, lazy: true, filter: "^((?!(直连)).)*$"}
